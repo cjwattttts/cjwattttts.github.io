@@ -245,7 +245,7 @@
  }
  
  #contact button {
-    background-color: #333333;
+    background: linear-gradient(to bottom right, #000000, #333333); /* Gradient background for button */
     color: #ffffff;
     padding: 20px 40px;
     border: none;
@@ -257,6 +257,6 @@
  }
  
  #contact button:hover {
-    background-color: #222222; /* Darker gray hover effect */
+    background: linear-gradient(to bottom right, #333333, #000000); /* Reversed gradient on hover */
  }
  
