@@ -1,4 +1,4 @@
-/* Global Resets */
+/* Global Reset */
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +14,32 @@
     font-size: 16px;
     line-height: 1.6;
     overflow-x: hidden;
+    font-weight: 400;
+ }
+ 
+ /* Typography */
+ h1, h2, h3 {
+    font-weight: 600;
+    letter-spacing: -0.5px;
+ }
+ 
+ h1 {
+    font-size: 4.5rem;
+ }
+ 
+ h2 {
+    font-size: 3rem;
+ }
+ 
+ h3 {
+    font-size: 2rem;
+ }
+ 
+ p {
+    font-size: 1.25rem;
+    color: #2c2c2e;
+    line-height: 1.7;
+    margin-bottom: 15px;
  }
  
  /* Header Styling */
@@ -24,26 +50,32 @@
     left: 0;
     padding: 30px 10%;
     z-index: 1000;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7));
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.6));
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease;
  }
  
- /* Navigation Menu */
- nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+ header:hover {
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
  }
  
- nav .logo h1 {
+ header .logo h1 {
     font-size: 2.8rem;
     color: #ffffff;
     letter-spacing: -1px;
+    transition: color 0.3s ease;
+ }
+ 
+ header .logo h1:hover {
+    color: #0091ea;
+ }
+ 
+ header nav {
+    display: flex;
+    align-items: center;
  }
  
  nav .nav-links {
@@ -65,7 +97,7 @@
  
  nav .nav-links li a:hover {
     color: #0091ea;
-    transform: scale(1.1);
+    transform: scale(1.05);
  }
  
  /* Hero Section */
@@ -76,7 +108,6 @@
     align-items: center;
     text-align: center;
     background: url('assets/images/hero-background.jpg') no-repeat center center/cover;
-    background-size: cover;
     position: relative;
     overflow: hidden;
  }
@@ -88,18 +119,18 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9));
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9));
  }
  
  .hero h2 {
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-weight: 700;
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 2px;
-    line-height: 1.1;
     max-width: 70%;
     margin-bottom: 20px;
+    z-index: 10;
  }
  
  .hero p {
@@ -108,6 +139,7 @@
     font-weight: 400;
     line-height: 1.8;
     max-width: 60%;
+    z-index: 10;
  }
  
  .hero .cta-button {
@@ -172,6 +204,11 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
     margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    margin-left: 2%;
+    margin-right: 2%;
  }
  
  .project-card:hover {
@@ -183,16 +220,23 @@
     width: 100%;
     height: auto;
     object-fit: cover;
+    transition: transform 0.3s ease;
+ }
+ 
+ .project-card:hover img {
+    transform: scale(1.1);
  }
  
  .project-card .content {
     padding: 30px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 1));
  }
  
  .project-card h3 {
     font-size: 2rem;
     font-weight: 600;
     color: #1c1c1e;
+    margin-bottom: 10px;
  }
  
  .project-card p {
@@ -231,6 +275,62 @@
     color: #0091ea;
  }
  
+ /* Contact Section */
+ #contact {
+    background-color: #ffffff;
+    padding: 100px 10%;
+    text-align: center;
+ }
+ 
+ #contact h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #1c1c1e;
+ }
+ 
+ #contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ 
+ #contact form input,
+ #contact form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 15px;
+    border: 1px solid #d1d1d6;
+    background-color: #f7f7f7;
+    color: #1c1c1e;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: border-color 0.3s ease;
+ }
+ 
+ #contact form input:focus,
+ #contact form textarea:focus {
+    border-color: #0091ea;
+ }
+ 
+ #contact button {
+    background-color: #0091ea;
+    color: #ffffff;
+    padding: 20px 50px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+ }
+ 
+ #contact button:hover {
+    background-color: #007bb5;
+    transform: translateY(-5px);
+ }
+ 
  /* Footer Styling */
  footer {
     background-color: #1c1c1e;
@@ -267,8 +367,8 @@
     background-color: #007bb5;
  }
  
- /* Media Queries for Responsiveness */
- @media (max-width: 768px) {
+ /* Responsive Design for Smaller Screens */
+ @media (max-width: 1024px) {
     header {
        padding: 20px 5%;
     }
@@ -283,10 +383,55 @@
        max-width: 90%;
     }
  
+    .project-card {
+       width: 45%;
+       margin-left: 2%;
+       margin-right: 2%;
+    }
+ }
+ 
+ @media (max-width: 768px) {
+    header {
+       padding: 15px 5%;
+    }
+ 
+    .hero h2 {
+       font-size: 2.5rem;
+       max-width: 90%;
+    }
+ 
+    .hero p {
+       font-size: 1rem;
+       max-width: 90%;
+    }
+ 
     #about p,
     #skills ul li,
     #projects .project-card {
        font-size: 1.1rem;
     }
+ 
+    #contact form input,
+    #contact form textarea {
+       width: 90%;
+    }
+ 
+    #contact button {
+       width: 90%;
+    }
  }
+ 
+ @media (max-width: 480px) {
+    .hero h2 {
+       font-size: 2rem;
+       max-width: 80%;
+    }
+ 
+    .hero p {
+       font-size: 1rem;
+       max-width: 80%;
+    }
+ 
+    #about h2 {
+      
  
