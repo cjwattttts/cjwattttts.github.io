@@ -33,7 +33,7 @@ nav {
 
 nav .logo h1 {
     font-size: 2.5rem;
-    color: #F4F4F4;
+    color: #4C6A92; /* Subtle blue tone */
 }
 
 .nav-links {
@@ -87,6 +87,23 @@ nav .logo h1 {
     opacity: 0.9;
 }
 
+/* Buttons */
+button, .btn {
+    background: linear-gradient(135deg, #4C6A92, #1C1C1C);
+    color: #F4F4F4;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background: linear-gradient(135deg, #5A7FB0, #333333);
+    transform: scale(1.05);
+}
+
 /* Other Sections */
 #about, #projects, #skills, #contact {
     padding: 80px 10%;
@@ -94,23 +111,23 @@ nav .logo h1 {
 }
 
 #about {
-    background-color: #2D2D2D;
+    background: linear-gradient(135deg, #2D2D2D, #1C1C1C);
 }
 
 #projects {
-    background-color: #1C1C1C;
+    background: linear-gradient(135deg, #1C1C1C, #2A2A2A);
 }
 
 #skills {
-    background-color: #2D2D2D;
+    background: linear-gradient(135deg, #2D2D2D, #1C1C1C);
 }
 
 #contact {
-    background-color: #1C1C1C;
+    background: linear-gradient(135deg, #1C1C1C, #2A2A2A);
 }
 
 .project-card {
-    background-color: #333333;
+    background: linear-gradient(135deg, #333333, #1C1C1C);
     border-radius: 10px;
     padding: 20px;
     margin: 20px;
@@ -130,16 +147,22 @@ nav .logo h1 {
     margin: 10px 0;
     border-radius: 10px;
     border: 1px solid #4C6A92;
-    background-color: #333333;
+    background: linear-gradient(135deg, #333333, #2A2A2A);
     color: #F4F4F4;
 }
 
 #contact button {
-    background-color: #4C6A92;
+    background: linear-gradient(135deg, #4C6A92, #1C1C1C);
     color: #F4F4F4;
     padding: 15px 30px;
     border: none;
     border-radius: 10px;
     font-weight: 600;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#contact button:hover {
+    background: linear-gradient(135deg, #5A7FB0, #333333);
+    transform: scale(1.05);
 }
