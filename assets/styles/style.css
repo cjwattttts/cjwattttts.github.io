@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap'); /* Modern font choice */
 
 /* ✨ Global Resets */
 * {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-family: 'Times New Roman', serif; /* Sophisticated font choice */
+   font-family: 'Roboto', sans-serif; /* Modern sans-serif font */
    scroll-behavior: smooth;
 }
 
 /* 🌱 Body Styling */
 body {
-   background-color: #F4E1D2; /* Beige background for a warm, neutral tone */
-   color: #3E3B31; /* Dark brown text */
+   background-color: #1a1a1a; /* Dark gray background for a sleek, modern feel */
+   color: #f0f0f0; /* Light text for readability */
    line-height: 1.6;
    font-size: 1rem;
 }
@@ -21,11 +21,11 @@ body {
 header {
    position: fixed;
    width: 100%;
-   background: rgba(255, 255, 255, 0.85);
-   backdrop-filter: blur(12px);
+   background: rgba(0, 0, 0, 0.7); /* Transparent dark background for modern feel */
+   backdrop-filter: blur(8px);
    padding: 1.5rem 2rem;
    z-index: 1000;
-   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); /* Light shadow for sophistication */
+   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); /* Light shadow for sophistication */
 }
 
 nav {
@@ -37,10 +37,11 @@ nav {
 }
 
 nav .logo h1 {
-   font-size: 2.2rem;
-   font-weight: 600;
-   color: #3E3B31;
-   text-transform: none;
+   font-size: 2.5rem;
+   font-weight: 700;
+   color: #00b3e3; /* Bright blue for modern and futuristic vibe */
+   text-transform: uppercase;
+   letter-spacing: 2px;
 }
 
 nav ul {
@@ -49,73 +50,91 @@ nav ul {
 }
 
 nav ul li {
-   margin-left: 25px;
+   margin-left: 30px;
 }
 
 nav ul li a {
-   color: #3E3B31;
-   font-weight: 600;
+   color: #f0f0f0;
+   font-weight: 500;
    text-decoration: none;
    transition: color 0.3s ease-in-out;
+   padding: 5px 10px;
+   border-radius: 5px;
 }
 
 nav ul li a:hover {
-   color: #A7C4B5; /* Soft green for hover effect */
+   color: #00b3e3; /* Slick blue hover effect */
+   background-color: rgba(0, 179, 227, 0.2); /* Subtle blue background on hover */
 }
 
 /* 🚀 Hero Section Styling */
 .hero {
-   height: 50vh; /* Reduced the height of the background section */
+   height: 100vh;
    display: flex;
    justify-content: center;
    align-items: center;
    text-align: left;
    background: url('assets/images/business-gradient.jpg') no-repeat center center/cover;
+   background-blur: 8px;
+   color: #f0f0f0;
    padding: 0 12%;
-   color: #D0D3D4; /* Light Silver text */
+   position: relative;
+   overflow: hidden;
 }
 
 .hero h2 {
-   font-size: 3.5rem; /* Reduced font size so it fits on one line */
-   font-weight: 600;
-   background-color: #003366; /* Navy blue background behind the title */
-   color: #D0D3D4; /* Light Silver text */
-   padding: 10px 20px; /* Added padding for better spacing around text */
-   border-radius: 5px; /* Optional: Rounded corners */
-   margin-bottom: 20px;
+   font-size: 4rem; /* Larger size for impact */
+   font-weight: 700;
+   color: transparent;
+   background: linear-gradient(135deg, #00b3e3, #1a1a1a);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); /* Subtle text shadow for legibility */
+}
+
+.hero p {
+   font-size: 1.5rem;
+   font-weight: 400;
+   max-width: 700px;
+   color: #f0f0f0;
+   text-align: center;
+   margin-top: 20px;
 }
 
 /* 🛠 About Me Section Styling */
 #about {
-   background-color: #FFFFFF;
-   color: #3E3B31;
-   padding: 60px 10%;
+   background-color: #2d2d2d; /* Darker gray for contrast */
+   color: #f0f0f0;
+   padding: 80px 10%;
    text-align: center;
 }
 
 #about h2 {
-   font-size: 2.5rem;
-   font-weight: 600;
+   font-size: 2.8rem;
+   font-weight: 700;
    margin-bottom: 20px;
 }
 
 #about p {
-   font-size: 1.1rem;
+   font-size: 1.2rem;
    line-height: 1.8;
    margin-bottom: 40px;
+   max-width: 800px;
+   margin: 20px auto;
 }
 
 /* 📊 Skills Section Styling */
 #skills {
-   background-color: #F4E1D2;
-   padding: 50px 10%;
+   background-color: #1a1a1a;
+   padding: 70px 10%;
    text-align: center;
 }
 
 #skills h2 {
-   font-size: 2.5rem;
-   font-weight: 600;
-   margin-bottom: 30px;
+   font-size: 2.8rem;
+   font-weight: 700;
+   margin-bottom: 40px;
+   color: #00b3e3;
 }
 
 #skills ul {
@@ -124,67 +143,75 @@ nav ul li a:hover {
 }
 
 #skills ul li {
-   font-size: 1.2rem;
-   margin-bottom: 15px;
+   font-size: 1.4rem;
+   margin-bottom: 20px;
+   color: #f0f0f0;
+   transition: color 0.3s ease-in-out;
+}
+
+#skills ul li:hover {
+   color: #00b3e3; /* Hover effect to highlight skills */
 }
 
 /* 💼 Projects Section Styling */
 #projects {
-   background-color: #FFFFFF;
-   padding: 60px 10%;
+   background-color: #2d2d2d;
+   padding: 80px 10%;
    text-align: center;
 }
 
 #projects h2 {
-   font-size: 2.5rem;
-   font-weight: 600;
-   margin-bottom: 30px;
+   font-size: 2.8rem;
+   font-weight: 700;
+   margin-bottom: 40px;
+   color: #00b3e3;
 }
 
 .project-card {
-   background-color: #F9F9F9;
-   border-radius: 10px;
-   padding: 20px;
+   background-color: #333333;
+   border-radius: 15px;
+   padding: 25px;
    margin: 20px auto;
    max-width: 900px;
-   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
    transform: scale(1.05);
-   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
 
 .project-card h3 {
-   font-size: 1.8rem;
-   font-weight: 600;
-   color: #3E3B31;
+   font-size: 2rem;
+   font-weight: 700;
+   color: #00b3e3;
 }
 
 .project-card p {
    font-size: 1.2rem;
-   margin-top: 10px;
-   color: #3E3B31;
+   margin-top: 15px;
+   color: #f0f0f0;
 }
 
 .project-card .tools {
    font-size: 1.1rem;
-   color: #A7C4B5;
-   margin-top: 10px;
+   color: #00b3e3;
+   margin-top: 15px;
 }
 
 /* 📩 Contact Section Styling */
 #contact {
-   background-color: #F4E1D2;
-   padding: 60px 10%;
+   background-color: #1a1a1a;
+   padding: 80px 10%;
    text-align: center;
 }
 
 #contact h2 {
-   font-size: 2.5rem;
-   font-weight: 600;
-   margin-bottom: 30px;
+   font-size: 2.8rem;
+   font-weight: 700;
+   margin-bottom: 40px;
+   color: #00b3e3;
 }
 
 #contact form input,
@@ -193,35 +220,50 @@ nav ul li a:hover {
    padding: 15px;
    margin: 10px 0;
    border-radius: 10px;
-   border: 1px solid #A7C4B5;
+   border: 1px solid #00b3e3;
    font-size: 1rem;
-   background-color: #FFFFFF;
-   color: #3E3B31;
+   background-color: #333333;
+   color: #f0f0f0;
+   transition: background-color 0.3s ease-in-out;
+}
+
+#contact form input:focus,
+#contact form textarea:focus {
+   background-color: #444444;
 }
 
 #contact button {
-   background-color: #A7C4B5;
-   color: #FFFFFF;
+   background-color: #00b3e3;
+   color: #fff;
    padding: 15px 30px;
    border: none;
    border-radius: 10px;
-   font-weight: 600;
+   font-weight: 700;
    cursor: pointer;
    transition: background-color 0.3s ease;
 }
 
 #contact button:hover {
-   background-color: #3E3B31;
+   background-color: #009ec3;
 }
 
 /* 🌙 Footer Section Styling */
 footer {
    text-align: center;
-   padding: 20px 0;
+   padding: 30px 0;
    font-size: 1rem;
-   background-color: #3E3B31;
-   color: #F4E1D2;
+   background-color: #00b3e3;
+   color: #1a1a1a;
    margin-top: 40px;
+}
+
+footer a {
+   color: #1a1a1a;
+   text-decoration: none;
+}
+
+footer a:hover {
+   text-decoration: underline;
 }
 
 /* 🌿 Smooth Scroll Effect */
@@ -238,9 +280,9 @@ html {
 /* 🖋 Link Styling */
 a {
    text-decoration: none;
-   color: #A7C4B5;
+   color: #00b3e3;
 }
 
 a:hover {
-   color: #3E3B31;
+   color: #f0f0f0;
 }
