@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
 
-/* Apple-Like Reset */
 * {
     margin: 0;
     padding: 0;
@@ -9,36 +8,37 @@
     scroll-behavior: smooth;
 }
 
-/* Dark Futuristic Theme */
+/* ✨ Business-Chic Color Theme */
 body {
-    background: #0A0A0A;
+    background: #001F3F;
     color: #F5F5F5;
 }
 
-/* Navbar - Fixed, Transparent with Smooth Animation */
+/* ⚡ Animated Navbar */
 header {
     position: fixed;
     width: 100%;
-    background: rgba(10, 10, 10, 0.85);
-    backdrop-filter: blur(10px);
-    padding: 1rem 2rem;
+    background: rgba(0, 31, 63, 0.85);
+    backdrop-filter: blur(12px);
+    padding: 1.2rem 2rem;
     z-index: 1000;
-    transition: background 0.3s ease-in-out;
+    transition: background 0.4s ease-in-out;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
 nav .logo h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 700;
-    color: #F5F5F5;
+    color: #F9FAFB;
     letter-spacing: -1px;
+    text-transform: uppercase;
 }
 
 nav ul {
@@ -47,72 +47,100 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 25px;
+    margin-left: 30px;
 }
 
 nav ul li a {
-    color: #F5F5F5;
+    color: #F9FAFB;
     font-weight: 600;
-    text-transform: uppercase;
     letter-spacing: 0.5px;
     transition: color 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
-    color: #009DFF;
+    color: #1DA1F2;
 }
 
-/* Hero Section */
+/* 🚀 HERO SECTION */
 .hero {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    background: url('assets/images/hero-bg.jpg') no-repeat center center/cover;
-    animation: fadeIn 1.5s ease-in-out;
+    text-align: left;
+    background: url('assets/images/business-gradient.jpg') no-repeat center center/cover;
+    padding: 0 10%;
 }
 
-.hero h2 {
-    font-size: 3.8rem;
+.hero h1 {
+    font-size: 4rem;
     font-weight: 700;
-    color: #F5F5F5;
-    text-shadow: 0px 0px 10px rgba(0, 157, 255, 0.3);
+    background: linear-gradient(135deg, #D1D5DB, #F9FAFB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .hero p {
-    font-size: 1.4rem;
-    font-weight: 300;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 20px;
+    max-width: 600px;
 }
 
-/* Smooth Fade-in Animation */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+/* 🔥 Unique Vertical Text */
+.vertical-text {
+    position: absolute;
+    left: 3%;
+    top: 50%;
+    transform: rotate(-90deg);
+    font-size: 1.2rem;
+    font-weight: 600;
+    opacity: 0.5;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
-/* Project Cards */
+/* 🛠 Glassmorphic Project Cards */
 .project-card {
-    background: rgba(22, 22, 22, 0.95);
-    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
     padding: 2rem;
-    margin: 20px auto;
+    margin: 40px auto;
     max-width: 800px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 10px 40px rgba(0, 31, 63, 0.4);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .project-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 15px 40px rgba(0, 157, 255, 0.3);
+    transform: scale(1.04);
+    box-shadow: 0 15px 50px rgba(0, 157, 255, 0.5);
 }
 
-/* Contact Form */
+/* ✨ Silver Gradient Button */
+.button {
+    background: linear-gradient(135deg, #D1D5DB, #F9FAFB);
+    color: #001F3F;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    background: #1DA1F2;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* 📩 Contact Form */
 #contact input, #contact textarea {
     width: 100%;
     padding: 1rem;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.1);
     color: white;
     outline: none;
@@ -124,22 +152,23 @@ nav ul li a:hover {
 }
 
 #contact button {
-    background: #009DFF;
+    background: #1DA1F2;
     color: white;
     padding: 1rem 2rem;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
 
 #contact button:hover {
-    background: #00D1FF;
+    background: #F9FAFB;
+    color: #001F3F;
     transform: scale(1.05);
 }
 
-/* Footer */
+/* 🌙 Footer */
 footer {
     text-align: center;
     padding: 2rem;
@@ -147,7 +176,13 @@ footer {
     opacity: 0.7;
 }
 
-/* Smooth Scroll Effect */
+/* 🔄 Smooth Scroll Effect */
 html {
     scroll-behavior: smooth;
+}
+
+/* 📽 Subtle Fade-In Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
