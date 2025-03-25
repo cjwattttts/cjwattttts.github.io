@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap'); /* Modern font choice */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:wght@400;600&display=swap');
 
 /* ✨ Global Resets */
 * {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-family: 'Roboto', sans-serif; /* Modern sans-serif font */
+   font-family: 'Roboto', sans-serif; /* Updated to a sleek, modern font */
    scroll-behavior: smooth;
 }
 
 /* 🌱 Body Styling */
 body {
-   background-color: #1a1a1a; /* Dark gray background for a sleek, modern feel */
-   color: #f0f0f0; /* Light text for readability */
+   background-color: #2D2D2D; /* Dark gray background */
+   color: #E0E0E0; /* Light gray text */
    line-height: 1.6;
    font-size: 1rem;
 }
@@ -21,11 +21,11 @@ body {
 header {
    position: fixed;
    width: 100%;
-   background: rgba(0, 0, 0, 0.7); /* Transparent dark background for modern feel */
-   backdrop-filter: blur(8px);
+   background: rgba(0, 0, 0, 0.85);
+   backdrop-filter: blur(12px);
    padding: 1.5rem 2rem;
    z-index: 1000;
-   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); /* Light shadow for sophistication */
+   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); /* Darker shadow for modern look */
 }
 
 nav {
@@ -37,11 +37,10 @@ nav {
 }
 
 nav .logo h1 {
-   font-size: 2.5rem;
-   font-weight: 700;
-   color: #00b3e3; /* Bright blue for modern and futuristic vibe */
-   text-transform: uppercase;
-   letter-spacing: 2px;
+   font-size: 2.2rem;
+   font-weight: 600;
+   color: #E0E0E0;
+   text-transform: none;
 }
 
 nav ul {
@@ -50,21 +49,18 @@ nav ul {
 }
 
 nav ul li {
-   margin-left: 30px;
+   margin-left: 25px;
 }
 
 nav ul li a {
-   color: #f0f0f0;
-   font-weight: 500;
+   color: #E0E0E0;
+   font-weight: 600;
    text-decoration: none;
    transition: color 0.3s ease-in-out;
-   padding: 5px 10px;
-   border-radius: 5px;
 }
 
 nav ul li a:hover {
-   color: #00b3e3; /* Slick blue hover effect */
-   background-color: rgba(0, 179, 227, 0.2); /* Subtle blue background on hover */
+   color: #4C6A92; /* Updated blue */
 }
 
 /* 🚀 Hero Section Styling */
@@ -73,68 +69,63 @@ nav ul li a:hover {
    display: flex;
    justify-content: center;
    align-items: center;
-   text-align: left;
+   text-align: center; /* Centered title */
    background: url('assets/images/business-gradient.jpg') no-repeat center center/cover;
-   background-blur: 8px;
-   color: #f0f0f0;
    padding: 0 12%;
-   position: relative;
-   overflow: hidden;
+   color: #E0E0E0;
 }
 
 .hero h2 {
-   font-size: 4rem; /* Larger size for impact */
+   font-family: 'Archivo Black', sans-serif; /* Modern, sleek font for the title */
+   font-size: 4rem; /* Larger for impact */
    font-weight: 700;
-   color: transparent;
-   background: linear-gradient(135deg, #00b3e3, #1a1a1a);
+   text-transform: uppercase; /* Title in all caps */
+   background: linear-gradient(135deg, #4C6A92, #2D2D2D);
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
-   text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); /* Subtle text shadow for legibility */
+   margin-bottom: 20px;
 }
 
 .hero p {
-   font-size: 1.5rem;
+   font-size: 1.25rem;
    font-weight: 400;
    max-width: 700px;
-   color: #f0f0f0;
+   color: #E0E0E0;
    text-align: center;
    margin-top: 20px;
 }
 
 /* 🛠 About Me Section Styling */
 #about {
-   background-color: #2d2d2d; /* Darker gray for contrast */
-   color: #f0f0f0;
-   padding: 80px 10%;
+   background-color: #3E3E3E;
+   color: #E0E0E0;
+   padding: 60px 10%;
    text-align: center;
 }
 
 #about h2 {
-   font-size: 2.8rem;
-   font-weight: 700;
+   font-size: 2.5rem;
+   font-weight: 600;
    margin-bottom: 20px;
 }
 
 #about p {
-   font-size: 1.2rem;
+   font-size: 1.1rem;
    line-height: 1.8;
    margin-bottom: 40px;
-   max-width: 800px;
-   margin: 20px auto;
 }
 
 /* 📊 Skills Section Styling */
 #skills {
-   background-color: #1a1a1a;
-   padding: 70px 10%;
+   background-color: #2D2D2D;
+   padding: 50px 10%;
    text-align: center;
 }
 
 #skills h2 {
-   font-size: 2.8rem;
-   font-weight: 700;
-   margin-bottom: 40px;
-   color: #00b3e3;
+   font-size: 2.5rem;
+   font-weight: 600;
+   margin-bottom: 30px;
 }
 
 #skills ul {
@@ -143,75 +134,67 @@ nav ul li a:hover {
 }
 
 #skills ul li {
-   font-size: 1.4rem;
-   margin-bottom: 20px;
-   color: #f0f0f0;
-   transition: color 0.3s ease-in-out;
-}
-
-#skills ul li:hover {
-   color: #00b3e3; /* Hover effect to highlight skills */
+   font-size: 1.2rem;
+   margin-bottom: 15px;
 }
 
 /* 💼 Projects Section Styling */
 #projects {
-   background-color: #2d2d2d;
-   padding: 80px 10%;
+   background-color: #3E3E3E;
+   padding: 60px 10%;
    text-align: center;
 }
 
 #projects h2 {
-   font-size: 2.8rem;
-   font-weight: 700;
-   margin-bottom: 40px;
-   color: #00b3e3;
+   font-size: 2.5rem;
+   font-weight: 600;
+   margin-bottom: 30px;
 }
 
 .project-card {
-   background-color: #333333;
-   border-radius: 15px;
-   padding: 25px;
+   background-color: #474747;
+   border-radius: 10px;
+   padding: 20px;
    margin: 20px auto;
    max-width: 900px;
-   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
    transform: scale(1.05);
-   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .project-card h3 {
-   font-size: 2rem;
-   font-weight: 700;
-   color: #00b3e3;
+   font-size: 1.8rem;
+   font-weight: 600;
+   color: #E0E0E0;
 }
 
 .project-card p {
    font-size: 1.2rem;
-   margin-top: 15px;
-   color: #f0f0f0;
+   margin-top: 10px;
+   color: #E0E0E0;
 }
 
 .project-card .tools {
    font-size: 1.1rem;
-   color: #00b3e3;
-   margin-top: 15px;
+   color: #4C6A92; /* Updated blue */
+   margin-top: 10px;
 }
 
 /* 📩 Contact Section Styling */
 #contact {
-   background-color: #1a1a1a;
-   padding: 80px 10%;
+   background-color: #2D2D2D;
+   padding: 60px 10%;
    text-align: center;
 }
 
 #contact h2 {
-   font-size: 2.8rem;
-   font-weight: 700;
-   margin-bottom: 40px;
-   color: #00b3e3;
+   font-size: 2.5rem;
+   font-weight: 600;
+   margin-bottom: 30px;
 }
 
 #contact form input,
@@ -220,50 +203,35 @@ nav ul li a:hover {
    padding: 15px;
    margin: 10px 0;
    border-radius: 10px;
-   border: 1px solid #00b3e3;
+   border: 1px solid #4C6A92; /* Updated blue */
    font-size: 1rem;
-   background-color: #333333;
-   color: #f0f0f0;
-   transition: background-color 0.3s ease-in-out;
-}
-
-#contact form input:focus,
-#contact form textarea:focus {
-   background-color: #444444;
+   background-color: #474747;
+   color: #E0E0E0;
 }
 
 #contact button {
-   background-color: #00b3e3;
-   color: #fff;
+   background-color: #4C6A92; /* Updated blue */
+   color: #E0E0E0;
    padding: 15px 30px;
    border: none;
    border-radius: 10px;
-   font-weight: 700;
+   font-weight: 600;
    cursor: pointer;
    transition: background-color 0.3s ease;
 }
 
 #contact button:hover {
-   background-color: #009ec3;
+   background-color: #2D2D2D;
 }
 
 /* 🌙 Footer Section Styling */
 footer {
    text-align: center;
-   padding: 30px 0;
+   padding: 20px 0;
    font-size: 1rem;
-   background-color: #00b3e3;
-   color: #1a1a1a;
+   background-color: #2D2D2D;
+   color: #E0E0E0;
    margin-top: 40px;
-}
-
-footer a {
-   color: #1a1a1a;
-   text-decoration: none;
-}
-
-footer a:hover {
-   text-decoration: underline;
 }
 
 /* 🌿 Smooth Scroll Effect */
@@ -280,9 +248,9 @@ html {
 /* 🖋 Link Styling */
 a {
    text-decoration: none;
-   color: #00b3e3;
+   color: #4C6A92; /* Updated blue */
 }
 
 a:hover {
-   color: #f0f0f0;
+   color: #E0E0E0;
 }
