@@ -1,4 +1,4 @@
-/* 🌍 Global Resets */
+/* Global Resets */
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@
     scroll-behavior: smooth;
  }
  
- /* 🎨 Body Styling */
+ /* Body Styling */
  body {
     background-color: #121212; /* Sleek dark background */
     color: #EAEAEA; /* Soft light text */
@@ -15,11 +15,11 @@
     font-size: 1rem;
  }
  
- /* 🚀 Header Styling */
+ /* Header Styling */
  header {
     position: fixed;
     width: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
     padding: 18px 10%;
     z-index: 1000;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
@@ -41,7 +41,7 @@
  }
  
  nav .logo h1::before {
-    content: "🚀";
+    content: "";
     margin-right: 10px;
  }
  
@@ -65,15 +65,17 @@
     color: #3FA7D6;
  }
  
- /* 🏆 Hero Section */
+ /* Hero Section */
  .hero {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background: url('assets/images/hero-background.jpg') no-repeat center center/cover;
+    background-size: cover;
     padding: 0 10%;
     text-align: center;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('assets/images/hero-background.jpg');
  }
  
  .hero h2 {
@@ -89,11 +91,12 @@
     margin-top: 20px;
  }
  
- /* 💡 About Me Section */
+ /* About Me Section */
  #about {
     background-color: #1E1E1E;
     padding: 80px 10%;
     text-align: center;
+    background: linear-gradient(135deg, #1E1E1E 30%, #252525 100%);
  }
  
  #about h2 {
@@ -107,11 +110,12 @@
     line-height: 1.8;
  }
  
- /* 🔥 Projects Section */
+ /* Projects Section */
  #projects {
     background-color: #121212;
     padding: 80px 10%;
     text-align: center;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6));
  }
  
  #projects h2 {
@@ -127,6 +131,7 @@
     margin: 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(135deg, #333333, #252525);
  }
  
  .project-card:hover {
@@ -134,15 +139,22 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
  }
  
- .project-card h3::before {
-    content: "💻 ";
+ .project-card h3 {
+    font-size: 1.8rem;
+    color: #EAEAEA;
  }
  
- /* 📊 Skills Section */
+ .project-card p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+ }
+ 
+ /* Skills Section */
  #skills {
     background-color: #1E1E1E;
     padding: 80px 10%;
     text-align: center;
+    background: linear-gradient(135deg, #1E1E1E 30%, #252525 100%);
  }
  
  #skills h2 {
@@ -155,20 +167,17 @@
     list-style: none;
  }
  
- #skills ul li::before {
-    content: "✔️ ";
- }
- 
  #skills ul li {
     font-size: 1.2rem;
     margin-bottom: 15px;
  }
  
- /* 📬 Contact Section */
+ /* Contact Section */
  #contact {
     background-color: #121212;
     padding: 80px 10%;
     text-align: center;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7));
  }
  
  #contact h2 {
