@@ -80,7 +80,7 @@ nav ul li a:hover {
    font-size: 4rem; /* Larger for impact */
    font-weight: 700;
    text-transform: uppercase; /* Title in all caps */
-   background: linear-gradient(135deg, #4C6A92, #2D2D2D);
+   background: linear-gradient(135deg, #4C6A92, #FFD700); /* Gold and blue gradient for pop */
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
    margin-bottom: 20px;
@@ -91,7 +91,7 @@ nav ul li a:hover {
    font-weight: 400;
    max-width: 700px;
    color: #E0E0E0;
-   text-align: center;
+   text-align: center; /* Ensures the paragraph is centered */
    margin-top: 20px;
 }
 
@@ -261,10 +261,10 @@ a:hover {
 
 /* Centering the "Explore my work" text */
 .hero p {
-   text-align: center; /* Ensures the paragraph is centered */
    font-size: 1.25rem;
    font-weight: 400;
    max-width: 700px;
    color: #E0E0E0;
+   text-align: center; /* Ensures the paragraph is centered */
    margin-top: 20px;
 }
