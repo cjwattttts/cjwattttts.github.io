@@ -1,262 +1,365 @@
-/* Global Resets */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    scroll-behavior: smooth;
- }
- 
- /* Body Styling */
- body {
-    background-color: #e0e0e0; /* Lighter gray background */
-    color: #333333; /* Dark text for contrast */
-    line-height: 1.6;
-    font-size: 0.85rem;
-    overflow-x: hidden;
-    min-height: 100vh;
- }
- 
- /* Header Styling */
- header {
-    position: fixed;
-    width: 100%;
-    background-color: #000000; /* Black background for header */
-    padding: 20px 10%;
-    z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
- }
- 
- nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
- }
- 
- nav .logo h1 {
-    font-size: 1.8rem;
-    color: #ffffff; /* White text for logo */
-    letter-spacing: 1px;
-    font-weight: 700;
- }
- 
- .nav-links {
-    display: flex;
-    list-style: none;
- }
- 
- .nav-links li {
-    margin-left: 30px;
- }
- 
- .nav-links li a {
-    color: #ffffff; /* White text for navigation */
-    font-weight: 600;
-    text-decoration: none;
-    font-size: 0.95rem;
-    letter-spacing: 1px;
-    transition: color 0.3s ease;
- }
- 
- .nav-links li a:hover {
-    color: #e0e0e0; /* Lighter gray text on hover */
- }
- 
- /* Hero Section */
- .hero {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to bottom right, #000000, #333333); /* Gradient background */
-    padding: 0 10%;
-    text-align: center;
-    position: relative;
- }
- 
- .hero h2 {
-    font-size: 3rem;
-    font-weight: 700;
-    color: #ffffff; /* White text */
-    text-transform: uppercase;
-    z-index: 2;
-    letter-spacing: 1px;
- }
- 
- .hero p {
-    font-size: 1.15rem;
-    color: #ffffff; /* White text */
-    margin-top: 20px;
-    z-index: 2;
-    letter-spacing: 0.5px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
- }
- 
- /* About Me Section */
- #about {
-    background-color: #ffffff; /* White background */
-    padding: 100px 10%;
-    text-align: center;
- }
- 
- #about h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #333333; /* Dark text */
- }
- 
- #about p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #333333; /* Dark text */
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
- }
- 
- /* Projects Section */
- #projects {
-    background-color: #e0e0e0; /* Light gray background */
-    padding: 100px 10%;
-    text-align: center;
- }
- 
- #projects h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 40px;
-    color: #333333;
- }
- 
- .project-card {
-    background-color: #333333; /* Dark background for cards */
-    border-radius: 15px;
-    padding: 30px;
-    margin: 20px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 650px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    max-width: 100%;
- }
- 
- .project-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.35);
- }
- 
- .project-card h3 {
-    font-size: 1.8rem;
-    color: #F4F4F4; /* Light gray text for headings */
-    letter-spacing: 0.5px;
- }
- 
- .project-card p {
-    font-size: 1.1rem;
-    margin-top: 10px;
-    color: #B0B0B0; /* Light gray for the description */
- }
- 
- .project-card .tools {
-    margin-top: 20px;
-    font-size: 1.1rem;
-    color: #F4F4F4; /* Light gray text */
- }
- 
- .project-card .tools span {
-    display: inline-block;
-    margin-right: 15px;
- }
- 
- /* Skills Section */
- #skills {
-    background-color: #ffffff; /* White background */
-    padding: 100px 10%;
-    text-align: center;
- }
- 
- #skills h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 40px;
-    color: #333333;
- }
- 
- #skills ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
- }
- 
- #skills ul li {
-    font-size: 1.15rem;
-    margin-bottom: 15px;
-    color: #333333; /* Dark text */
-    padding: 10px 20px;
-    border: 1px solid #333333;
-    margin: 10px;
-    border-radius: 30px;
-    transition: background-color 0.3s ease;
- }
- 
- #skills ul li:hover {
-    background-color: #d0d0d0; /* Lighter gray for hover */
-    color: #333333;
- }
- 
- /* Contact Section */
- #contact {
-    background-color: #e0e0e0; /* Lighter gray background */
-    padding: 100px 10%;
-    text-align: center;
- }
- 
- #contact h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 40px;
-    color: #333333;
- }
- 
- #contact form input,
- #contact form textarea {
-    width: 100%;
-    padding: 20px;
-    margin: 10px 0;
-    border-radius: 15px;
-    border: 1px solid #333333;
-    background-color: #ffffff;
-    color: #333333;
-    transition: background-color 0.3s ease;
-    font-size: 1.1rem;
- }
- 
- #contact form input:focus,
- #contact form textarea:focus {
-    background-color: #f4f4f4;
-    outline: none;
- }
- 
- #contact button {
-    background: linear-gradient(to bottom right, #000000, #333333); /* Gradient background for button */
-    color: #ffffff;
-    padding: 20px 40px;
-    border: none;
-    border-radius: 15px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size: 1.1rem;
- }
- 
- #contact button:hover {
-    background: linear-gradient(to bottom right, #333333, #000000); /* Reversed gradient on hover */
- }
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Cameron Watts - Business Analyst Portfolio</title>
+   <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;600;700&display=swap" rel="stylesheet">
+   <style>
+      /* Global Resets */
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         font-family: 'Helvetica Neue', Arial, sans-serif;
+         scroll-behavior: smooth;
+      }
+
+      /* Body Styling */
+      body {
+         background-color: #f0f0f0; /* Lighter gray background */
+         color: #333333;
+         line-height: 1.6;
+         font-size: 0.85rem; /* Slightly smaller font size */
+         overflow-x: hidden;
+         min-height: 100vh;
+      }
+
+      /* Header Styling */
+      header {
+         position: fixed;
+         width: 100%;
+         background: rgba(0, 0, 0, 0.4); /* Semi-transparent background with lighter opacity */
+         padding: 20px 10%;
+         z-index: 1000;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+         transition: background 0.3s ease;
+      }
+
+      header:hover {
+         background: rgba(0, 0, 0, 0.6); /* Darkens slightly on hover */
+      }
+
+      nav {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+      }
+
+      nav .logo h1 {
+         font-size: 1.8rem; /* Slightly smaller font size */
+         color: #F4F4F4;
+         letter-spacing: 1px;
+         font-weight: 700;
+      }
+
+      .nav-links {
+         display: flex;
+         list-style: none;
+      }
+
+      .nav-links li {
+         margin-left: 30px;
+      }
+
+      .nav-links li a {
+         color: #F4F4F4;
+         font-weight: 600;
+         text-decoration: none;
+         font-size: 0.95rem; /* Slightly smaller font size */
+         letter-spacing: 1px;
+         transition: color 0.3s ease;
+      }
+
+      .nav-links li a:hover {
+         color: #f0f0f0;
+      }
+
+      /* Hero Section */
+      .hero {
+         height: 100vh;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background: linear-gradient(135deg, #6e7e85, #b7c4cf); /* Gradient background */
+         padding: 0 10%;
+         text-align: center;
+         position: relative;
+      }
+
+      .hero::before {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background: rgba(0, 0, 0, 0.3); /* Dark overlay */
+         z-index: 1;
+      }
+
+      .hero h2 {
+         font-size: 3rem; /* Slightly smaller font size */
+         font-weight: 700;
+         color: #ffffff;
+         text-transform: uppercase;
+         z-index: 2;
+         letter-spacing: 1px;
+      }
+
+      .hero p {
+         font-size: 1.15rem; /* Slightly smaller font size */
+         color: #ffffff;
+         margin-top: 20px;
+         z-index: 2;
+         letter-spacing: 0.5px;
+         max-width: 600px;
+         margin-left: auto;
+         margin-right: auto;
+      }
+
+      /* About Me Section */
+      #about {
+         background-color: #ffffff; /* White background */
+         padding: 100px 10%;
+         text-align: center;
+      }
+
+      #about h2 {
+         font-size: 2.5rem; /* Slightly smaller font size */
+         font-weight: 700;
+         margin-bottom: 20px;
+         color: #333333;
+      }
+
+      #about p {
+         font-size: 1.1rem; /* Slightly smaller font size */
+         line-height: 1.8;
+         color: #333333;
+         max-width: 700px;
+         margin-left: auto;
+         margin-right: auto;
+      }
+
+      /* Projects Section */
+      #projects {
+         background-color: #f0f0f0; /* Lighter gray background */
+         padding: 100px 10%;
+         text-align: center;
+      }
+
+      #projects h2 {
+         font-size: 2.5rem; /* Slightly smaller font size */
+         font-weight: 700;
+         margin-bottom: 40px;
+         color: #333333;
+      }
+
+      .project-card {
+         background-color: #333333;
+         border-radius: 15px;
+         padding: 30px;
+         margin: 20px;
+         box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+         transition: transform 0.3s ease, box-shadow 0.3s ease;
+         width: 650px; /* Slightly wider for a more balanced layout */
+         height: auto;
+         margin-left: auto;
+         margin-right: auto;
+         text-align: left;
+         max-width: 100%;
+      }
+
+      .project-card:hover {
+         transform: scale(1.05);
+         box-shadow: 0 10px 50px rgba(0, 0, 0, 0.35);
+      }
+
+      .project-card h3 {
+         font-size: 1.8rem; /* Slightly smaller font size */
+         color: #F4F4F4;
+         letter-spacing: 0.5px;
+      }
+
+      .project-card p {
+         font-size: 1.1rem; /* Slightly smaller font size */
+         margin-top: 10px;
+         color: #B0B0B0; /* Light grey for the description */
+      }
+
+      .project-card .tools {
+         margin-top: 20px;
+         font-size: 1.1rem; /* Slightly smaller font size */
+         color: #F4F4F4;
+      }
+
+      .project-card .tools span {
+         display: inline-block;
+         margin-right: 15px;
+      }
+
+      /* Skills Section */
+      #skills {
+         background-color: #ffffff; /* White background */
+         padding: 100px 10%;
+         text-align: center;
+      }
+
+      #skills h2 {
+         font-size: 2.5rem; /* Slightly smaller font size */
+         font-weight: 700;
+         margin-bottom: 40px;
+         color: #333333;
+      }
+
+      #skills ul {
+         list-style: none;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+      }
+
+      #skills ul li {
+         font-size: 1.15rem; /* Slightly smaller font size */
+         margin-bottom: 15px;
+         color: #333333;
+         padding: 10px 20px;
+         border: 1px solid #333333;
+         margin: 10px;
+         border-radius: 30px;
+         transition: background-color 0.3s ease;
+      }
+
+      #skills ul li:hover {
+         background-color: #e0e0e0; /* Lighter gray for hover */
+         color: #333333;
+      }
+
+      /* Contact Section */
+      #contact {
+         background-color: #f0f0f0; /* Lighter gray background */
+         padding: 100px 10%;
+         text-align: center;
+      }
+
+      #contact h2 {
+         font-size: 2.5rem; /* Slightly smaller font size */
+         font-weight: 700;
+         margin-bottom: 40px;
+         color: #333333;
+      }
+
+      #contact form input,
+      #contact form textarea {
+         width: 100%;
+         padding: 20px;
+         margin: 10px 0;
+         border-radius: 15px;
+         border: 1px solid #333333;
+         background-color: #ffffff;
+         color: #333333;
+         transition: background-color 0.3s ease;
+         font-size: 1.1rem; /* Slightly smaller font size */
+      }
+
+      #contact form input:focus,
+      #contact form textarea:focus {
+         background-color: #f4f4f4;
+         outline: none;
+      }
+
+      #contact button {
+         background-color: #333333;
+         color: #ffffff;
+         padding: 20px 40px;
+         border: none;
+         border-radius: 15px;
+         font-weight: 600;
+         cursor: pointer;
+         transition: background-color 0.3s ease;
+         font-size: 1.1rem; /* Slightly smaller font size */
+      }
+
+      #contact button:hover {
+         background-color: #222222; /* Darker gray hover effect */
+      }
+   </style>
+</head>
+<body>
+   <header>
+      <nav>
+         <div class="logo">
+            <h1>Cameron Watts</h1>
+         </div>
+         <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <!-- Hero Section -->
+   <section class="hero">
+      <h2>Welcome to My Business Analyst Portfolio</h2>
+      <p>Explore my projects, skills, and experience as I develop my expertise in data-driven business analysis.</p>
+   </section>
+
+   <!-- About Me Section -->
+   <section id="about">
+      <h2>About Me</h2>
+      <p>I'm a passionate business analyst focused on utilizing data to drive actionable insights and enhance business decision-making. I have expertise in data analytics, business intelligence, and machine learning.</p>
+   </section>
+
+   <!-- Projects Section -->
+   <section id="projects">
+      <h2>My Projects</h2>
+      <div class="project-card">
+         <h3>Data Analysis: Sales Forecasting</h3>
+         <p>Used historical sales data to forecast future sales using Python and machine learning models.</p>
+         <div class="tools">
+            <span>Tools Used: Python, Pandas, Scikit-learn</span>
+         </div>
+      </div>
+      <div class="project-card">
+         <h3>Business Intelligence Dashboard</h3>
+         <p>Created an interactive dashboard in Power BI to visualize key business metrics for decision-making.</p>
+         <div class="tools">
+            <span>Tools Used: Power BI, Excel</span>
+         </div>
+      </div>
+      <div class="project-card">
+         <h3>Customer Segmentation Analysis</h3>
+         <p>Performed customer segmentation using K-means clustering to identify target audiences for marketing strategies.</p>
+         <div class="tools">
+            <span>Tools Used: R, K-means Clustering</span>
+         </div>
+      </div>
+   </section>
+
+   <!-- Skills Section -->
+   <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+         <li>Python</li>
+         <li>R</li>
+         <li>Power BI</li>
+         <li>Excel</li>
+         <li>SQL</li>
+         <li>Data Visualization</li>
+      </ul>
+   </section>
+
+   <!-- Contact Section -->
+   <section id="contact">
+      <h2>Contact</h2>
+      <form>
+         <input type="text" placeholder="Your Name">
+         <input type="email" placeholder="Your Email">
+         <textarea placeholder="Your Message"></textarea>
+         <button type="submit">Send Message</button>
+      </form>
+   </section>
+</body>
+</html>
