@@ -1,32 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@400;600&display=swap');
 
-/* ✨ Global Resets */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', serif; /* Sophisticated font choice */
+    font-family: 'Times New Roman', serif; /* Changed to Times New Roman */
     scroll-behavior: smooth;
 }
 
-/* 🌱 Body Styling */
+/* ✨ Business-Chic Color Theme */
 body {
-    background-color: #F4E1D2; /* Beige background for a warm, neutral tone */
-    color: #3E3B31; /* Dark brown text */
-    line-height: 1.6;
-    font-size: 1rem;
+    background: #BDC3C7; /* Light Gray Background */
+    color: #2C3E50; /* Navy Blue Text */
 }
 
-/* ✨ Header and Navbar Styling */
+/* ⚡ Animated Navbar */
 header {
     position: fixed;
     width: 100%;
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(44, 62, 80, 0.85); /* Navy Blue with transparency */
     backdrop-filter: blur(12px);
-    padding: 1.5rem 2rem;
+    padding: 1.2rem 2rem;
     z-index: 1000;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); /* Light shadow for sophistication */
-    animation: fadeIn 1s ease-out;
+    transition: background 0.4s ease-in-out;
 }
 
 nav {
@@ -38,10 +34,10 @@ nav {
 }
 
 nav .logo h1 {
-    font-size: 2.2rem;
-    font-weight: 600;
-    color: #3E3B31;
-    text-transform: none;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #F5F5F5; /* Light Gray Text */
+    letter-spacing: -1px;
 }
 
 nav ul {
@@ -50,227 +46,146 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 25px;
+    margin-left: 30px;
 }
 
 nav ul li a {
-    color: #3E3B31;
+    color: #F5F5F5; /* Light Gray Text */
     font-weight: 600;
-    text-decoration: none;
+    letter-spacing: 0.5px;
     transition: color 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
-    color: #A7C4B5; /* Soft green for hover effect */
+    color: #1DA1F2; /* Light Blue Hover */
 }
 
-/* 🚀 Hero Section Styling */
+/* 🚀 HERO SECTION */
 .hero {
-    height: 100vh;
+    height: 60vh; /* Reduced height */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: left;
-    background: url('assets/images/business-gradient.jpg') no-repeat center center/cover;
+    background: url('assets/images/business-gradient.jpg') no-repeat center center/cover; /* Background Image */
     padding: 0 12%;
-    color: #F4E1D2;
+    color: #F5F5F5; /* Light Gray Text */
     opacity: 0;
-    animation: fadeInUp 1.5s ease-out forwards;
+    animation: fadeInUp 1.5s ease-out forwards; /* Fade In Animation */
 }
 
-.hero h2 {
-    font-size: 3.5rem;
-    font-weight: 600;
-    background: linear-gradient(135deg, #A7C4B5, #3E3B31);
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #BDC3C7, #2C3E50); /* Gradient: Silver to Navy Blue */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 20px;
-    opacity: 0;
-    animation: fadeInUp 2s ease-out forwards;
 }
 
 .hero p {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 400;
-    max-width: 700px;
-    color: #F4E1D2;
-    text-align: center;
     margin-top: 20px;
-    opacity: 0;
-    animation: fadeInUp 2.5s ease-out forwards;
+    max-width: 600px;
 }
 
-/* 🛠 About Me Section Styling */
-#about {
-    background-color: #FFFFFF;
-    color: #3E3B31;
-    padding: 60px 10%;
-    text-align: center;
-    opacity: 0;
-    animation: fadeInUp 2s ease-out forwards;
-}
-
-#about h2 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-#about p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin-bottom: 40px;
-}
-
-/* 📊 Skills Section Styling */
-#skills {
-    background-color: #F4E1D2;
-    padding: 50px 10%;
-    text-align: center;
-    opacity: 0;
-    animation: fadeInUp 2.5s ease-out forwards;
-}
-
-#skills h2 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-bottom: 30px;
-}
-
-#skills ul {
-    list-style: none;
-    padding: 0;
-}
-
-#skills ul li {
+/* 🔥 Unique Vertical Text */
+.vertical-text {
+    position: absolute;
+    left: 3%;
+    top: 50%;
+    transform: rotate(-90deg);
     font-size: 1.2rem;
-    margin-bottom: 15px;
-}
-
-/* 💼 Projects Section Styling */
-#projects {
-    background-color: #FFFFFF;
-    padding: 60px 10%;
-    text-align: center;
-    opacity: 0;
-    animation: fadeInUp 3s ease-out forwards;
-}
-
-#projects h2 {
-    font-size: 2.5rem;
     font-weight: 600;
-    margin-bottom: 30px;
+    opacity: 0.5;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
+/* 🛠 Glassmorphic Project Cards */
 .project-card {
-    background-color: #F9F9F9;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 900px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    opacity: 0;
-    animation: fadeInUp 3.5s ease-out forwards;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 2rem;
+    margin: 40px auto;
+    max-width: 800px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 10px 40px rgba(0, 31, 63, 0.4);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .project-card:hover {
+    transform: scale(1.04);
+    box-shadow: 0 15px 50px rgba(0, 157, 255, 0.5);
+}
+
+/* ✨ Silver Gradient Button */
+.button {
+    background: linear-gradient(135deg, #BDC3C7, #2C3E50); /* Gradient: Silver to Navy Blue */
+    color: #2C3E50; /* Navy Blue */
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    background: #1DA1F2;
+    color: white;
     transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.project-card h3 {
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: #3E3B31;
-}
-
-.project-card p {
-    font-size: 1.2rem;
-    margin-top: 10px;
-    color: #3E3B31;
-}
-
-.project-card .tools {
-    font-size: 1.1rem;
-    color: #A7C4B5;
-    margin-top: 10px;
-}
-
-/* 📩 Contact Section Styling */
-#contact {
-    background-color: #F4E1D2;
-    padding: 60px 10%;
-    text-align: center;
-    opacity: 0;
-    animation: fadeInUp 4s ease-out forwards;
-}
-
-#contact h2 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-bottom: 30px;
-}
-
-#contact form input,
-#contact form textarea {
+/* 📩 Contact Form */
+#contact input, #contact textarea {
     width: 100%;
-    padding: 15px;
-    margin: 10px 0;
+    padding: 1rem;
+    border: none;
     border-radius: 10px;
-    border: 1px solid #A7C4B5;
-    font-size: 1rem;
-    background-color: #FFFFFF;
-    color: #3E3B31;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #F5F5F5; /* Light Gray Text */
+    outline: none;
+    transition: background 0.3s ease-in-out;
+}
+
+#contact input:focus, #contact textarea:focus {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 #contact button {
-    background-color: #A7C4B5;
-    color: #FFFFFF;
-    padding: 15px 30px;
+    background: #2C3E50; /* Navy Blue */
+    color: white;
+    padding: 1rem 2rem;
     border: none;
     border-radius: 10px;
-    font-weight: 600;
+    font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease-in-out;
 }
 
 #contact button:hover {
-    background-color: #3E3B31;
+    background: #BDC3C7; /* Light Gray */
+    color: #2C3E50;
+    transform: scale(1.05);
 }
 
-/* 🌙 Footer Section Styling */
+/* 🌙 Footer */
 footer {
     text-align: center;
-    padding: 20px 0;
-    font-size: 1rem;
-    background-color: #3E3B31;
-    color: #F4E1D2;
-    margin-top: 40px;
+    padding: 2rem;
+    font-size: 0.9rem;
+    opacity: 0.7;
+    color: #2C3E50; /* Navy Blue Text */
 }
 
-/* 🌿 Smooth Scroll Effect */
+/* 🔄 Smooth Scroll Effect */
 html {
     scroll-behavior: smooth;
 }
 
-/* 🎨 Subtle Fade-In Animations */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
+/* 📽 Subtle Fade-In Animations */
 @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
-}
-
-/* 🖋 Link Styling */
-a {
-    text-decoration: none;
-    color: #A7C4B5;
-}
-
-a:hover {
-    color: #3E3B31;
 }
