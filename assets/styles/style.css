@@ -11,8 +11,8 @@
 
 /* 🌱 Body Styling */
 body {
-   background-color: #D0D3D4; /* Light Silver background for a neutral tone */
-   color: #3E4A55; /* Navy Blue text */
+   background-color: #F4E1D2; /* Beige background for a warm, neutral tone */
+   color: #3E3B31; /* Dark brown text */
    line-height: 1.6;
    font-size: 1rem;
 }
@@ -39,7 +39,7 @@ nav {
 nav .logo h1 {
    font-size: 2.2rem;
    font-weight: 600;
-   color: #3E4A55; /* Navy Blue */
+   color: #3E3B31;
    text-transform: none;
 }
 
@@ -53,19 +53,19 @@ nav ul li {
 }
 
 nav ul li a {
-   color: #3E4A55; /* Navy Blue */
+   color: #3E3B31;
    font-weight: 600;
    text-decoration: none;
    transition: color 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
-   color: #A7A8AA; /* Soft Silver for hover effect */
+   color: #A7C4B5; /* Soft green for hover effect */
 }
 
 /* 🚀 Hero Section Styling */
 .hero {
-   height: 100vh;
+   height: 70vh; /* Reduce the height of the background */
    display: flex;
    justify-content: center;
    align-items: center;
@@ -76,7 +76,7 @@ nav ul li a:hover {
 }
 
 .hero h2 {
-   font-size: 3.5rem;
+   font-size: 5rem; /* Increase the font size of the text */
    font-weight: 600;
    background: linear-gradient(135deg, #A7A8AA, #3E4A55); /* Gradient from Silver to Navy Blue */
    -webkit-background-clip: text;
@@ -96,7 +96,7 @@ nav ul li a:hover {
 /* 🛠 About Me Section Styling */
 #about {
    background-color: #FFFFFF;
-   color: #3E4A55; /* Navy Blue */
+   color: #3E3B31;
    padding: 60px 10%;
    text-align: center;
 }
@@ -115,7 +115,7 @@ nav ul li a:hover {
 
 /* 📊 Skills Section Styling */
 #skills {
-   background-color: #D0D3D4; /* Light Silver */
+   background-color: #F4E1D2;
    padding: 50px 10%;
    text-align: center;
 }
@@ -167,24 +167,24 @@ nav ul li a:hover {
 .project-card h3 {
    font-size: 1.8rem;
    font-weight: 600;
-   color: #3E4A55; /* Navy Blue */
+   color: #3E3B31;
 }
 
 .project-card p {
    font-size: 1.2rem;
    margin-top: 10px;
-   color: #3E4A55; /* Navy Blue */
+   color: #3E3B31;
 }
 
 .project-card .tools {
    font-size: 1.1rem;
-   color: #A7A8AA; /* Soft Silver */
+   color: #A7C4B5;
    margin-top: 10px;
 }
 
 /* 📩 Contact Section Styling */
 #contact {
-   background-color: #D0D3D4; /* Light Silver */
+   background-color: #F4E1D2;
    padding: 60px 10%;
    text-align: center;
 }
@@ -201,14 +201,14 @@ nav ul li a:hover {
    padding: 15px;
    margin: 10px 0;
    border-radius: 10px;
-   border: 1px solid #A7A8AA; /* Soft Silver border */
+   border: 1px solid #A7C4B5;
    font-size: 1rem;
    background-color: #FFFFFF;
-   color: #3E4A55; /* Navy Blue */
+   color: #3E3B31;
 }
 
 #contact button {
-   background-color: #A7A8AA; /* Soft Silver */
+   background-color: #A7C4B5;
    color: #FFFFFF;
    padding: 15px 30px;
    border: none;
@@ -219,7 +219,7 @@ nav ul li a:hover {
 }
 
 #contact button:hover {
-   background-color: #3E4A55; /* Navy Blue */
+   background-color: #3E3B31;
 }
 
 /* 🌙 Footer Section Styling */
@@ -227,8 +227,8 @@ footer {
    text-align: center;
    padding: 20px 0;
    font-size: 1rem;
-   background-color: #3E4A55; /* Navy Blue */
-   color: #D0D3D4; /* Light Silver */
+   background-color: #3E3B31;
+   color: #F4E1D2;
    margin-top: 40px;
 }
 
@@ -246,9 +246,9 @@ html {
 /* 🖋 Link Styling */
 a {
    text-decoration: none;
-   color: #A7A8AA; /* Soft Silver */
+   color: #A7C4B5;
 }
 
 a:hover {
-   color: #3E4A55; /* Navy Blue */
+   color: #3E3B31;
 }
