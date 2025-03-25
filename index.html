@@ -3,61 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business-Chic Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cameron Watts | Business Analyst Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
-    <!-- ⚡ Animated Navbar -->
     <header>
         <nav>
             <div class="logo">
-                <h1>My Portfolio</h1>
+                <h1>Cameron Watts</h1>
             </div>
-            <ul>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- 🚀 HERO SECTION -->
-    <section class="hero">
-        <div>
-            <h1>Elevate Your Business</h1>
-            <p>Crafting sleek digital solutions with data-driven precision.</p>
-            <button class="button">Learn More</button>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to My Business Analyst Portfolio</h2>
+            <p>Explore my work, projects, and skills as I work to shape the future of data-driven business decisions.</p>
         </div>
     </section>
 
-    <!-- 🔥 Unique Vertical Text -->
-    <div class="vertical-text">Innovate & Inspire</div>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am Cameron Watts, a Business Analytics & Information Systems student at the University of South Florida (USF). I specialize in data analysis, business intelligence, and creating actionable insights to drive business decisions. I am passionate about using data to solve problems and help businesses grow. I look forward to leveraging my skills as a Business Analyst.</p>
+    </section>
 
-    <!-- 🛠 Glassmorphic Project Cards -->
     <section id="projects">
+        <h2>My Projects</h2>
+        
         <div class="project-card">
-            <h2>Project One</h2>
-            <p>A sleek analytics dashboard leveraging data for business success.</p>
+            <h3>Data Analysis: Sales Forecasting</h3>
+            <p>Used historical sales data to forecast future sales using Python and machine learning models.</p>
+            <p><strong>Tools Used:</strong> Python, Pandas, Scikit-learn</p>
         </div>
+
         <div class="project-card">
-            <h2>Project Two</h2>
-            <p>Interactive visualization tools enhancing financial insights.</p>
+            <h3>Business Intelligence Dashboard</h3>
+            <p>Created an interactive dashboard in Power BI to visualize key business metrics for decision-making.</p>
+            <p><strong>Tools Used:</strong> Power BI, Excel</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Customer Segmentation Analysis</h3>
+            <p>Performed customer segmentation using K-means clustering to identify target audiences for marketing strategies.</p>
+            <p><strong>Tools Used:</strong> R, K-means Clustering</p>
         </div>
     </section>
 
-    <!-- 📩 Contact Form -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Data Analysis</strong>: Excel, SQL, Python (Pandas, NumPy)</li>
+            <li><strong>Data Visualization</strong>: Power BI, Tableau, Excel</li>
+            <li><strong>Business Intelligence</strong>: SAP, Oracle BI</li>
+            <li><strong>Machine Learning</strong>: Scikit-learn, TensorFlow</li>
+            <li><strong>Statistical Analysis</strong>: R, SPSS</li>
+            <li><strong>Soft Skills</strong>: Problem-solving, Communication, Teamwork</li>
+        </ul>
+    </section>
+
     <section id="contact">
         <h2>Contact Me</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
+        <form action="mailto:cwatts@usf.edu" method="post" enctype="text/plain">
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
     </section>
 
-    <!-- 🌙 Footer -->
     <footer>
-        <p>&copy; 2025 Cameron Watts. All rights reserved.</p>
+        <p>&copy; 2025 Cameron Watts. All Rights Reserved.</p>
     </footer>
+
+    <script src="assets/scripts/slider.js"></script>
 </body>
 </html>
