@@ -1,270 +1,327 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&family=Poppins:wght@600&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Analyst Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* ✨ Global Resets */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif; /* Modern font for a sleek look */
+            scroll-behavior: smooth;
+        }
 
-/* ✨ Global Resets */
-* {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   font-family: 'Roboto', sans-serif; /* Modern font for text */
-   scroll-behavior: smooth;
-}
+        /* 🌱 Body Styling */
+        body {
+            background-color: #2D2D2D; /* Dark gray background */
+            color: #F4F4F4; /* Light text color for contrast */
+            line-height: 1.6;
+            font-size: 1rem;
+        }
 
-/* 🌱 Body Styling */
-body {
-   background-color: #2D2D2D; /* Dark gray background */
-   color: #E0E0E0; /* Light gray text */
-   line-height: 1.6;
-   font-size: 1rem;
-}
+        /* ✨ Header and Navbar Styling */
+        header {
+            position: fixed;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            padding: 1.5rem 2rem;
+            z-index: 1000;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
 
-/* ✨ Header and Navbar Styling */
-header {
-   position: fixed;
-   width: 100%;
-   background: rgba(0, 0, 0, 0.85);
-   backdrop-filter: blur(12px);
-   padding: 1.5rem 2rem;
-   z-index: 1000;
-   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); /* Darker shadow for modern look */
-}
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
 
-nav {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   max-width: 1300px;
-   margin: 0 auto;
-}
+        nav .logo h1 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: #FFFFFF;
+            text-transform: uppercase;
+        }
 
-nav .logo h1 {
-   font-size: 2.2rem;
-   font-weight: 600;
-   color: #E0E0E0;
-   text-transform: none;
-}
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
 
-nav ul {
-   display: flex;
-   list-style: none;
-}
+        nav ul li {
+            margin-left: 25px;
+        }
 
-nav ul li {
-   margin-left: 25px;
-}
+        nav ul li a {
+            color: #FFFFFF;
+            font-weight: 600;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
 
-nav ul li a {
-   color: #E0E0E0;
-   font-weight: 600;
-   text-decoration: none;
-   transition: color 0.3s ease-in-out;
-}
+        nav ul li a:hover {
+            color: #4C6A92; /* Lighter blue for hover effect */
+        }
 
-nav ul li a:hover {
-   color: #4C6A92; /* Updated blue */
-}
+        /* 🚀 Hero Section Styling */
+        .hero {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: url('assets/images/business-gradient.jpg') no-repeat center center/cover;
+            padding: 0 12%;
+            color: #F4E1D2;
+        }
 
-/* 🚀 Hero Section Styling */
-.hero {
-   height: 100vh;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   text-align: center; /* Centered title */
-   background: url('assets/images/business-gradient.jpg') no-repeat center center/cover;
-   padding: 0 12%;
-   color: #E0E0E0;
-}
+        .hero h2 {
+            font-size: 4rem; /* Larger for impact */
+            font-weight: 700;
+            text-transform: uppercase; /* Title in all caps */
+            background: linear-gradient(135deg, #1A3A5A, #4C6A92); /* Navy blue mixed with lighter blue */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+        }
 
-.hero h2 {
-   font-family: 'Poppins', sans-serif; /* Modern, sleek font for the title */
-   font-size: 4rem; /* Larger for impact */
-   font-weight: 700;
-   text-transform: uppercase; /* Title in all caps */
-   background: linear-gradient(135deg, #4C6A92, #FFD700); /* Gold and blue gradient for pop */
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   margin-bottom: 20px;
-}
+        .hero p {
+            font-size: 1.25rem;
+            font-weight: 400;
+            max-width: 700px;
+            color: #F4E1D2;
+            text-align: center;
+            margin-top: 20px;
+        }
 
-.hero p {
-   font-size: 1.25rem;
-   font-weight: 400;
-   max-width: 700px;
-   color: #E0E0E0;
-   text-align: center; /* Ensures the paragraph is centered */
-   margin-top: 20px;
-}
+        /* 🛠 About Me Section Styling */
+        #about {
+            background-color: #1F1F1F;
+            color: #F4F4F4;
+            padding: 60px 10%;
+            text-align: center;
+        }
 
-/* 🛠 About Me Section Styling */
-#about {
-   background-color: #3E3E3E;
-   color: #E0E0E0;
-   padding: 60px 10%;
-   text-align: center;
-}
+        #about h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
 
-#about h2 {
-   font-size: 2.5rem;
-   font-weight: 600;
-   margin-bottom: 20px;
-   text-transform: uppercase; /* All caps titles */
-}
+        #about p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 40px;
+        }
 
-#about p {
-   font-size: 1.1rem;
-   line-height: 1.8;
-   margin-bottom: 40px;
-}
+        /* 📊 Skills Section Styling */
+        #skills {
+            background-color: #2D2D2D;
+            padding: 50px 10%;
+            text-align: center;
+        }
 
-/* 📊 Skills Section Styling */
-#skills {
-   background-color: #2D2D2D;
-   padding: 50px 10%;
-   text-align: center;
-}
+        #skills h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
 
-#skills h2 {
-   font-size: 2.5rem;
-   font-weight: 600;
-   margin-bottom: 30px;
-   text-transform: uppercase; /* All caps titles */
-}
+        #skills ul {
+            list-style: none;
+            padding: 0;
+        }
 
-#skills ul {
-   list-style: none;
-   padding: 0;
-}
+        #skills ul li {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
 
-#skills ul li {
-   font-size: 1.2rem;
-   margin-bottom: 15px;
-}
+        /* 💼 Projects Section Styling */
+        #projects {
+            background-color: #1F1F1F;
+            padding: 60px 10%;
+            text-align: center;
+        }
 
-/* 💼 Projects Section Styling */
-#projects {
-   background-color: #3E3E3E;
-   padding: 60px 10%;
-   text-align: center;
-}
+        #projects h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
 
-#projects h2 {
-   font-size: 2.5rem;
-   font-weight: 600;
-   margin-bottom: 30px;
-   text-transform: uppercase; /* All caps titles */
-}
+        .project-card {
+            background-color: #3A3A3A;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
 
-.project-card {
-   background-color: #474747;
-   border-radius: 10px;
-   padding: 20px;
-   margin: 20px auto;
-   max-width: 900px;
-   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-   transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+        .project-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
 
-.project-card:hover {
-   transform: scale(1.05);
-   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
+        .project-card h3 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #F4F4F4;
+        }
 
-.project-card h3 {
-   font-size: 1.8rem;
-   font-weight: 600;
-   color: #E0E0E0;
-}
+        .project-card p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            color: #F4F4F4;
+        }
 
-.project-card p {
-   font-size: 1.2rem;
-   margin-top: 10px;
-   color: #E0E0E0;
-}
+        .project-card .tools {
+            font-size: 1.1rem;
+            color: #4C6A92;
+            margin-top: 10px;
+        }
 
-.project-card .tools {
-   font-size: 1.1rem;
-   color: #4C6A92; /* Updated blue */
-   margin-top: 10px;
-}
+        /* 📩 Contact Section Styling */
+        #contact {
+            background-color: #2D2D2D;
+            padding: 60px 10%;
+            text-align: center;
+        }
 
-/* 📩 Contact Section Styling */
-#contact {
-   background-color: #2D2D2D;
-   padding: 60px 10%;
-   text-align: center;
-}
+        #contact h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
 
-#contact h2 {
-   font-size: 2.5rem;
-   font-weight: 600;
-   margin-bottom: 30px;
-   text-transform: uppercase; /* All caps titles */
-}
+        #contact form input,
+        #contact form textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            border: 1px solid #4C6A92;
+            font-size: 1rem;
+            background-color: #3A3A3A;
+            color: #F4F4F4;
+        }
 
-#contact form input,
-#contact form textarea {
-   width: 100%;
-   padding: 15px;
-   margin: 10px 0;
-   border-radius: 10px;
-   border: 1px solid #4C6A92; /* Updated blue */
-   font-size: 1rem;
-   background-color: #474747;
-   color: #E0E0E0;
-}
+        #contact button {
+            background-color: #4C6A92;
+            color: #FFFFFF;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
 
-#contact button {
-   background-color: #4C6A92; /* Updated blue */
-   color: #E0E0E0;
-   padding: 15px 30px;
-   border: none;
-   border-radius: 10px;
-   font-weight: 600;
-   cursor: pointer;
-   transition: background-color 0.3s ease;
-}
+        #contact button:hover {
+            background-color: #1A3A5A;
+        }
 
-#contact button:hover {
-   background-color: #2D2D2D;
-}
+        /* 🌙 Footer Section Styling */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 1rem;
+            background-color: #1A3A5A;
+            color: #F4E1D2;
+            margin-top: 40px;
+        }
 
-/* 🌙 Footer Section Styling */
-footer {
-   text-align: center;
-   padding: 20px 0;
-   font-size: 1rem;
-   background-color: #2D2D2D;
-   color: #E0E0E0;
-   margin-top: 40px;
-}
+        /* 🌿 Smooth Scroll Effect */
+        html {
+            scroll-behavior: smooth;
+        }
 
-/* 🌿 Smooth Scroll Effect */
-html {
-   scroll-behavior: smooth;
-}
+        /* 🎨 Subtle Fade-In Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
 
-/* 🎨 Subtle Fade-In Animations */
-@keyframes fadeIn {
-   from { opacity: 0; transform: translateY(20px); }
-   to { opacity: 1; transform: translateY(0); }
-}
+        /* 🖋 Link Styling */
+        a {
+            text-decoration: none;
+            color: #4C6A92;
+        }
 
-/* 🖋 Link Styling */
-a {
-   text-decoration: none;
-   color: #4C6A92; /* Updated blue */
-}
+        a:hover {
+            color: #F4F4F4;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>CAMERON WATTS</h1>
+            </div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-a:hover {
-   color: #E0E0E0;
-}
+    <section class="hero">
+        <h2>WELCOME TO MY BUSINESS ANALYST PORTFOLIO</h2>
+        <p>Explore my work, projects, and skills as I work to shape the future of data-driven business decisions.</p>
+    </section>
 
-/* Centering the "Explore my work" text */
-.hero p {
-   font-size: 1.25rem;
-   font-weight: 400;
-   max-width: 700px;
-   color: #E0E0E0;
-   text-align: center; /* Ensures the paragraph is centered */
-   margin-top: 20px;
-}
+    <section id="about">
+        <h2>ABOUT ME</h2>
+        <p>I'm a passionate Business Analyst with experience in data-driven decision-making. I aim to transform business challenges into actionable insights and strategic solutions.</p>
+    </section>
+
+    <section id="skills">
+        <h2>SKILLS</h2>
+        <ul>
+            <li>Data Analysis</li>
+            <li>Business Intelligence Tools</li>
+            <li>SQL & Data Management</li>
+            <li>Tableau Visualization</li>
+            <li>Problem Solving</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>PROJECTS</h2>
+        <div class="project-card">
+            <h3>Sales Analysis Dashboard</h3>
+            <p>This dashboard analyzes regional sales performance and identifies trends using data visualization tools like Tableau.</p>
+            <div class="tools">Tools: Tableau, Excel</div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>CONTACT</h2>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Cameron Watts. All rights reserved.</p>
+    </footer>
+</body>
+</html>
