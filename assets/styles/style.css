@@ -9,8 +9,8 @@
  
  /* Body Styling */
  body {
-    background: linear-gradient(to right, #1C1C1C, #2D2D2D); /* Sleek gradient */
-    color: #F4F4F4;
+    background-color: #f0f0f0; /* Lighter gray background */
+    color: #333333;
     line-height: 1.6;
     font-size: 0.85rem; /* Slightly smaller font size */
     overflow-x: hidden;
@@ -65,7 +65,7 @@
  }
  
  .nav-links li a:hover {
-    color: #4C6A92;
+    color: #f0f0f0;
  }
  
  /* Hero Section */
@@ -136,7 +136,7 @@
  
  /* Projects Section */
  #projects {
-    background: linear-gradient(to right, #2D2D2D, #1C1C1C);
+    background-color: #f0f0f0; /* Lighter gray background */
     padding: 100px 10%;
     text-align: center;
  }
@@ -145,7 +145,7 @@
     font-size: 2.5rem; /* Slightly smaller font size */
     font-weight: 700;
     margin-bottom: 40px;
-    color: #ffffff;
+    color: #333333;
  }
  
  .project-card {
@@ -193,7 +193,7 @@
  
  /* Skills Section */
  #skills {
-    background: linear-gradient(to right, #ffffff, #f4f4f4); /* White gradient background */
+    background-color: #ffffff; /* White background */
     padding: 100px 10%;
     text-align: center;
  }
@@ -224,13 +224,13 @@
  }
  
  #skills ul li:hover {
-    background-color: #4C6A92;
-    color: #ffffff;
+    background-color: #e0e0e0; /* Lighter gray for hover */
+    color: #333333;
  }
  
  /* Contact Section */
  #contact {
-    background: linear-gradient(to right, #ffffff, #f4f4f4); /* White gradient background */
+    background-color: #f0f0f0; /* Lighter gray background */
     padding: 100px 10%;
     text-align: center;
  }
@@ -248,7 +248,7 @@
     padding: 20px;
     margin: 10px 0;
     border-radius: 15px;
-    border: 1px solid #4C6A92;
+    border: 1px solid #333333;
     background-color: #ffffff;
     color: #333333;
     transition: background-color 0.3s ease;
@@ -262,7 +262,7 @@
  }
  
  #contact button {
-    background-color: #4C6A92;
+    background-color: #333333;
     color: #ffffff;
     padding: 20px 40px;
     border: none;
@@ -274,6 +274,6 @@
  }
  
  #contact button:hover {
-    background-color: #365B7D; /* Darker hover effect */
+    background-color: #222222; /* Darker gray hover effect */
  }
  
