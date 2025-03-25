@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&family=Poppins:wght@600&display=swap');
 
 /* ✨ Global Resets */
 * {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-family: 'Roboto', sans-serif; /* Updated to a sleek, modern font */
+   font-family: 'Roboto', sans-serif; /* Modern font for text */
    scroll-behavior: smooth;
 }
 
@@ -76,7 +76,7 @@ nav ul li a:hover {
 }
 
 .hero h2 {
-   font-family: 'Archivo Black', sans-serif; /* Modern, sleek font for the title */
+   font-family: 'Poppins', sans-serif; /* Modern, sleek font for the title */
    font-size: 4rem; /* Larger for impact */
    font-weight: 700;
    text-transform: uppercase; /* Title in all caps */
@@ -107,6 +107,7 @@ nav ul li a:hover {
    font-size: 2.5rem;
    font-weight: 600;
    margin-bottom: 20px;
+   text-transform: uppercase; /* All caps titles */
 }
 
 #about p {
@@ -126,6 +127,7 @@ nav ul li a:hover {
    font-size: 2.5rem;
    font-weight: 600;
    margin-bottom: 30px;
+   text-transform: uppercase; /* All caps titles */
 }
 
 #skills ul {
@@ -149,6 +151,7 @@ nav ul li a:hover {
    font-size: 2.5rem;
    font-weight: 600;
    margin-bottom: 30px;
+   text-transform: uppercase; /* All caps titles */
 }
 
 .project-card {
@@ -195,6 +198,7 @@ nav ul li a:hover {
    font-size: 2.5rem;
    font-weight: 600;
    margin-bottom: 30px;
+   text-transform: uppercase; /* All caps titles */
 }
 
 #contact form input,
@@ -253,4 +257,14 @@ a {
 
 a:hover {
    color: #E0E0E0;
+}
+
+/* Centering the "Explore my work" text */
+.hero p {
+   text-align: center; /* Ensures the paragraph is centered */
+   font-size: 1.25rem;
+   font-weight: 400;
+   max-width: 700px;
+   color: #E0E0E0;
+   margin-top: 20px;
 }
