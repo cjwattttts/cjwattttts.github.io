@@ -65,7 +65,7 @@ nav ul li a:hover {
 
 /* 🚀 Hero Section Styling */
 .hero {
-   height: 70vh; /* Reduce the height of the background */
+   height: 50vh; /* Reduced the height of the background section */
    display: flex;
    justify-content: center;
    align-items: center;
@@ -76,7 +76,7 @@ nav ul li a:hover {
 }
 
 .hero h2 {
-   font-size: 5rem; /* Increase the font size of the text */
+   font-size: 3.5rem; /* Reduced font size so it fits on one line */
    font-weight: 600;
    background: linear-gradient(135deg, #A7A8AA, #3E4A55); /* Gradient from Silver to Navy Blue */
    -webkit-background-clip: text;
