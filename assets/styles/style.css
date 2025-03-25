@@ -62,7 +62,8 @@ nav .logo h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('assets/images/hero-background.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(28, 28, 28, 0.85), rgba(28, 28, 28, 0.6)), 
+                url('assets/images/hero-background.jpg') no-repeat center center/cover;
     padding: 0 10%;
     text-align: center;
 }
@@ -72,43 +73,40 @@ nav .logo h1 {
     font-weight: 700;
     color: #F4F4F4;
     text-transform: uppercase;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #3A3A3A, #1C1C1C);
+    display: inline-block;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .hero p {
     font-size: 1.25rem;
     color: #F4F4F4;
     margin-top: 20px;
+    opacity: 0.9;
 }
 
-/* About Me Section */
+/* Other Sections */
+#about, #projects, #skills, #contact {
+    padding: 80px 10%;
+    text-align: center;
+}
+
 #about {
     background-color: #2D2D2D;
-    padding: 80px 10%;
-    text-align: center;
 }
 
-#about h2 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-#about p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-}
-
-/* Projects Section */
 #projects {
     background-color: #1C1C1C;
-    padding: 80px 10%;
-    text-align: center;
 }
 
-#projects h2 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-bottom: 40px;
+#skills {
+    background-color: #2D2D2D;
+}
+
+#contact {
+    background-color: #1C1C1C;
 }
 
 .project-card {
@@ -123,51 +121,6 @@ nav .logo h1 {
 .project-card:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
-
-.project-card h3 {
-    font-size: 1.8rem;
-    color: #F4F4F4;
-}
-
-.project-card p {
-    font-size: 1.2rem;
-    margin-top: 10px;
-}
-
-/* Skills Section */
-#skills {
-    background-color: #2D2D2D;
-    padding: 80px 10%;
-    text-align: center;
-}
-
-#skills h2 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-bottom: 40px;
-}
-
-#skills ul {
-    list-style: none;
-}
-
-#skills ul li {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-}
-
-/* Contact Section */
-#contact {
-    background-color: #1C1C1C;
-    padding: 80px 10%;
-    text-align: center;
-}
-
-#contact h2 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-bottom: 40px;
 }
 
 #contact form input,
