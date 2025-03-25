@@ -1,28 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Times+New+Roman&family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@400;600&display=swap');
 
+/* ✨ Global Resets */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', serif; /* Using Times New Roman */
+    font-family: 'Times New Roman', serif; /* Sophisticated font choice */
     scroll-behavior: smooth;
 }
 
-/* ✨ Elegant Color Theme */
+/* 🌱 Body Styling */
 body {
-    background: #F1F1F1; /* Light beige background */
-    color: #3E3B31; /* Dark brown text color */
+    background-color: #F4E1D2; /* Beige background for a warm, neutral tone */
+    color: #3E3B31; /* Dark brown text */
+    line-height: 1.6;
+    font-size: 1rem;
 }
 
-/* ⚡ Animated Navbar */
+/* ✨ Header and Navbar Styling */
 header {
     position: fixed;
     width: 100%;
-    background: rgba(56, 92, 71, 0.85); /* Soft green background */
+    background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(12px);
-    padding: 1.2rem 2rem;
+    padding: 1.5rem 2rem;
     z-index: 1000;
-    transition: background 0.4s ease-in-out;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); /* Light shadow for sophistication */
 }
 
 nav {
@@ -34,11 +37,10 @@ nav {
 }
 
 nav .logo h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #F9F9F9; /* Light white color for logo */
-    letter-spacing: 0;
-    text-transform: none; /* Removed uppercase */
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #3E3B31;
+    text-transform: none;
 }
 
 nav ul {
@@ -47,131 +49,206 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 30px;
+    margin-left: 25px;
 }
 
 nav ul li a {
-    color: #F9F9F9; /* White color */
+    color: #3E3B31;
     font-weight: 600;
-    letter-spacing: 0.5px;
+    text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
-    color: #A0D9A3; /* Light green on hover */
+    color: #A7C4B5; /* Soft green for hover effect */
 }
 
-/* 🚀 HERO SECTION */
+/* 🚀 Hero Section Styling */
 .hero {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
     background: url('assets/images/business-gradient.jpg') no-repeat center center/cover;
-    padding: 0 10%;
+    padding: 0 12%;
+    color: #F4E1D2;
 }
 
 .hero h2 {
-    font-size: 4rem;
-    font-weight: 700;
-    background: linear-gradient(135deg, #8D9A6E, #B9B8A6); /* Light beige gradient */
+    font-size: 3.5rem;
+    font-weight: 600;
+    background: linear-gradient(135deg, #A7C4B5, #3E3B31);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 1.8rem;
+    font-size: 1.25rem;
     font-weight: 400;
-    margin-top: 20px;
     max-width: 700px;
-    color: #3E3B31; /* Dark brown text */
+    color: #F4E1D2;
+    text-align: center;
+    margin-top: 20px;
 }
 
-/* 🛠 Glassmorphic Project Cards */
+/* 🛠 About Me Section Styling */
+#about {
+    background-color: #FFFFFF;
+    color: #3E3B31;
+    padding: 60px 10%;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+/* 📊 Skills Section Styling */
+#skills {
+    background-color: #F4E1D2;
+    padding: 50px 10%;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills ul li {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+/* 💼 Projects Section Styling */
+#projects {
+    background-color: #FFFFFF;
+    padding: 60px 10%;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
 .project-card {
-    background: rgba(255, 255, 255, 0.2); /* Light transparency */
-    border-radius: 16px;
-    padding: 2rem;
-    margin: 40px auto;
-    max-width: 800px;
-    backdrop-filter: blur(10px); /* Light blur */
-    box-shadow: 0 10px 40px rgba(0, 31, 63, 0.4);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background-color: #F9F9F9;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
     transform: scale(1.05);
-    box-shadow: 0 15px 50px rgba(56, 92, 71, 0.5); /* Green shadow on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* ✨ Silver Gradient Button */
-.button {
-    background: linear-gradient(135deg, #8D9A6E, #B9B8A6); /* Beige gradient */
+.project-card h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
     color: #3E3B31;
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
 }
 
-.button:hover {
-    background: #A0D9A3; /* Light green background on hover */
-    color: white;
-    transform: scale(1.05);
+.project-card p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #3E3B31;
 }
 
-/* 📩 Contact Form */
-#contact input, #contact textarea {
+.project-card .tools {
+    font-size: 1.1rem;
+    color: #A7C4B5;
+    margin-top: 10px;
+}
+
+/* 📩 Contact Section Styling */
+#contact {
+    background-color: #F4E1D2;
+    padding: 60px 10%;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+#contact form input,
+#contact form textarea {
     width: 100%;
-    padding: 1rem;
-    border: none;
+    padding: 15px;
+    margin: 10px 0;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #3E3B31; /* Dark brown text color */
-    outline: none;
-    transition: background 0.3s ease-in-out;
-}
-
-#contact input:focus, #contact textarea:focus {
-    background-color: rgba(255, 255, 255, 0.3); /* Lighter background on focus */
+    border: 1px solid #A7C4B5;
+    font-size: 1rem;
+    background-color: #FFFFFF;
+    color: #3E3B31;
 }
 
 #contact button {
-    background: #8D9A6E; /* Green button */
-    color: white;
-    padding: 1rem 2rem;
+    background-color: #A7C4B5;
+    color: #FFFFFF;
+    padding: 15px 30px;
     border: none;
     border-radius: 10px;
-    font-weight: bold;
+    font-weight: 600;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: background-color 0.3s ease;
 }
 
 #contact button:hover {
-    background: #A0D9A3;
-    color: #3E3B31;
-    transform: scale(1.05);
+    background-color: #3E3B31;
 }
 
-/* 🌙 Footer */
+/* 🌙 Footer Section Styling */
 footer {
     text-align: center;
-    padding: 2rem;
+    padding: 20px 0;
     font-size: 1rem;
-    color: #3E3B31; /* Dark brown text */
-    opacity: 0.7;
+    background-color: #3E3B31;
+    color: #F4E1D2;
+    margin-top: 40px;
 }
 
-/* 🔄 Smooth Scroll Effect */
+/* 🌿 Smooth Scroll Effect */
 html {
     scroll-behavior: smooth;
 }
 
-/* 📽 Subtle Fade-In Animations */
+/* 🎨 Subtle Fade-In Animations */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+/* 🖋 Link Styling */
+a {
+    text-decoration: none;
+    color: #A7C4B5;
+}
+
+a:hover {
+    color: #3E3B31;
 }
