@@ -169,8 +169,8 @@
     margin: 20px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 350px; /* Adjusted width */
-    height: auto; /* Adjusted height */
+    width: 600px; /* Much wider */
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
@@ -183,20 +183,20 @@
  }
  
  .project-card h3 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #F4F4F4;
     letter-spacing: 0.5px;
  }
  
  .project-card p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-top: 10px;
     color: #B0B0B0; /* Light grey for the description */
  }
  
  .project-card .tools {
     margin-top: 20px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #F4F4F4;
  }
  
