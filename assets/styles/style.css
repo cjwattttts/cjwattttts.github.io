@@ -5,65 +5,65 @@
     box-sizing: border-box;
     font-family: 'Helvetica Neue', Arial, sans-serif;
     scroll-behavior: smooth;
- }
- 
- /* Body Styling */
- body {
-    background-color: #e0e0e0; /* Lighter gray background */
+}
+
+/* Body Styling */
+body {
+    background-color: #f4f4f4; /* Lightened gray background */
     color: #333333; /* Dark text for contrast */
     line-height: 1.6;
     font-size: 0.85rem;
     overflow-x: hidden;
     min-height: 100vh;
- }
- 
- /* Header Styling */
- header {
+}
+
+/* Header Styling */
+header {
     position: fixed;
     width: 100%;
-    background-color: #000000; /* Black background for header */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for header */
     padding: 20px 10%;
     z-index: 1000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
- }
- 
- nav {
+}
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
- }
- 
- nav .logo h1 {
+}
+
+nav .logo h1 {
     font-size: 1.8rem;
     color: #ffffff; /* White text for logo */
     letter-spacing: 1px;
     font-weight: 700;
- }
- 
- .nav-links {
+}
+
+.nav-links {
     display: flex;
     list-style: none;
- }
- 
- .nav-links li {
+}
+
+.nav-links li {
     margin-left: 30px;
- }
- 
- .nav-links li a {
+}
+
+.nav-links li a {
     color: #ffffff; /* White text for navigation */
     font-weight: 600;
     text-decoration: none;
     font-size: 0.95rem;
     letter-spacing: 1px;
     transition: color 0.3s ease;
- }
- 
- .nav-links li a:hover {
+}
+
+.nav-links li a:hover {
     color: #e0e0e0; /* Lighter gray text on hover */
- }
- 
- /* Hero Section */
- .hero {
+}
+
+/* Hero Section */
+.hero {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -72,18 +72,18 @@
     padding: 0 10%;
     text-align: center;
     position: relative;
- }
- 
- .hero h2 {
+}
+
+.hero h2 {
     font-size: 3rem;
     font-weight: 700;
     color: #ffffff; /* White text */
     text-transform: uppercase;
     z-index: 2;
     letter-spacing: 1px;
- }
- 
- .hero p {
+}
+
+.hero p {
     font-size: 1.15rem;
     color: #ffffff; /* White text */
     margin-top: 20px;
@@ -92,46 +92,46 @@
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
- }
- 
- /* About Me Section */
- #about {
+}
+
+/* About Me Section */
+#about {
     background-color: #ffffff; /* White background */
     padding: 100px 10%;
     text-align: center;
- }
- 
- #about h2 {
+}
+
+#about h2 {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 20px;
     color: #333333; /* Dark text */
- }
- 
- #about p {
+}
+
+#about p {
     font-size: 1.1rem;
     line-height: 1.8;
     color: #333333; /* Dark text */
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
- }
- 
- /* Projects Section */
- #projects {
+}
+
+/* Projects Section */
+#projects {
     background-color: #e0e0e0; /* Light gray background */
     padding: 100px 10%;
     text-align: center;
- }
- 
- #projects h2 {
+}
+
+#projects h2 {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 40px;
     color: #333333;
- }
- 
- .project-card {
+}
+
+.project-card {
     background-color: #333333; /* Dark background for cards */
     border-radius: 15px;
     padding: 30px;
@@ -144,58 +144,58 @@
     margin-right: auto;
     text-align: left;
     max-width: 100%;
- }
- 
- .project-card:hover {
+}
+
+.project-card:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 50px rgba(0, 0, 0, 0.35);
- }
- 
- .project-card h3 {
+}
+
+.project-card h3 {
     font-size: 1.8rem;
     color: #F4F4F4; /* Light gray text for headings */
     letter-spacing: 0.5px;
- }
- 
- .project-card p {
+}
+
+.project-card p {
     font-size: 1.1rem;
     margin-top: 10px;
     color: #B0B0B0; /* Light gray for the description */
- }
- 
- .project-card .tools {
+}
+
+.project-card .tools {
     margin-top: 20px;
     font-size: 1.1rem;
     color: #F4F4F4; /* Light gray text */
- }
- 
- .project-card .tools span {
+}
+
+.project-card .tools span {
     display: inline-block;
     margin-right: 15px;
- }
- 
- /* Skills Section */
- #skills {
+}
+
+/* Skills Section */
+#skills {
     background-color: #ffffff; /* White background */
     padding: 100px 10%;
     text-align: center;
- }
- 
- #skills h2 {
+}
+
+#skills h2 {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 40px;
     color: #333333;
- }
- 
- #skills ul {
+}
+
+#skills ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
- }
- 
- #skills ul li {
+}
+
+#skills ul li {
     font-size: 1.15rem;
     margin-bottom: 15px;
     color: #333333; /* Dark text */
@@ -204,29 +204,29 @@
     margin: 10px;
     border-radius: 30px;
     transition: background-color 0.3s ease;
- }
- 
- #skills ul li:hover {
+}
+
+#skills ul li:hover {
     background-color: #d0d0d0; /* Lighter gray for hover */
     color: #333333;
- }
- 
- /* Contact Section */
- #contact {
+}
+
+/* Contact Section */
+#contact {
     background-color: #e0e0e0; /* Lighter gray background */
     padding: 100px 10%;
     text-align: center;
- }
- 
- #contact h2 {
+}
+
+#contact h2 {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 40px;
     color: #333333;
- }
- 
- #contact form input,
- #contact form textarea {
+}
+
+#contact form input,
+#contact form textarea {
     width: 100%;
     padding: 20px;
     margin: 10px 0;
@@ -236,15 +236,15 @@
     color: #333333;
     transition: background-color 0.3s ease;
     font-size: 1.1rem;
- }
- 
- #contact form input:focus,
- #contact form textarea:focus {
+}
+
+#contact form input:focus,
+#contact form textarea:focus {
     background-color: #f4f4f4;
     outline: none;
- }
- 
- #contact button {
+}
+
+#contact button {
     background: linear-gradient(to bottom right, #000000, #333333); /* Gradient background for button */
     color: #ffffff;
     padding: 20px 40px;
@@ -254,9 +254,8 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-size: 1.1rem;
- }
- 
- #contact button:hover {
+}
+
+#contact button:hover {
     background: linear-gradient(to bottom right, #333333, #000000); /* Reversed gradient on hover */
- }
- 
+}
