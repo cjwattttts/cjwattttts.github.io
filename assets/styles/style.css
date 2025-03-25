@@ -5,31 +5,31 @@
     box-sizing: border-box;
 }
 
-/* Modern Dark Theme with Gradient */
+/* Dark, Futuristic Theme */
 body {
     font-family: 'Inter', sans-serif;
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-    color: #ffffff;
+    background: #121212;
+    color: #EAEAEA;
     line-height: 1.6;
 }
 
-/* Headers with Bold, Sleek Font */
+/* Headers with Bold, Neon Accent */
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
-    color: #00e6e6;
+    color: #B800E6;
 }
 
 /* Header */
 header {
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(18, 18, 18, 0.95);
     padding: 1rem 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 nav {
@@ -43,6 +43,7 @@ nav {
 
 nav .logo h1 {
     font-size: 2rem;
+    color: #EAEAEA;
 }
 
 nav ul {
@@ -55,7 +56,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: #EAEAEA;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1px;
@@ -63,7 +64,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #00e6e6;
+    color: #E600B8;
 }
 
 /* Hero Section */
@@ -94,17 +95,18 @@ section {
 
 /* Project Cards */
 .project-card {
-    background: rgba(255, 255, 255, 0.1);
+    background: #1E1E1E;
     border-radius: 12px;
     padding: 1.8rem;
     margin: 20px auto;
     max-width: 800px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .project-card:hover {
     transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(184, 0, 230, 0.3);
 }
 
 /* Contact Form */
@@ -113,13 +115,13 @@ section {
     padding: 1rem;
     border: none;
     border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
     color: white;
 }
 
 #contact button {
-    background: #00e6e6;
-    color: black;
+    background: #B800E6;
+    color: white;
     padding: 1rem 2rem;
     border: none;
     border-radius: 8px;
@@ -129,5 +131,5 @@ section {
 }
 
 #contact button:hover {
-    background: #00cccc;
+    background: #E600B8;
 }
