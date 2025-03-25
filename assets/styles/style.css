@@ -3,35 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cameron Watts - Data Analyst Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Business Analyst Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
-        /* 🌙 Global Reset */
+        /* ✨ Global Resets */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Roboto', sans-serif; /* Modern font */
             scroll-behavior: smooth;
         }
 
-        /* 🌑 Body Styling */
+        /* 🌱 Body Styling */
         body {
-            background-color: #121212; /* Dark background for modern look */
-            color: #f1f1f1; /* Light text color for readability */
+            background-color: #2D2D2D; /* Dark gray background */
+            color: #F4F4F4; /* Light text color for contrast */
             line-height: 1.6;
             font-size: 1rem;
         }
 
-        /* ✨ Header Styling */
+        /* ✨ Header and Navbar Styling */
         header {
             position: fixed;
             width: 100%;
             background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            padding: 1rem 2rem;
+            backdrop-filter: blur(12px);
+            padding: 1.5rem 2rem;
             z-index: 1000;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
         }
 
         nav {
@@ -43,10 +43,10 @@
         }
 
         nav .logo h1 {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             font-weight: 600;
-            color: #fff;
-            letter-spacing: 2px;
+            color: #FFFFFF;
+            text-transform: uppercase;
         }
 
         nav ul {
@@ -55,21 +55,21 @@
         }
 
         nav ul li {
-            margin-left: 30px;
+            margin-left: 25px;
         }
 
         nav ul li a {
-            color: #fff;
+            color: #FFFFFF;
             font-weight: 600;
             text-decoration: none;
-            transition: color 0.3s ease;
+            transition: color 0.3s ease-in-out;
         }
 
         nav ul li a:hover {
-            color: #00BFFF; /* Vibrant color for modern feel */
+            color: #4C6A92;
         }
 
-        /* 🚀 Hero Section */
+        /* 🚀 Hero Section Styling */
         .hero {
             height: 100vh;
             display: flex;
@@ -77,16 +77,15 @@
             align-items: center;
             text-align: center;
             background: url('assets/images/business-gradient.jpg') no-repeat center center/cover;
-            background-size: cover;
-            padding: 0 12%;
+            padding: 0 5%;
             color: #F4E1D2;
         }
 
         .hero h2 {
-            font-size: 3.5rem;
+            font-size: 4rem; /* Larger for impact */
             font-weight: 700;
             text-transform: uppercase;
-            background: linear-gradient(135deg, #1A3A5A, #00BFFF);
+            background: linear-gradient(135deg, #1A3A5A, #4C6A92);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             margin-bottom: 20px;
@@ -95,23 +94,25 @@
         .hero p {
             font-size: 1.25rem;
             font-weight: 400;
-            color: #F4E1D2;
             max-width: 700px;
+            color: #F4E1D2;
+            text-align: center;
             margin-top: 20px;
         }
 
-        /* 🛠 About Section */
+        /* 🛠 About Me Section Styling */
         #about {
-            background-color: #1E1E1E;
+            background-color: #1F1F1F;
+            color: #F4F4F4;
             padding: 60px 10%;
             text-align: center;
         }
 
         #about h2 {
-            font-size: 2.8rem;
+            font-size: 2.5rem;
             font-weight: 600;
-            margin-bottom: 30px;
-            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
         }
 
         #about p {
@@ -120,18 +121,18 @@
             margin-bottom: 40px;
         }
 
-        /* 📊 Skills Section */
+        /* 📊 Skills Section Styling */
         #skills {
-            background-color: #121212;
-            padding: 60px 10%;
+            background-color: #2D2D2D;
+            padding: 50px 10%;
             text-align: center;
         }
 
         #skills h2 {
-            font-size: 2.8rem;
+            font-size: 2.5rem;
             font-weight: 600;
+            text-transform: uppercase;
             margin-bottom: 30px;
-            letter-spacing: 2px;
         }
 
         #skills ul {
@@ -142,68 +143,67 @@
         #skills ul li {
             font-size: 1.2rem;
             margin-bottom: 15px;
-            color: #F4F4F4;
         }
 
-        /* 💼 Projects Section */
+        /* 💼 Projects Section Styling */
         #projects {
-            background-color: #1E1E1E;
+            background-color: #1F1F1F;
             padding: 60px 10%;
             text-align: center;
         }
 
         #projects h2 {
-            font-size: 2.8rem;
+            font-size: 2.5rem;
             font-weight: 600;
+            text-transform: uppercase;
             margin-bottom: 30px;
-            letter-spacing: 2px;
         }
 
         .project-card {
-            background-color: #333;
+            background-color: #3A3A3A;
             border-radius: 10px;
-            padding: 25px;
+            padding: 20px;
             margin: 20px auto;
             max-width: 900px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .project-card:hover {
             transform: scale(1.05);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
 
         .project-card h3 {
-            font-size: 2rem;
+            font-size: 1.8rem;
             font-weight: 600;
             color: #F4F4F4;
         }
 
         .project-card p {
-            font-size: 1.15rem;
-            color: #F4F4F4;
+            font-size: 1.2rem;
             margin-top: 10px;
+            color: #F4F4F4;
         }
 
         .project-card .tools {
-            font-size: 1.2rem;
-            color: #00BFFF;
+            font-size: 1.1rem;
+            color: #4C6A92;
             margin-top: 10px;
         }
 
-        /* 📩 Contact Section */
+        /* 📩 Contact Section Styling */
         #contact {
-            background-color: #121212;
+            background-color: #2D2D2D;
             padding: 60px 10%;
             text-align: center;
         }
 
         #contact h2 {
-            font-size: 2.8rem;
+            font-size: 2.5rem;
             font-weight: 600;
+            text-transform: uppercase;
             margin-bottom: 30px;
-            letter-spacing: 2px;
         }
 
         #contact form input,
@@ -212,15 +212,15 @@
             padding: 15px;
             margin: 10px 0;
             border-radius: 10px;
-            border: 1px solid #00BFFF;
+            border: 1px solid #4C6A92;
             font-size: 1rem;
-            background-color: #333;
+            background-color: #3A3A3A;
             color: #F4F4F4;
         }
 
         #contact button {
-            background-color: #00BFFF;
-            color: #fff;
+            background-color: #4C6A92;
+            color: #FFFFFF;
             padding: 15px 30px;
             border: none;
             border-radius: 10px;
@@ -233,18 +233,31 @@
             background-color: #1A3A5A;
         }
 
-        /* 🌙 Footer */
+        /* 🌙 Footer Section Styling */
         footer {
             text-align: center;
             padding: 20px 0;
+            font-size: 1rem;
             background-color: #1A3A5A;
             color: #F4E1D2;
+            margin-top: 40px;
         }
 
+        /* 🌿 Smooth Scroll Effect */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* 🎨 Subtle Fade-In Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* 🖋 Link Styling */
         a {
-            color: #00BFFF;
             text-decoration: none;
-            transition: color 0.3s ease;
+            color: #4C6A92;
         }
 
         a:hover {
@@ -256,7 +269,7 @@
     <header>
         <nav>
             <div class="logo">
-                <h1>Cameron Watts</h1>
+                <h1>CAMERON WATTS</h1>
             </div>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -268,37 +281,36 @@
     </header>
 
     <section class="hero">
-        <h2>Welcome to My Data Analyst Portfolio</h2>
-        <p>Shaping the future of data-driven decisions with actionable insights and impactful solutions.</p>
+        <h2>WELCOME TO MY PORTFOLIO</h2>
     </section>
 
     <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a passionate Data Analyst focused on transforming data into actionable insights to support decision-making. I believe in leveraging analytical tools and methodologies to uncover hidden trends and opportunities.</p>
+        <h2>ABOUT ME</h2>
+        <p>I'm a passionate Business Analyst with experience in data-driven decision-making. I aim to transform business challenges into actionable insights and strategic solutions.</p>
     </section>
 
     <section id="skills">
-        <h2>Skills</h2>
+        <h2>SKILLS</h2>
         <ul>
-            <li>Data Visualization (Tableau, Power BI)</li>
-            <li>SQL & Data Management</li>
-            <li>Statistical Analysis</li>
+            <li>Data Analysis</li>
             <li>Business Intelligence Tools</li>
-            <li>Problem Solving & Critical Thinking</li>
+            <li>SQL & Data Management</li>
+            <li>Tableau Visualization</li>
+            <li>Problem Solving</li>
         </ul>
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>
+        <h2>PROJECTS</h2>
         <div class="project-card">
-            <h3>Sales Performance Dashboard</h3>
-            <p>A comprehensive dashboard to analyze regional sales performance using Tableau and SQL for deeper insights.</p>
-            <div class="tools">Tools: Tableau, SQL, Excel</div>
+            <h3>Sales Analysis Dashboard</h3>
+            <p>This dashboard analyzes regional sales performance and identifies trends using data visualization tools like Tableau.</p>
+            <div class="tools">Tools: Tableau, Excel</div>
         </div>
     </section>
 
     <section id="contact">
-        <h2>Contact</h2>
+        <h2>CONTACT</h2>
         <form>
             <input type="text" placeholder="Your Name">
             <input type="email" placeholder="Your Email">
@@ -309,6 +321,3 @@
 
     <footer>
         <p>&copy; 2025 Cameron Watts. All rights reserved.</p>
-    </footer>
-</body>
-</html>
