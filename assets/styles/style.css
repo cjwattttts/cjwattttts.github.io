@@ -1,191 +1,254 @@
 @import url('https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@400;600&display=swap');
 
+/* ✨ Global Resets */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Times New Roman', serif; /* Changed to Times New Roman */
-    scroll-behavior: smooth;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Times New Roman', serif; /* Sophisticated font choice */
+   scroll-behavior: smooth;
 }
 
-/* ✨ Business-Chic Color Theme */
+/* 🌱 Body Styling */
 body {
-    background: #BDC3C7; /* Light Gray Background */
-    color: #2C3E50; /* Navy Blue Text */
+   background-color: #D0D3D4; /* Light Silver background for a neutral tone */
+   color: #3E4A55; /* Navy Blue text */
+   line-height: 1.6;
+   font-size: 1rem;
 }
 
-/* ⚡ Animated Navbar */
+/* ✨ Header and Navbar Styling */
 header {
-    position: fixed;
-    width: 100%;
-    background: rgba(44, 62, 80, 0.85); /* Navy Blue with transparency */
-    backdrop-filter: blur(12px);
-    padding: 1.2rem 2rem;
-    z-index: 1000;
-    transition: background 0.4s ease-in-out;
+   position: fixed;
+   width: 100%;
+   background: rgba(255, 255, 255, 0.85);
+   backdrop-filter: blur(12px);
+   padding: 1.5rem 2rem;
+   z-index: 1000;
+   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); /* Light shadow for sophistication */
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1300px;
-    margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 1300px;
+   margin: 0 auto;
 }
 
 nav .logo h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #F5F5F5; /* Light Gray Text */
-    letter-spacing: -1px;
+   font-size: 2.2rem;
+   font-weight: 600;
+   color: #3E4A55; /* Navy Blue */
+   text-transform: none;
 }
 
 nav ul {
-    display: flex;
-    list-style: none;
+   display: flex;
+   list-style: none;
 }
 
 nav ul li {
-    margin-left: 30px;
+   margin-left: 25px;
 }
 
 nav ul li a {
-    color: #F5F5F5; /* Light Gray Text */
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    transition: color 0.3s ease-in-out;
+   color: #3E4A55; /* Navy Blue */
+   font-weight: 600;
+   text-decoration: none;
+   transition: color 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
-    color: #1DA1F2; /* Light Blue Hover */
+   color: #A7A8AA; /* Soft Silver for hover effect */
 }
 
-/* 🚀 HERO SECTION */
+/* 🚀 Hero Section Styling */
 .hero {
-    height: 60vh; /* Reduced height */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    background: url('assets/images/business-gradient.jpg') no-repeat center center/cover; /* Background Image */
-    padding: 0 12%;
-    color: #F5F5F5; /* Light Gray Text */
-    opacity: 0;
-    animation: fadeInUp 1.5s ease-out forwards; /* Fade In Animation */
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: left;
+   background: url('assets/images/business-gradient.jpg') no-repeat center center/cover;
+   padding: 0 12%;
+   color: #D0D3D4; /* Light Silver text */
 }
 
-.hero h1 {
-    font-size: 4rem;
-    font-weight: 700;
-    background: linear-gradient(135deg, #BDC3C7, #2C3E50); /* Gradient: Silver to Navy Blue */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.hero h2 {
+   font-size: 3.5rem;
+   font-weight: 600;
+   background: linear-gradient(135deg, #A7A8AA, #3E4A55); /* Gradient from Silver to Navy Blue */
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin-top: 20px;
-    max-width: 600px;
+   font-size: 1.25rem;
+   font-weight: 400;
+   max-width: 700px;
+   color: #D0D3D4; /* Light Silver text */
+   text-align: center;
+   margin-top: 20px;
 }
 
-/* 🔥 Unique Vertical Text */
-.vertical-text {
-    position: absolute;
-    left: 3%;
-    top: 50%;
-    transform: rotate(-90deg);
-    font-size: 1.2rem;
-    font-weight: 600;
-    opacity: 0.5;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+/* 🛠 About Me Section Styling */
+#about {
+   background-color: #FFFFFF;
+   color: #3E4A55; /* Navy Blue */
+   padding: 60px 10%;
+   text-align: center;
 }
 
-/* 🛠 Glassmorphic Project Cards */
+#about h2 {
+   font-size: 2.5rem;
+   font-weight: 600;
+   margin-bottom: 20px;
+}
+
+#about p {
+   font-size: 1.1rem;
+   line-height: 1.8;
+   margin-bottom: 40px;
+}
+
+/* 📊 Skills Section Styling */
+#skills {
+   background-color: #D0D3D4; /* Light Silver */
+   padding: 50px 10%;
+   text-align: center;
+}
+
+#skills h2 {
+   font-size: 2.5rem;
+   font-weight: 600;
+   margin-bottom: 30px;
+}
+
+#skills ul {
+   list-style: none;
+   padding: 0;
+}
+
+#skills ul li {
+   font-size: 1.2rem;
+   margin-bottom: 15px;
+}
+
+/* 💼 Projects Section Styling */
+#projects {
+   background-color: #FFFFFF;
+   padding: 60px 10%;
+   text-align: center;
+}
+
+#projects h2 {
+   font-size: 2.5rem;
+   font-weight: 600;
+   margin-bottom: 30px;
+}
+
 .project-card {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 16px;
-    padding: 2rem;
-    margin: 40px auto;
-    max-width: 800px;
-    backdrop-filter: blur(20px);
-    box-shadow: 0 10px 40px rgba(0, 31, 63, 0.4);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+   background-color: #F9F9F9;
+   border-radius: 10px;
+   padding: 20px;
+   margin: 20px auto;
+   max-width: 900px;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
-    transform: scale(1.04);
-    box-shadow: 0 15px 50px rgba(0, 157, 255, 0.5);
+   transform: scale(1.05);
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* ✨ Silver Gradient Button */
-.button {
-    background: linear-gradient(135deg, #BDC3C7, #2C3E50); /* Gradient: Silver to Navy Blue */
-    color: #2C3E50; /* Navy Blue */
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
+.project-card h3 {
+   font-size: 1.8rem;
+   font-weight: 600;
+   color: #3E4A55; /* Navy Blue */
 }
 
-.button:hover {
-    background: #1DA1F2;
-    color: white;
-    transform: scale(1.05);
+.project-card p {
+   font-size: 1.2rem;
+   margin-top: 10px;
+   color: #3E4A55; /* Navy Blue */
 }
 
-/* 📩 Contact Form */
-#contact input, #contact textarea {
-    width: 100%;
-    padding: 1rem;
-    border: none;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #F5F5F5; /* Light Gray Text */
-    outline: none;
-    transition: background 0.3s ease-in-out;
+.project-card .tools {
+   font-size: 1.1rem;
+   color: #A7A8AA; /* Soft Silver */
+   margin-top: 10px;
 }
 
-#contact input:focus, #contact textarea:focus {
-    background-color: rgba(255, 255, 255, 0.2);
+/* 📩 Contact Section Styling */
+#contact {
+   background-color: #D0D3D4; /* Light Silver */
+   padding: 60px 10%;
+   text-align: center;
+}
+
+#contact h2 {
+   font-size: 2.5rem;
+   font-weight: 600;
+   margin-bottom: 30px;
+}
+
+#contact form input,
+#contact form textarea {
+   width: 100%;
+   padding: 15px;
+   margin: 10px 0;
+   border-radius: 10px;
+   border: 1px solid #A7A8AA; /* Soft Silver border */
+   font-size: 1rem;
+   background-color: #FFFFFF;
+   color: #3E4A55; /* Navy Blue */
 }
 
 #contact button {
-    background: #2C3E50; /* Navy Blue */
-    color: white;
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 10px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
+   background-color: #A7A8AA; /* Soft Silver */
+   color: #FFFFFF;
+   padding: 15px 30px;
+   border: none;
+   border-radius: 10px;
+   font-weight: 600;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
 }
 
 #contact button:hover {
-    background: #BDC3C7; /* Light Gray */
-    color: #2C3E50;
-    transform: scale(1.05);
+   background-color: #3E4A55; /* Navy Blue */
 }
 
-/* 🌙 Footer */
+/* 🌙 Footer Section Styling */
 footer {
-    text-align: center;
-    padding: 2rem;
-    font-size: 0.9rem;
-    opacity: 0.7;
-    color: #2C3E50; /* Navy Blue Text */
+   text-align: center;
+   padding: 20px 0;
+   font-size: 1rem;
+   background-color: #3E4A55; /* Navy Blue */
+   color: #D0D3D4; /* Light Silver */
+   margin-top: 40px;
 }
 
-/* 🔄 Smooth Scroll Effect */
+/* 🌿 Smooth Scroll Effect */
 html {
-    scroll-behavior: smooth;
+   scroll-behavior: smooth;
 }
 
-/* 📽 Subtle Fade-In Animations */
-@keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+/* 🎨 Subtle Fade-In Animations */
+@keyframes fadeIn {
+   from { opacity: 0; transform: translateY(20px); }
+   to { opacity: 1; transform: translateY(0); }
+}
+
+/* 🖋 Link Styling */
+a {
+   text-decoration: none;
+   color: #A7A8AA; /* Soft Silver */
+}
+
+a:hover {
+   color: #3E4A55; /* Navy Blue */
 }
