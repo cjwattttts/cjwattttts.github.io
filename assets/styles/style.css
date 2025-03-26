@@ -105,12 +105,17 @@ nav .logo h1 {
    color: #333333;
    padding: 100px 5%;
    text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row; /* Align image and text side by side */
 }
 
 #about h2 {
    font-size: 3rem;
    font-weight: 800;
    margin-bottom: 30px;
+   flex: 1;
 }
 
 #about p {
@@ -119,14 +124,15 @@ nav .logo h1 {
    max-width: 750px;
    margin-left: auto;
    margin-right: auto;
+   flex: 2; /* Allow the paragraph to take more space */
 }
 
 #about img {
    width: 200px; /* Adjust width */
-   height: auto; /* Maintain aspect ratio */
-   border-radius: 90%; /* Circular appearance */
+   height: 200px; /* Make height equal to width for a square */
+   border-radius: 20px; /* Rounded corners */
    margin-top: 20px;
-   margin-bottom: 30px;
+   margin-right: 30px;
 }
 
 /* Projects Section */
