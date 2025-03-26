@@ -103,7 +103,7 @@ nav .logo h1 {
 #about {
    background-color: #ffffff; /* Plain white background */
    color: #333333;
-   padding: 40px 5%;
+   padding: 60px 5%;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -116,7 +116,7 @@ nav .logo h1 {
 #about h2 {
    font-size: 3rem;
    font-weight: 800;
-   margin-bottom: 30px;
+   margin-bottom: 10px;
 }
 
 #about p {
@@ -132,7 +132,7 @@ nav .logo h1 {
    display: flex;
    justify-content: center;
    align-items: center;
-   margin-top: 60px;
+   margin-top: 40px;
    width: 100%;
 }
 
