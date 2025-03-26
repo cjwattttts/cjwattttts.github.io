@@ -109,7 +109,7 @@ nav .logo h1 {
    justify-content: center;
    flex-direction: column;
    text-align: center;
-   position: relative;
+   position: center;
    z-index: 1;
 }
 
@@ -131,7 +131,7 @@ nav .logo h1 {
    display: flex;
    justify-content: center;
    align-items: center;
-   position: relative;
+   position: center;
    z-index: 2;
 }
 
