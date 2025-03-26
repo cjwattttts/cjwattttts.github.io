@@ -177,6 +177,29 @@ nav .logo h1 {
    margin-right: 20px;
 }
 
+/* Centering Buttons */
+.project-card .button-container {
+   display: flex;
+   justify-content: center; /* Centers the buttons */
+   margin-top: 20px;
+}
+
+.project-card .button-container button {
+   background-color: #0078a0; /* Blue background */
+   color: #ffffff;
+   padding: 12px 25px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 1rem;
+   margin: 5px;
+   transition: background-color 0.3s ease;
+}
+
+.project-card .button-container button:hover {
+   background-color: #004d66; /* Darker blue hover effect */
+}
+
 /* Skills Section */
 #skills {
    background-color: #ffffff; /* Plain white background */
