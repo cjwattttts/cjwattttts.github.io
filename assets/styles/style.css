@@ -122,9 +122,9 @@ nav .logo h1 {
 }
 
 #about img {
-   width: 150px; /* Adjust width */
+   width: 200px; /* Adjust width */
    height: auto; /* Maintain aspect ratio */
-   border-radius: 50%; /* Circular appearance */
+   border-radius: 90%; /* Circular appearance */
    margin-top: 20px;
    margin-bottom: 30px;
 }
