@@ -7,6 +7,11 @@
    scroll-behavior: smooth;
 }
 
+/* Global rule for text hover */
+a, p, h1, h2, h3, li {
+   cursor: pointer;
+}
+
 /* Body Styling */
 body {
    background-color: #f7f7f7; /* Light beige background */
