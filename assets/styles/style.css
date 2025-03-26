@@ -103,7 +103,7 @@ nav .logo h1 {
 #about {
    background-color: #ffffff; /* Plain white background */
    color: #333333;
-   padding: 100px 5%;
+   padding: 40px 5%;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -151,7 +151,7 @@ nav .logo h1 {
 /* Projects Section */
 #projects {
    background: linear-gradient(135deg, #0d3b58, #1a2530); /* Dark oceanic blue to deep gray gradient */
-   padding: 100px 10%;
+   padding: 40px 10%;
    text-align: center;
 }
 
@@ -269,7 +269,7 @@ nav .logo h1 {
 /* Skills Section */
 #skills {
    background-color: #ffffff; /* Plain white background */
-   padding: 100px 5%;
+   padding: 40px 5%;
    text-align: center;
 }
 
@@ -307,7 +307,7 @@ nav .logo h1 {
 /* Certifications Section */
 #certifications {
    background-color: #ffffff; /* Plain white background */
-   padding: 100px 5%;
+   padding: 40px 5%;
    text-align: center;
 }
 
