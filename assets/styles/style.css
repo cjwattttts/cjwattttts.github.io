@@ -71,7 +71,7 @@ nav .logo h1 {
    display: flex;
    justify-content: center;
    align-items: center;
-   background: linear-gradient(to bottom right, #6c4f38, #2f5061); /* Beige to brown gradient */
+   background: linear-gradient(to bottom right, #4b647b, #2f5061); /* Blue to deeper blue gradient */
    padding: 0 15%;
    text-align: center;
    position: relative;
@@ -123,7 +123,7 @@ nav .logo h1 {
 
 /* Projects Section */
 #projects {
-   background: linear-gradient(135deg, #8b6e4b, #4b647b); /* Brown to blue gradient */
+   background: linear-gradient(135deg, #2f5061, #4e6c77); /* Deep blue to charcoal gradient */
    padding: 100px 10%;
    text-align: center;
 }
@@ -136,7 +136,7 @@ nav .logo h1 {
 }
 
 .project-card {
-   background-color: #6b4f31; /* Brown background for project cards */
+   background-color: #6b4f31; /* Keeping a brown background for contrast */
    border-radius: 25px;
    padding: 40px;
    margin: 25px;
@@ -217,7 +217,7 @@ nav .logo h1 {
 
 /* Contact Section */
 #contact {
-   background: linear-gradient(to top left, #4b647b, #8b6e4b); /* Blue to brown gradient */
+   background: linear-gradient(to top left, #2f5061, #4e6c77); /* Blue to charcoal gradient */
    padding: 100px 5%;
    text-align: center;
 }
@@ -250,7 +250,7 @@ nav .logo h1 {
 }
 
 #contact button {
-   background: linear-gradient(to bottom right, #6c4f38, #4b647b); /* Brown to blue gradient */
+   background: linear-gradient(to bottom right, #4b647b, #2f5061); /* Blue to deep blue gradient */
    color: #ffffff;
    padding: 20px 40px;
    border: none;
@@ -262,7 +262,7 @@ nav .logo h1 {
 }
 
 #contact button:hover {
-   background: linear-gradient(to top left, #4b647b, #6c4f38);
+   background: linear-gradient(to top left, #2f5061, #4b647b);
    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
