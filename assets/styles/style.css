@@ -180,7 +180,7 @@ nav .logo h1 {
 /* Centering Buttons */
 .project-card .button-container {
    display: flex;
-   justify-content: center; /* Centers the buttons */
+   justify-content: center; /* Centers the buttons horizontally */
    margin-top: 20px;
 }
 
