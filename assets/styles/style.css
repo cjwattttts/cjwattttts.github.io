@@ -304,11 +304,85 @@ nav .logo h1 {
    transform: scale(1.1);
 }
 
+/* Certifications Section */
+#certifications {
+   background-color: #ffffff; /* Plain white background */
+   padding: 100px 5%;
+   text-align: center;
+}
+
+#certifications h2 {
+   font-size: 3rem;
+   font-weight: 800;
+   margin-bottom: 50px;
+   color: #333333;
+}
+
+.certification-card {
+   background-color: #f2f2f2; /* Light gray background */
+   border-radius: 25px;
+   padding: 40px;
+   margin: 25px;
+   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   width: 700px;
+   text-align: left;
+   max-width: 100%;
+   border: 2px solid transparent;
+   background-clip: padding-box;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.certification-card h3 {
+   font-size: 2rem;
+   color: #333333;
+}
+
+.certification-card p {
+   font-size: 1.1rem;
+   margin-top: 15px;
+   color: #555555;
+}
+
+.certification-card:hover {
+   transform: scale(1.05);
+   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+   .project-card,
+   .certification-card {
+      width: 100%;
+      padding: 20px;
+   }
+
+   .project-card h3,
+   .certification-card h3 {
+      font-size: 1.8rem;
+   }
+
+   .project-card p,
+   .certification-card p {
+      font-size: 1rem;
+   }
+
+   .project-card .tools,
+   .certification-card .tools {
+      font-size: 1rem;
+   }
+}
+
 /* Contact Section */
 #contact {
    background: linear-gradient(to top left, #0d3b58, #1a2530); /* Dark oceanic blue to deep gray gradient */
-   padding: 100px 5%;
+   padding: 50px 5%; /* Adjusted padding for better spacing */
    text-align: center;
+   display: flex; /* Flexbox to align items */
+   flex-direction: column; /* Stack items vertically */
+   justify-content: flex-start; /* Align content to the top */
+   align-items: center; /* Center elements horizontally */
+   min-height: 65vh; /* Ensure the section fills the screen */
 }
 
 #contact h2 {
@@ -316,6 +390,16 @@ nav .logo h1 {
    font-weight: 800;
    margin-bottom: 40px;
    color: #ffffff;
+   margin-top: 0; /* Ensure the title stays at the top */
+}
+
+#contact form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   max-width: 600px; /* Limit the width to prevent form from stretching too wide */
+   margin-bottom: 20px; /* Add space between the form and the button */
 }
 
 #contact form input,
@@ -339,7 +423,7 @@ nav .logo h1 {
 }
 
 #contact button {
-   background: #ffffff; /* Oceanic blue to dark gray gradient */
+   background: #ffffff; /* White button with blue text */
    padding: 20px 40px;
    border: none;
    border-radius: 25px;
@@ -347,15 +431,24 @@ nav .logo h1 {
    cursor: pointer;
    transition: all 0.3s ease;
    font-size: 1.2rem;
+   color: #004d66; /* Oceanic blue text */
+   margin-top: 20px; /* Add some space above the button */
 }
 
 #contact button:hover {
-   background: #a5a5a5;
+   background: #a5a5a5; /* Slight gray hover effect */
    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+
 /* Keyframe Animations */
 @keyframes fadeIn {
-   0% { opacity: 0; }
-   100% { opacity: 1; }
+   0% {
+      opacity: 0;
+      transform: translateY(20px); /* Start from below */
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0); /* End at original position */
+   }
 }
