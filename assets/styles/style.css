@@ -62,7 +62,7 @@ nav .logo h1 {
 
 .nav-links li a:hover {
    color: #d3d3d3; /* Light gray on hover */
-   text-shadow: 0 0 5px #fff;
+   text-shadow: 0 0 1px #ffffff;
 }
 
 /* Hero Section */
