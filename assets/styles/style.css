@@ -121,6 +121,14 @@ nav .logo h1 {
    margin-right: auto;
 }
 
+#about img {
+   width: 150px; /* Adjust width */
+   height: auto; /* Maintain aspect ratio */
+   border-radius: 50%; /* Circular appearance */
+   margin-top: 20px;
+   margin-bottom: 30px;
+}
+
 /* Projects Section */
 #projects {
    background: linear-gradient(135deg, #0d3b58, #1a2530); /* Dark oceanic blue to deep gray gradient */
