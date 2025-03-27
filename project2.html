@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Project 2 - Detailed View</title>
+    <title>Certifications - Cameron Watts</title>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -14,6 +14,99 @@
 
     <!-- Link to External CSS -->
     <link rel="stylesheet" href="assets/styles/style.css">
+
+    <style>
+        /* Adding custom styles for proper layout */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #f4f4f9;
+        }
+
+        nav .logo h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .nav-links li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .certificates-container {
+            text-align: center;
+            margin: 40px;
+            padding-top: 100px; /* Added top padding to avoid header blocking */
+            flex-grow: 1;
+        }
+
+        h2 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+            color: white; /* Title text in white */
+        }
+
+        .certificate {
+            display: inline-block;
+            text-align: left;
+            margin-bottom: 30px;
+            padding: 30px;
+            border-radius: 15px;
+            background-color: #ffffff;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .certificate:hover {
+            transform: translateY(-10px);
+        }
+
+        .certificate h3 {
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .certificate p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Adding symbol styles */
+        h2 i {
+            margin-right: 10px;
+            color: white; /* Icon in white */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -27,33 +120,17 @@
         </nav>
     </header>
 
-    <section class="project-details">
-        <div class="project-container">
-            <div class="bubble">
-                <h2>Retail Performance & Trend Analysis</h2>
-                <p>This project involved analyzing Western US sales trends, creating an interactive dashboard with visualizations and drill-down insights to identify outliers and key trends.</p>
-            </div>
+    <section class="certificates">
+        <div class="certificates-container">
+            <h2><i class="fas fa-certificate"></i>Certifications</h2>
 
-            <div class="bubble">
-                <h3>Tools Used:</h3>
-                <ul>
-                    <li>Excel</li>
-                    <li>Tableau</li>
-                </ul>
-            </div>
-
-            <div class="bubble">
-                <h3>Project Overview:</h3>
-                <p>During this project, I leveraged Excel for data cleaning and analysis, and Tableau to create interactive dashboards that allowed for in-depth analysis of sales performance across regions. The key objective was to identify outliers in the data and uncover trends that could inform business decisions.</p>
-            </div>
-
-            <div class="bubble">
-                <h3>Key Features:</h3>
-                <ul>
-                    <li>Interactive profit maps</li>
-                    <li>Drill-down functionality to explore specific regions</li>
-                    <li>Dynamic charts for data visualization</li>
-                </ul>
+            <div class="certificate">
+                <h3>Google Data Analytics</h3>
+                <p>
+                    The Google Data Analytics certification, earned through Coursera, taught me key data analysis skills such as data cleaning, data visualization, and problem-solving techniques using SQL and spreadsheets. 
+                    Throughout the course, I worked with real-world datasets and learned how to interpret data to inform business decisions. I also gained hands-on experience with tools like Excel, SQL, and Tableau, 
+                    while developing the ability to analyze and present data in a way that drives actionable insights for businesses.
+                </p>
             </div>
         </div>
     </section>
