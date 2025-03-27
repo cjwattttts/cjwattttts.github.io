@@ -465,54 +465,18 @@ nav .logo h1 {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-family: 'Helvetica Neue', Arial, sans-serif;
    scroll-behavior: smooth;
 }
 
 /* Body Styling */
 body {
-   background-color: #f1f1f1;
+   background: linear-gradient(to bottom right, #0d3b58, #1a2530); /* Dark oceanic blue to deep gray gradient */
    color: #333333;
    font-size: 1rem;
    line-height: 1.8;
    overflow-x: hidden;
    min-height: 100vh;
    transition: background-color 0.3s ease;
-}
-
-/* Header Styling */
-header {
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 100%;
-   padding: 20px 10%;
-   z-index: 1000;
-}
-
-header h1 {
-   font-size: 2.5rem;
-   color: #ffffff;
-   font-weight: 700;
-   letter-spacing: 1px;
-   text-transform: uppercase;
-}
-
-/* Navigation Links */
-header a {
-   color: #ffffff;
-   text-decoration: none;
-   font-size: 1.2rem;
-   font-weight: 600;
-   padding: 10px 20px;
-   border-radius: 30px;
-   transition: all 0.3s ease;
-}
-
-header a:hover {
-   background-color: rgba(255, 255, 255, 0.1);
-   color: #d3d3d3;
-   transform: translateX(10px);
 }
 
 /* Project Details Section */
@@ -607,14 +571,6 @@ header a:hover {
 }
 
 /* Footer */
-footer {
-   padding: 40px 10%;
-   background-color: #333333;
-   color: #ffffff;
-   text-align: center;
-   font-size: 1rem;
-   margin-top: 100px;
-}
 
 footer p {
    font-weight: 600;
@@ -644,4 +600,20 @@ footer p {
    footer {
        padding: 30px 5%;
    }
+}
+
+/* Footer Styling */
+footer {
+   background-color: #555555; /* Gray background */
+   color: #ffffff; /* White text */
+   text-align: center;
+   padding: 20px;
+   position: relative;
+   bottom: 0;
+   width: 100%;
+}
+
+footer p {
+   margin: 0;
+   font-size: 1rem;
 }
