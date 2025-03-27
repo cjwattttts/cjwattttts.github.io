@@ -624,3 +624,22 @@ footer p {
 
 /* Certificate styling */
 
+.bubble {
+   background: #f7f7f7; /* Use the same light gray background as throughout the design */
+   padding: 15px;
+   border-radius: 15px;
+   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+   color: #333333;
+   width: 100%;
+   max-width: 800px;
+   text-align: left;
+   transition: all 0.3s ease;
+   position: relative;
+   overflow: hidden;
+}
+
+.bubble:hover {
+   transform: translateY(-10px);
+   opacity: 0.9;
+   background: #f7f7f7; /* Ensure the background color remains the same during hover */
+}
