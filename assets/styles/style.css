@@ -14,7 +14,7 @@ a, p, h1, h2, h3, li {
 
 /* Body Styling */
 body {
-   background-color: #f7f7f7; /* Light beige background */
+   background-color: #5d5d5d; /* Light beige background */
    color: #222222; /* Dark text for contrast */
    line-height: 1.6;
    font-size: 1rem;
@@ -623,23 +623,3 @@ footer p {
 }
 
 /* Certificate styling */
-
-.bubble {
-   background: #f7f7f7; /* Use the same light gray background as throughout the design */
-   padding: 15px;
-   border-radius: 15px;
-   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-   color: #333333;
-   width: 100%;
-   max-width: 800px;
-   text-align: left;
-   transition: all 0.3s ease;
-   position: relative;
-   overflow: hidden;
-}
-
-.bubble:hover {
-   transform: translateY(-10px);
-   opacity: 0.9;
-   background: #f7f7f7; /* Ensure the background color remains the same during hover */
-}
