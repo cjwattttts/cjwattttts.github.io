@@ -112,8 +112,6 @@
         <p>&copy; 2025 Cameron Watts. All Rights Reserved.</p>
     </footer>
 
-    <script src="assets/scripts/slider.js"></script>
-
     <script>
         // Prevent scrolling past the top and bottom of the page
         window.addEventListener('wheel', function(event) {
@@ -123,6 +121,14 @@
             }
             // Prevent scrolling down when already at the bottom of the page
             if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight && event.deltaY > 0) {
+                event.preventDefault();
+            }
+        });
+
+        // Disable page scroll via keyboard arrow keys and spacebar
+        window.addEventListener('keydown', function(event) {
+            if ((event.key === 'ArrowUp' || event.key === 'ArrowDown' || event.key === ' ' || event.key === 'PageUp' || event.key === 'PageDown') && 
+                (window.scrollY <= 0 || (window.innerHeight + window.scrollY) >= document.body.scrollHeight)) {
                 event.preventDefault();
             }
         });
