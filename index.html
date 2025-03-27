@@ -113,5 +113,19 @@
     </footer>
 
     <script src="assets/scripts/slider.js"></script>
+
+    <script>
+        // Prevent scrolling past the top and bottom of the page
+        window.addEventListener('wheel', function(event) {
+            // Prevent scrolling up when already at the top of the page
+            if (window.scrollY <= 0 && event.deltaY < 0) {
+                event.preventDefault();
+            }
+            // Prevent scrolling down when already at the bottom of the page
+            if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight && event.deltaY > 0) {
+                event.preventDefault();
+            }
+        });
+    </script>
 </body>
 </html>
