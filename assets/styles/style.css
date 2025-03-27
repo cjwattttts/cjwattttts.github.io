@@ -14,12 +14,14 @@ a, p, h1, h2, h3, li {
 
 /* Body Styling */
 body {
-   background-color: #5d5d5d; /* Light beige background */
-   color: #222222; /* Dark text for contrast */
-   line-height: 1.6;
+   background: linear-gradient(to bottom right, #0d3b58, #1a2530); /* Dark oceanic blue to deep gray gradient */
+   color: #333333;
    font-size: 1rem;
+   line-height: 1.8;
    overflow-x: hidden;
-   min-height: 100vh;
+   min-height: 100vh; /* Ensure body covers the full viewport height */
+   background-attachment: fixed; /* Keep the background fixed while scrolling */
+   transition: background-color 0.3s ease;
 }
 
 /* Header Styling */
