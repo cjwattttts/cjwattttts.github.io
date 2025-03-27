@@ -410,14 +410,17 @@ nav .logo h1 {
 #contact form input,
 #contact form textarea {
    width: 100%;
+   max-width: 700px; /* Increased width for wider bubbles */
    padding: 20px;
-   margin: 15px 0;
+   margin: 10px auto; /* Centers the elements */
    border-radius: 25px;
    border: 2px solid #0d3b58; /* Oceanic blue border */
    background-color: #ffffff;
    color: #333333;
    font-size: 1.1rem;
    transition: all 0.3s ease;
+   display: block; /* Ensures full width respects centering */
+   text-align: center; /* Optional: Centers text inside inputs */
 }
 
 #contact form input:focus,
