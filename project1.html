@@ -108,6 +108,31 @@
             color: white; /* Icon in white */
         }
 
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            font-size: 1.1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+            text-transform: uppercase; /* Ensures text is always in all caps */
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+
+        .button-container {
+            position: fixed;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            z-index: 10;
+        }
+
     </style>
 </head>
 <body>
@@ -124,16 +149,34 @@
 
     <section class="certificates">
         <div class="certificates-container">
-            <h2><i class="fas fa-chart-line"></i>Retail Performance & Trend Analysis</h2>
+            <h2><i class="fas fa-chart-line"></i>Western US Sales Trend Dashboard</h2>
 
             <div class="certificate">
                 <h3>Western US Sales Trend Dashboard</h3>
                 <p>
-                    In this project, I analyzed retail sales trends in the Western US, focusing on identifying key outliers and trends that could inform business decisions. Using Excel and Tableau, 
-                    I created an interactive dashboard that allowed users to drill down into specific regions and sales categories, visualizing performance data in a dynamic way. 
-                    The dashboard provided insights into regional variations, seasonal fluctuations, and outlier performances, ultimately helping stakeholders identify areas for improvement and growth.
+                    In this project, I explored a large dataset and created visuals to uncover trends and insights. I began by developing bar graphs to show profit levels for various products across regions in 2022 and 2023. Next, I created a tree map for each item and category, where the size of each block represented sales volume, with the largest product, Lagan, generating $195,034,677 in sales. The project also includes interactive filters for users to customize data by year, category, and item. A detailed chart visualizes sales amounts for items in the West region, while a profit map shows state-level profits in the Western US using color gradients, red for high profits and blue for low. A key feature is the interactive dashboard, allowing users to drill down into data for specific items in the West and view state-level performance. Users can click on a state to see more detailed product data. To conclude, I crafted a compelling story to communicate the insights, guiding viewers through a drill-down into California’s sales data with visuals and text boxes for clarity.
                 </p>
-                <p><strong>Tools Used:</strong> Excel, Tableau</p>
+            
+                <p>&nbsp;</p>
+
+                <p><strong>Tools Used:</strong> Tableau, Excel</p>
+            
+                <p>&nbsp;</p> <!-- Added space between tools and formulas sections -->
+            
+                <p><strong>Formulas, Skills, and Techniques Used:</strong> Bar Graphs, Tree Map, Color Mark, Horizontal Bar Graph, Profit Map, Label Mark, Detail Mark, Interactive Filters, Dashboard, Story, Story Text Boxes</p>
+            
+                <!-- Add images here -->
+                <div class="certificate-images">
+                    <img src="images/tab2dashboard.png" alt="Tab2 Dashboard" style="width: 100%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-top: 20px;">
+                    <img src="images/tab2story.png" alt="Tab2 Story" style="width: 100%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-top: 20px;">
+                </div>
+                <!-- Add this below the images in the project section -->
+<div>
+    <div>
+        <div>
+    <a href="index.html" class="button">Back to Home Page</a>
+</div>
+
             </div>
         </div>
     </section>
@@ -141,5 +184,3 @@
     <footer>
         <p>&copy; 2025 Cameron Watts. All Rights Reserved.</p>
     </footer>
-</body>
-</html>

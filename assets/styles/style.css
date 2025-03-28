@@ -657,3 +657,35 @@ html {
       font-size: 1.5rem; /* Increase the font size for readability */
    }
 }
+
+/* Container for the button */
+.button-container {
+   position: fixed;
+   bottom: 20px; /* Position the button at the bottom */
+   left: 50%; /* Center the container horizontally */
+   transform: translateX(-50%); /* Adjust for perfect centering */
+   z-index: 10; /* Ensure the button stays above other content */
+   display: flex; /* Use flexbox for easier alignment */
+   justify-content: center; /* Center the button horizontally inside the container */
+   width: 100%; /* Make sure the container takes up full width */
+ }
+ 
+ /* Style for the button itself */
+ .button {
+   padding: 10px 20px;
+   background-color: white; /* White background */
+   color: gray; /* Gray text */
+   font-size: 1.1rem;
+   text-decoration: none;
+   border-radius: 50px; /* Rounded edges */
+   border: 1px solid gray; /* Border color */
+   transition: background-color 0.3s, color 0.3s;
+   text-align: center; /* Center the text inside the button */
+ }
+ 
+ /* Hover effects */
+ .button:hover {
+   background-color: #f4f4f4; /* Lighter background on hover */
+   color: #333; /* Darker text on hover */
+ }
+ 
