@@ -19,30 +19,6 @@
         textarea {
             resize: none;
         }
-
-        /* Basic styling for hamburger */
-        .hamburger {
-            font-size: 30px;
-            cursor: pointer;
-        }
-
-        /* Hide the nav links by default */
-        .nav-links {
-            display: none;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        /* Show the nav links when the 'active' class is added */
-        .nav-links.active {
-            display: block;
-        }
-
-        /* Show the hamburger as a cross when active */
-        .hamburger.active {
-            transform: rotate(90deg);
-        }
     </style>
 </head>
 <body>
@@ -52,7 +28,7 @@
                 <h1>Cameron Watts</h1> <!-- Only your name showing on mobile -->
             </div>
             <!-- Hamburger Icon for Mobile -->
-            <div class="hamburger">&#9776;</div>
+            <div class="hamburger" onclick="toggleNav()">&#9776;</div>
             <ul class="nav-links">
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#projects">PROJECTS</a></li>
@@ -166,16 +142,6 @@
             var navLinks = document.querySelector('.nav-links');
             navLinks.classList.toggle('active');
         }
-
-        // Close the menu when a navigation item is clicked
-        const navLinks = document.querySelector('.nav-links');
-        const navItems = document.querySelectorAll('.nav-links li');
-
-        navItems.forEach(item => {
-            item.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-            });
-        });
     </script>
 </body>
 </html>

@@ -18,12 +18,3 @@ navItems.forEach(item => {
         navLinks.classList.remove('active');
     });
 });
-
-// Close the menu if clicked outside the navigation menu (optional feature)
-document.addEventListener('click', (event) => {
-    // Check if the clicked element is not the hamburger or navLinks
-    if (!navLinks.contains(event.target) && !hamburger.contains(event.target)) {
-        hamburger.classList.remove('active');
-        navLinks.classList.remove('active');
-    }
-});

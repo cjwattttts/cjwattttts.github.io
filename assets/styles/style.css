@@ -25,13 +25,6 @@ body {
 }
 
 /* 🔝 HEADER STYLING */
-nav .logo h1 {
-   font-size: 1rem; /* smaller font size for the logo */
-   color: #ffffff; /* sets logo text color to white */
-   letter-spacing: 1px; /* adds spacing between letters */
-   font-weight: 800; /* makes text bold */
-   text-transform: uppercase; /* capitalizes all letters */
-}
 
 header {
    position: fixed; /* keeps header at the top while scrolling */
