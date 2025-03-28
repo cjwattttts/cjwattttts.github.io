@@ -1,189 +1,506 @@
-/* Global Resets */
+/* 🌍 GLOBAL RESETS */
 * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* Apple-style fonts */
-   scroll-behavior: smooth;
+   margin: 0; /* removes default margin from all elements */
+   padding: 0; /* removes default padding from all elements */
+   box-sizing: border-box; /* ensures padding and border are included in element size */
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* sets a clean, modern font */
+   scroll-behavior: smooth; /* enables smooth scrolling */
 }
 
-/* Global rule for text hover */
+/* 🖱️ TEXT HOVER EFFECTS */
 a, p, h1, h2, h3, li {
-   cursor: pointer;
+   cursor: pointer; /* makes text elements appear clickable */
 }
 
-/* Body Styling */
+/* 🎨 BODY STYLING */
 body {
-   background: linear-gradient(to bottom right, #0d3b58, #1a2530); /* Dark oceanic blue to deep gray gradient */
-   color: #333333;
-   font-size: 1rem;
-   line-height: 1.8;
-   overflow-x: hidden;
-   min-height: 100vh; /* Ensure body covers the full viewport height */
-   background-attachment: fixed; /* Keep the background fixed while scrolling */
-   transition: background-color 0.3s ease;
+   background: linear-gradient(to bottom right, #0d3b58, #1a2530); /* applies a dark blue-gray gradient */
+   color: #333333; /* sets default text color */
+   font-size: 1rem; /* sets base font size */
+   line-height: 1.8; /* improves text readability */
+   overflow-x: hidden; /* prevents horizontal scrolling */
+   min-height: 100vh; /* ensures body covers the full viewport height */
+   background-attachment: fixed; /* keeps background fixed while scrolling */
+   transition: background-color 0.3s ease; /* smooth transition for background color changes */
 }
 
-/* Header Styling */
+/* 🔝 HEADER STYLING */
 header {
-   position: fixed;
-   top: 0;
-   width: 100%;
-   background-color: rgba(0, 0, 0, 0.7); /* Transparent background */
-   padding: 15px 10%;
-   z-index: 1000;
-   backdrop-filter: blur(10px); /* Glassmorphism effect */
+   position: fixed; /* keeps header at the top while scrolling */
+   top: 0; /* positions header at the very top */
+   width: 100%; /* spans the full width of the screen */
+   background-color: rgba(0, 0, 0, 0.7); /* applies a transparent black background */
+   padding: 15px 10%; /* adds space inside the header */
+   z-index: 1000; /* ensures header stays on top of other elements */
+   backdrop-filter: blur(10px); /* creates a glassmorphism effect */
 }
 
+/* 📌 NAVIGATION BAR */
 nav {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+   display: flex; /* makes navigation a flex container */
+   justify-content: space-between; /* spaces out nav elements */
+   align-items: center; /* aligns nav items vertically */
 }
 
 nav .logo h1 {
-   font-size: 2rem;
-   color: #ffffff;
-   letter-spacing: 1px;
-   font-weight: 800;
-   text-transform: uppercase;
+   font-size: 2rem; /* makes the logo text larger */
+   color: #ffffff; /* sets logo text color to white */
+   letter-spacing: 1px; /* adds spacing between letters */
+   font-weight: 800; /* makes text bold */
+   text-transform: uppercase; /* capitalizes all letters */
 }
 
+/* 🔗 NAVIGATION LINKS */
 .nav-links {
-   display: flex;
-   list-style: none;
+   display: flex; /* arranges links in a row */
+   list-style: none; /* removes default list styling */
 }
 
 .nav-links li {
-   margin-left: 35px;
+   margin-left: 35px; /* adds spacing between nav items */
 }
 
 .nav-links li a {
-   color: #ffffff;
-   font-weight: 600;
-   text-decoration: none;
-   font-size: 1rem;
-   letter-spacing: 1px;
-   transition: all 0.3s ease;
+   color: #ffffff; /* makes link text white */
+   font-weight: 600; /* makes text slightly bold */
+   text-decoration: none; /* removes default underline */
+   font-size: 1rem; /* sets link text size */
+   letter-spacing: 1px; /* adds spacing between letters */
+   transition: all 0.3s ease; /* adds a smooth transition effect */
 }
 
 .nav-links li a:hover {
-   color: #d3d3d3; /* Light gray on hover */
-   text-shadow: 0 0 1px #ffffff;
+   color: #d3d3d3; /* changes text color on hover */
+   text-shadow: 0 0 1px #ffffff; /* adds a glow effect */
 }
 
-/* Hero Section */
+/* 🦸 HERO SECTION */
 .hero {
-   height: 100vh;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background: linear-gradient(to bottom right, #0d3b58, #1a2530); /* Dark oceanic blue to deep gray gradient */
-   padding: 100px 15%; /* Added padding at the top to move content down */
-   text-align: center;
-   position: relative;
-   overflow: hidden;
+   height: 100vh; /* makes section take up full viewport height */
+   display: flex; /* enables flexbox layout */
+   justify-content: center; /* centers content horizontally */
+   align-items: center; /* centers content vertically */
+   background: linear-gradient(to bottom right, #0d3b58, #1a2530); /* applies a gradient background */
+   padding: 100px 15%; /* adds padding to push content down */
+   text-align: center; /* centers text */
+   position: relative; /* ensures relative positioning */
+   overflow: hidden; /* hides overflowing content */
 }
 
 .hero h2 {
-   font-size: 4rem;
-   font-weight: 800;
-   color: #ffffff;
-   text-transform: uppercase;
-   letter-spacing: 2px;
-   z-index: 2;
-   animation: fadeIn 2s ease-out;
-   margin-top: 50px; /* Moves the welcome text further down */
+   font-size: 4rem; /* makes heading larger */
+   font-weight: 800; /* makes text bold */
+   color: #ffffff; /* sets text color to white */
+   text-transform: uppercase; /* capitalizes all letters */
+   letter-spacing: 2px; /* adds spacing between letters */
+   z-index: 2; /* ensures text appears above background elements */
+   animation: fadeIn 2s ease-out; /* applies a fade-in effect */
+   margin-top: 50px; /* moves text further down */
 }
 
 .hero p {
-   font-size: 1.2rem;
-   color: #ffffff;
-   margin-top: 20px;
-   z-index: 2;
-   letter-spacing: 1px;
-   max-width: 600px;
-   margin-left: auto;
-   margin-right: auto;
+   font-size: 1.2rem; /* sets paragraph font size */
+   color: #ffffff; /* makes text white */
+   margin-top: 20px; /* adds spacing below heading */
+   z-index: 2; /* ensures paragraph is above background elements */
+   letter-spacing: 1px; /* adds spacing between letters */
+   max-width: 600px; /* limits paragraph width */
+   margin-left: auto; /* centers paragraph */
+   margin-right: auto; /* centers paragraph */
 }
 
-/* About Me Section */
+/* 🏆 ABOUT ME SECTION */
 #about {
-   background-color: #ffffff; /* Plain white background */
-   color: #333333;
-   padding: 60px 5%;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
-   position: relative;
-   z-index: 1;
+   background-color: #ffffff; /* sets background to white */
+   color: #333333; /* makes text dark */
+   padding: 60px 5%; /* adds padding around content */
+   display: flex; /* enables flexbox layout */
+   flex-direction: column; /* stacks elements vertically */
+   align-items: center; /* centers content horizontally */
+   justify-content: center; /* centers content vertically */
+   text-align: center; /* centers text */
+   position: relative; /* ensures relative positioning */
+   z-index: 1; /* ensures section is above background */
 }
 
 #about h2 {
-   font-size: 3rem;
-   font-weight: 800;
-   margin-bottom: 10px;
+   font-size: 3rem; /* makes heading larger */
+   font-weight: 800; /* makes text bold */
+   margin-bottom: 10px; /* adds spacing below heading */
 }
 
 #about p {
-   font-size: 1.2rem;
-   line-height: 1.8;
-   max-width: 600px;
-   margin-left: auto;
-   margin-right: auto;
+   font-size: 1.2rem; /* sets paragraph font size */
+   line-height: 1.8; /* increases spacing between lines */
+   max-width: 600px; /* limits paragraph width */
+   margin-left: auto; /* centers paragraph */
+   margin-right: auto; /* centers paragraph */
 }
 
-/* About Me Content (Image + Text) */
+/* 📸 ABOUT ME IMAGE + TEXT */
 #about .content {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-top: 40px;
-   width: 100%;
+   display: flex; /* enables flexbox layout */
+   justify-content: center; /* centers content horizontally */
+   align-items: center; /* aligns content vertically */
+   margin-top: 40px; /* adds space above content */
+   width: 100%; /* ensures full width */
 }
 
 #about img {
-   width: 300px; /* Larger photo size */
-   height: 300px; /* Same height as width for square aspect */
-   border-radius: 25px; /* Rounded corners */
-   margin-right: 40px; /* Space between image and text */
+   width: 300px; /* sets image width */
+   height: 300px; /* ensures square aspect ratio */
+   border-radius: 25px; /* rounds image corners */
+   margin-right: 40px; /* adds spacing between image and text */
 }
 
 #about .text {
-   max-width: 1500px;
-   text-align: left;
+   max-width: 1500px; /* sets maximum width for text */
+   text-align: left; /* aligns text to the left */
 }
 
-/* Projects Section */
+/* 🎯 PROJECTS SECTION */
 #projects {
-   background: linear-gradient(135deg, #0d3b58, #1a2530); /* Dark oceanic blue to deep gray gradient */
-   padding: 40px 10%;
-   text-align: center;
+   background: linear-gradient(135deg, #0d3b58, #1a2530); /* applies a dark gradient background */
+   padding: 40px 10%; /* adds padding around content */
+   text-align: center; /* centers text */
 }
 
 #projects h2 {
-   font-size: 3rem;
-   font-weight: 800;
-   margin-bottom: 50px;
-   color: #ffffff;
+   font-size: 3rem; /* makes heading larger */
+   font-weight: 800; /* makes text bold */
+   margin-bottom: 50px; /* adds spacing below heading */
+   color: #ffffff; /* makes text white */
 }
 
 .project-card {
-   background-color: #5d5d5d;
-   border-radius: 25px;
-   padding: 40px;
-   margin: 25px;
-   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
-   transition: transform 0.3s ease, box-shadow 0.3s ease;
-   width: 700px;
-   text-align: left;
-   max-width: 100%;
-   border: 2px solid transparent;
-   background-clip: padding-box;
-   margin-left: auto;
-   margin-right: auto;
+   background-color: #5d5d5d; /* sets card background color */
+   border-radius: 25px; /* rounds card corners */
+   padding: 40px; /* adds space inside the card */
+   margin: 25px; /* adds spacing between cards */
+   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* adds shadow effect */
+   transition: transform 0.3s ease, box-shadow 0.3s ease; /* adds smooth hover effect */
+   width: 700px; /* sets card width */
+   text-align: left; /* aligns text to the left */
+   max-width: 100%; /* ensures responsiveness */
+   border: 2px solid transparent; /* ensures border is initially invisible */
+   background-clip: padding-box; /* prevents border color from affecting padding */
+   margin-left: auto; /* centers card */
+   margin-right: auto; /* centers card */
+}
+/* Project Card Hover Effect */
+.project-card:hover {
+   transform: scale(1.08); /* Increases the size on hover */
+   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5); /* Adds a shadow to the card */
+   border-color: #5d5d5d; /* Lighter blue highlight on hover */
+}
+
+/* Project Card Heading */
+.project-card h3 {
+   font-size: 2rem; /* Sets the font size */
+   color: #ffffff; /* White color for the heading */
+}
+
+/* Project Card Paragraph */
+.project-card p {
+   font-size: 1.1rem; /* Sets the font size */
+   margin-top: 15px; /* Adds space between the heading and the text */
+   color: #cccccc; /* Light gray color for the paragraph */
+}
+
+/* Project Card Tools Section */
+.project-card .tools {
+   margin-top: 20px; /* Adds space between the text and tools */
+   font-size: 1.1rem; /* Sets the font size */
+   color: #004d66; /* Lighter blue accent color */
+}
+
+/* Project Card Tools Item */
+.project-card .tools span {
+   display: inline-block; /* Displays tools inline */
+   margin-right: 20px; /* Adds space between each tool */
+}
+
+/* 🧳 BUTTON CONTAINER STYLING */
+.project-card .button-container {
+   display: flex; /* makes the container a flexbox */
+   justify-content: center; /* centers the buttons horizontally */
+   margin-top: 20px; /* adds space above the buttons */
+}
+
+/* 🎨 BUTTON STYLING */
+.project-card .button-container button {
+   background-color: #0078a0; /* sets the button's background to blue */
+   color: #ffffff; /* makes the text white */
+   padding: 12px 25px; /* adds padding inside the button */
+   border: none; /* removes button border */
+   border-radius: 5px; /* rounds the corners of the button */
+   cursor: pointer; /* changes cursor to pointer when hovered */
+   font-size: 1rem; /* sets the font size */
+   margin: 5px; /* adds margin around the button */
+   transition: background-color 0.3s ease; /* smooth transition for background color */
+}
+
+/* 🖱️ BUTTON HOVER EFFECT */
+.project-card .button-container button:hover {
+   background-color: #004d66; /* darker blue when button is hovered */
+}
+
+/* 📱 MEDIA QUERIES FOR SMALL SCREENS */
+@media (max-width: 768px) {
+   .project-card {
+      width: 100%; /* makes project card full width */
+      padding: 20px; /* adds padding inside the card */
+   }
+
+   .project-card h3 {
+      font-size: 1.8rem; /* adjusts the font size for h3 */
+   }
+
+   .project-card p {
+      font-size: 1rem; /* adjusts the font size for p */
+   }
+
+   .project-card .tools {
+      font-size: 1rem; /* adjusts the font size for tools */
+   }
+
+   .project-card .button-container {
+      flex-direction: column; /* stacks buttons vertically on small screens */
+   }
+
+   .project-card .button-container button {
+      margin: 10px 0; /* adds margin between buttons */
+   }
+
+   #about .content {
+      flex-direction: column; /* stacks content vertically */
+      align-items: center; /* centers content */
+   }
+
+   #about img {
+      margin-right: 0; /* removes right margin */
+      margin-bottom: 20px; /* adds space between image and text */
+   }
+}
+
+/* 🎯 SKILLS SECTION */
+#skills {
+   background-color: #ffffff; /* sets background to white */
+   padding: 40px 5%; /* adds padding around the section */
+   text-align: center; /* centers text inside the section */
+}
+
+#skills h2 {
+   font-size: 3rem; /* sets font size for h2 */
+   font-weight: 800; /* makes the font bold */
+   margin-bottom: 40px; /* adds margin below the header */
+   color: #333333; /* sets text color */
+}
+
+#skills ul {
+   list-style: none; /* removes bullet points */
+   display: flex; /* makes it a flex container */
+   flex-wrap: wrap; /* wraps items to the next line */
+   justify-content: center; /* centers the items */
+}
+
+#skills ul li {
+   font-size: 1.2rem; /* sets font size for list items */
+   margin: 15px; /* adds margin between items */
+   padding: 12px 30px; /* adds padding inside list items */
+   border-radius: 50px; /* makes the items round */
+   background-color: #1a485a; /* sets a blue background */
+   color: #ffffff; /* sets text color to white */
+   border: 2px solid #ffffff; /* adds a white border */
+   transition: all 0.3s ease; /* smooth transition effect */
+}
+
+#skills ul li:hover {
+   background-color: #5d5d5d; /* changes background on hover */
+   color: #ffffff; /* keeps text white on hover */
+   transform: scale(1.1); /* enlarges the item on hover */
+}
+
+/* 🏆 CERTIFICATIONS SECTION */
+#certifications {
+   background-color: #ffffff; /* sets background to white */
+   padding: 40px 5%; /* adds padding around the section */
+   text-align: center; /* centers the text inside */
+}
+
+#certifications h2 {
+   font-size: 3rem; /* sets font size for h2 */
+   font-weight: 800; /* makes the font bold */
+   margin-bottom: 50px; /* adds margin below the header */
+   color: #333333; /* sets text color */
+}
+
+.certification-card {
+   background-color: #5d5d5d; /* sets light gray background */
+   border-radius: 25px; /* rounds the corners */
+   padding: 40px; /* adds padding inside the card */
+   margin: 25px; /* adds margin around the card */
+   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* adds shadow effect */
+   transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth transition */
+   width: 700px; /* sets a fixed width */
+   text-align: left; /* aligns text to the left */
+   max-width: 100%; /* ensures it doesn’t overflow */
+   border: 2px solid transparent; /* adds transparent border */
+   background-clip: padding-box; /* clips background to padding */
+   margin-left: auto; /* centers card horizontally */
+   margin-right: auto; /* centers card horizontally */
+}
+
+.certification-card h3 {
+   font-size: 2rem; /* sets font size for h3 */
+   color: #ffffff; /* sets text color to white */
+}
+
+.certification-card p {
+   font-size: 1.1rem; /* adjusts font size for p */
+   margin-top: 15px; /* adds margin above the paragraph */
+   color: #cccccc; /* light gray text */
+}
+
+.certification-card:hover {
+   transform: scale(1.05); /* enlarges the card on hover */
+   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2); /* increases shadow on hover */
+}
+
+/* 📱 MEDIA QUERIES FOR SMALL SCREENS */
+@media (max-width: 768px) {
+   .project-card,
+   .certification-card {
+      width: 100%; /* makes cards full width */
+      padding: 20px; /* adds padding inside the cards */
+   }
+
+   .project-card h3,
+   .certification-card h3 {
+      font-size: 1.8rem; /* adjusts font size for h3 */
+   }
+
+   .project-card p,
+   .certification-card p {
+      font-size: 1rem; /* adjusts font size for p */
+   }
+
+   .project-card .tools,
+   .certification-card .tools {
+      font-size: 1rem; /* adjusts font size for tools */
+   }
+}
+
+/* 📞 CONTACT SECTION */
+#contact {
+   background: linear-gradient(to top left, #0d3b58, #1a2530); /* gradient background */
+   padding: 50px 5%; /* adds padding */
+   text-align: center; /* centers text */
+   display: flex; /* uses flexbox for layout */
+   flex-direction: column; /* stacks items vertically */
+   justify-content: flex-start; /* aligns content at the top */
+   align-items: center; /* centers content horizontally */
+   min-height: 65vh; /* ensures the section fills at least 65% of the screen */
+}
+
+#contact h2 {
+   font-size: 3rem; /* sets font size for h2 */
+   font-weight: 800; /* makes the font bold */
+   margin-bottom: 40px; /* adds space below the title */
+   color: #ffffff; /* sets text color to white */
+   margin-top: 0; /* removes top margin */
+}
+
+#contact form {
+   display: flex; /* uses flexbox for form layout */
+   flex-direction: column; /* stacks form elements vertically */
+   align-items: center; /* centers form elements horizontally */
+   width: 100%; /* makes form full width */
+   max-width: 600px; /* limits form width */
+   margin-bottom: 20px; /* adds space below the form */
+}
+
+#contact form input,
+#contact form textarea {
+   width: 100%; /* makes inputs and textareas full width */
+   max-width: 700px; /* limits width of inputs */
+   padding: 20px; /* adds padding inside */
+   margin: 10px auto; /* centers elements with margin */
+   border-radius: 25px; /* rounds the corners */
+   border: 2px solid #0d3b58; /* oceanic blue border */
+   background-color: #ffffff; /* sets background to white */
+   color: #333333; /* sets text color */
+   font-size: 1.1rem; /* sets font size */
+   transition: all 0.3s ease; /* smooth transition for interactions */
+   display: block; /* ensures full width respects centering */
+   text-align: center; /* optional: centers text inside inputs */
+}
+
+#contact form input:focus,
+#contact form textarea:focus {
+   background-color: #f4f4f4; /* light background on focus */
+   outline: none; /* removes focus outline */
+   border-color: #004d66; /* highlights with lighter blue */
+}
+
+#contact button {
+   background: #ffffff; /* white background */
+   padding: 20px 40px; /* adds padding */
+   border: none; /* removes border */
+   border-radius: 25px; /* rounds the corners */
+   font-weight: 700; /* makes text bold */
+   cursor: pointer; /* pointer cursor on hover */
+   transition: all 0.3s ease; /* smooth transition */
+   font-size: 1.2rem; /* adjusts font size */
+   color: #004d66; /* oceanic blue text */
+   margin-top: 20px; /* adds space above the button */
+}
+
+#contact button:hover {
+   background: #d7d7d7; /* slight gray hover effect */
+   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* adds shadow on hover */
+}
+
+/* 🌀 KEYFRAME ANIMATIONS */
+@keyframes fadeIn {
+   0% {
+      opacity: 0; /* starts invisible */
+      transform: translateY(20px); /* starts below */
+   }
+   100% {
+      opacity: 1; /* becomes fully visible */
+      transform: translateY(0); /* ends at normal position */
+   }
+}
+
+/* 🎯 PROJECTS SECTION */
+#projects {
+   background: linear-gradient(135deg, #0d3b58, #1a2530); /* applies a dark gradient background */
+   padding: 40px 10%; /* adds padding around content */
+   text-align: center; /* centers text */
+}
+
+#projects h2 {
+   font-size: 3rem; /* makes heading larger */
+   font-weight: 800; /* makes text bold */
+   margin-bottom: 50px; /* adds spacing below heading */
+   color: #ffffff; /* makes text white */
+}
+
+.project-card {
+   background-color: #5d5d5d; /* sets card background color */
+   border-radius: 25px; /* rounds card corners */
+   padding: 40px; /* adds space inside the card */
+   margin: 25px; /* adds spacing between cards */
+   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* adds shadow effect */
+   transition: transform 0.3s ease, box-shadow 0.3s ease; /* adds smooth hover effect */
+   width: 700px; /* sets card width */
+   text-align: left; /* aligns text to the left */
+   max-width: 100%; /* ensures responsiveness */
+   border: 2px solid transparent; /* ensures border is initially invisible */
+   background-clip: padding-box; /* prevents border color from affecting padding */
+   margin-left: auto; /* centers card */
+   margin-right: auto; /* centers card */
 }
 
 .project-card:hover {
@@ -211,417 +528,50 @@ nav .logo h1 {
 
 .project-card .tools span {
    display: inline-block;
-   margin-right: 20px;
+   margin-right: 15px;
 }
 
-/* Centering Buttons */
-.project-card .button-container {
-   display: flex;
-   justify-content: center; /* Centers the buttons horizontally */
-   margin-top: 20px;
-}
-
-.project-card .button-container button {
-   background-color: #0078a0; /* Blue background */
-   color: #ffffff;
-   padding: 12px 25px;
-   border: none;
-   border-radius: 5px;
-   cursor: pointer;
-   font-size: 1rem;
-   margin: 5px;
-   transition: background-color 0.3s ease;
-}
-
-.project-card .button-container button:hover {
-   background-color: #004d66; /* Darker blue hover effect */
-}
-
-@media (max-width: 768px) {
-   .project-card {
-      width: 100%;
-      padding: 20px;
-   }
-
-   .project-card h3 {
-      font-size: 1.8rem;
-   }
-
-   .project-card p {
-      font-size: 1rem;
-   }
-
-   .project-card .tools {
-      font-size: 1rem;
-   }
-
-   .project-card .button-container {
-      flex-direction: column; /* Stack buttons vertically on small screens */
-   }
-
-   .project-card .button-container button {
-      margin: 10px 0;
-   }
-
-   #about .content {
-      flex-direction: column;
-      align-items: center;
-   }
-
-   #about img {
-      margin-right: 0;
-      margin-bottom: 20px; /* Adds space between the image and the text in mobile view */
-   }
-}
-
-/* Skills Section */
-#skills {
-   background-color: #ffffff; /* Plain white background */
-   padding: 40px 5%;
-   text-align: center;
-}
-
-#skills h2 {
-   font-size: 3rem;
-   font-weight: 800;
-   margin-bottom: 40px;
-   color: #333333;
-}
-
-#skills ul {
-   list-style: none;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-}
-
-#skills ul li {
-   font-size: 1.2rem;
-   margin: 15px;
-   padding: 12px 30px;
-   border-radius: 50px;
-   background-color: #1a485a; /* Blue background */
-   color: #ffffff;
-   border: 2px solid #ffffff; /* Darker blue border */
-   transition: all 0.3s ease;
-}
-
-#skills ul li:hover {
-   background-color: #5d5d5d; /* Darker blue on hover */
-   color: #ffffff;
-   transform: scale(1.1);
-}
-
-/* Certifications Section */
-#certifications {
-   background-color: #ffffff; /* Plain white background */
-   padding: 40px 5%;
-   text-align: center;
-}
-
-#certifications h2 {
-   font-size: 3rem;
-   font-weight: 800;
-   margin-bottom: 50px;
-   color: #333333;
-}
-
-.certification-card {
-   background-color: #5d5d5d; /* Light gray background */
-   border-radius: 25px;
-   padding: 40px;
-   margin: 25px;
-   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-   transition: transform 0.3s ease, box-shadow 0.3s ease;
-   width: 700px;
-   text-align: left;
-   max-width: 100%;
-   border: 2px solid transparent;
-   background-clip: padding-box;
-   margin-left: auto;
-   margin-right: auto;
-}
-
-.certification-card h3 {
-   font-size: 2rem;
-   color: #ffffff;
-}
-
-.certification-card p {
-   font-size: 1.1rem;
-   margin-top: 15px;
-   color: #cccccc;
-}
-
-.certification-card:hover {
-   transform: scale(1.05);
-   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
-}
-
-@media (max-width: 768px) {
-   .project-card,
-   .certification-card {
-      width: 100%;
-      padding: 20px;
-   }
-
-   .project-card h3,
-   .certification-card h3 {
-      font-size: 1.8rem;
-   }
-
-   .project-card p,
-   .certification-card p {
-      font-size: 1rem;
-   }
-
-   .project-card .tools,
-   .certification-card .tools {
-      font-size: 1rem;
-   }
-}
-
-/* Contact Section */
-#contact {
-   background: linear-gradient(to top left, #0d3b58, #1a2530); /* Dark oceanic blue to deep gray gradient */
-   padding: 50px 5%; /* Adjusted padding for better spacing */
-   text-align: center;
-   display: flex; /* Flexbox to align items */
-   flex-direction: column; /* Stack items vertically */
-   justify-content: flex-start; /* Align content to the top */
-   align-items: center; /* Center elements horizontally */
-   min-height: 65vh; /* Ensure the section fills the screen */
-}
-
-#contact h2 {
-   font-size: 3rem;
-   font-weight: 800;
-   margin-bottom: 40px;
-   color: #ffffff;
-   margin-top: 0; /* Ensure the title stays at the top */
-}
-
-#contact form {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   width: 100%;
-   max-width: 600px; /* Limit the width to prevent form from stretching too wide */
-   margin-bottom: 20px; /* Add space between the form and the button */
-}
-
-#contact form input,
-#contact form textarea {
-   width: 100%;
-   max-width: 700px; /* Increased width for wider bubbles */
-   padding: 20px;
-   margin: 10px auto; /* Centers the elements */
-   border-radius: 25px;
-   border: 2px solid #0d3b58; /* Oceanic blue border */
-   background-color: #ffffff;
-   color: #333333;
-   font-size: 1.1rem;
-   transition: all 0.3s ease;
-   display: block; /* Ensures full width respects centering */
-   text-align: center; /* Optional: Centers text inside inputs */
-}
-
-#contact form input:focus,
-#contact form textarea:focus {
-   background-color: #f4f4f4;
-   outline: none;
-   border-color: #004d66; /* Lighter blue highlight on focus */
-}
-
-#contact button {
-   background: #ffffff; /* White button with blue text */
-   padding: 20px 40px;
-   border: none;
-   border-radius: 25px;
-   font-weight: 700;
-   cursor: pointer;
-   transition: all 0.3s ease;
-   font-size: 1.2rem;
-   color: #004d66; /* Oceanic blue text */
-   margin-top: 20px; /* Add some space above the button */
-}
-
-#contact button:hover {
-   background: #d7d7d7; /* Slight gray hover effect */
-   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-
-/* Keyframe Animations */
-@keyframes fadeIn {
-   0% {
-      opacity: 0;
-      transform: translateY(20px); /* Start from below */
-   }
-   100% {
-      opacity: 1;
-      transform: translateY(0); /* End at original position */
-   }
-}
-
-/* PROJECTS SECTION */
-
-/* Global Resets */
-* {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   scroll-behavior: smooth;
-}
-
-/* Body Styling */
-body {
-   background: linear-gradient(to bottom right, #0d3b58, #1a2530); /* Dark oceanic blue to deep gray gradient */
-   color: #333333;
-   font-size: 1rem;
-   line-height: 1.8;
-   overflow-x: hidden;
-   min-height: 100vh;
-   transition: background-color 0.3s ease;
-}
-
-/* Project Details Section */
-.project-details {
-   padding: 100px 10%;
-   color: #ffffff;
-   text-align: center;
-   margin-top: 80px;
-}
-
-/* Project Container */
-.project-container {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   gap: 30px;
-   animation: fadeIn 1.5s ease-out;
-}
-
-@keyframes fadeIn {
-   0% {
-       opacity: 0;
-   }
-   100% {
-       opacity: 1;
-   }
-}
-
-/* Bubble Styling */
-.bubble {
-   background: #ffffff;
-   padding: 15px;
-   border-radius: 15px;
-   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-   color: #333333;
-   width: 100%;
-   max-width: 800px;
-   text-align: left;
-   transition: all 0.3s ease;
-   position: relative;
-   overflow: hidden;
-}
-
-.bubble:hover {
-   transform: translateY(-10px);
-   opacity: 0.9;
-}
-
-.bubble h2, .bubble h3 {
-   font-size: 2rem;
-   font-weight: 600;
-   margin-bottom: 20px;
-   color: #1e2a47;
-   letter-spacing: 1px;
-}
-
-.bubble p, .bubble ul {
-   font-size: 1.2rem;
-   color: #555555;
-   line-height: 1.8;
-   text-align: justify;
-}
-
-.bubble ul {
-   padding-left: 20px;
-   list-style-type: disc;
-}
-
-/* Button Styling inside Bubble */
-.bubble .button-container {
-   display: flex;
-   gap: 20px;
-   margin-top: 20px;
-   justify-content: center;
-}
-
-.bubble .button-container a {
-   background-color: #0078a0;
-   color: #ffffff;
-   padding: 12px 30px;
-   border-radius: 30px;
-   text-decoration: none;
-   font-size: 1rem;
-   text-transform: uppercase;
-   letter-spacing: 1px;
-   transition: all 0.3s ease;
-}
-
-.bubble .button-container a:hover {
-   background-color: #004d66;
-   transform: translateY(-5px);
-}
-
-/* Footer */
-
-footer p {
-   font-weight: 600;
-   letter-spacing: 0.5px;
-}
-
-/* Media Queries for Responsiveness */
-@media screen and (max-width: 768px) {
-   .project-details {
-       padding: 80px 5%;
-   }
-
-   .project-container {
-       flex-direction: column;
-       gap: 20px;
-   }
-
-   .bubble {
-       width: 100%;
-       padding: 30px 20px;
-   }
-
-   header h1 {
-       font-size: 2rem;
-   }
-
-   footer {
-       padding: 30px 5%;
-   }
-}
-
-/* Footer Styling */
+/* 🦶 FOOTER STYLING */
 footer {
-   background-color: #555555; /* Gray background */
-   color: #ffffff; /* White text */
-   text-align: center;
-   padding: 20px;
-   position: relative;
-   bottom: 0;
-   width: 100%;
+   background-color: #555555; /* sets footer background color to gray */
+   color: #ffffff; /* makes text color white */
+   text-align: center; /* centers footer text */
+   padding: 20px; /* adds padding inside the footer */
+   position: relative; /* makes footer position relative */
+   bottom: 0; /* keeps footer at the bottom */
+   width: 100%; /* makes footer take up the full width */
 }
 
+/* 📝 FOOTER PARAGRAPH STYLING */
 footer p {
-   margin: 0;
-   font-size: 1rem;
+   margin: 0; /* removes margin around the paragraph */
+   font-size: 1rem; /* sets font size for the paragraph */
+   font-weight: 600; /* makes the font slightly bold */
+   letter-spacing: 0.5px; /* adds spacing between letters */
 }
 
-/* Certificate styling */
+/* 📱 MEDIA QUERIES FOR RESPONSIVENESS */
+@media screen and (max-width: 768px) {
+   footer {
+       padding: 30px 5%; /* adjusts padding for smaller screens */
+   }
+
+   footer p {
+       font-size: 0.9rem; /* makes text a bit smaller on small screens */
+   }
+}
+
+/* CORRECTION FOR SCROLLING TO THE BOTTOM */
+/* Ensure that the body and html fill the entire height of the page */
+html, body {
+   height: 100%;
+   width: 100%;
+   overflow-x: hidden; /* Prevent horizontal scrolling */
+   background-color: #555555; /* Set the background color to gray for the entire page */
+   margin: 0; /* Remove default margin */
+}
+
+/* Prevent bouncing effect on macOS */
+html {
+   overscroll-behavior: none; /* This prevents the bounce effect */
+}
