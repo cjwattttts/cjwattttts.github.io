@@ -657,35 +657,39 @@ html {
       font-size: 1.5rem; /* Increase the font size for readability */
    }
 }
-
-/* Container for the button */
+ 
+ /* Container for the button */
 .button-container {
-   position: fixed;
-   bottom: 20px; /* Position the button at the bottom */
-   left: 50%; /* Center the container horizontally */
-   transform: translateX(-50%); /* Adjust for perfect centering */
-   z-index: 10; /* Ensure the button stays above other content */
-   display: flex; /* Use flexbox for easier alignment */
-   justify-content: center; /* Center the button horizontally inside the container */
-   width: 100%; /* Make sure the container takes up full width */
- }
- 
- /* Style for the button itself */
- .button {
-   padding: 10px 20px;
-   background-color: white; /* White background */
-   color: gray; /* Gray text */
-   font-size: 1.1rem;
-   text-decoration: none;
-   border-radius: 50px; /* Rounded edges */
-   border: 1px solid gray; /* Border color */
-   transition: background-color 0.3s, color 0.3s;
-   text-align: center; /* Center the text inside the button */
- }
- 
- /* Hover effects */
- .button:hover {
+   position: absolute; /* Allows positioning relative to the viewport */
+   top: 50%; /* Places the container vertically in the middle */
+   left: 50%; /* Places the container horizontally in the middle */
+   transform: translate(-50%, -50%); /* Adjusts for exact centering */
+   text-align: center;
+}
+
+/* Style for the button itself */
+/* Hover effects */
+.button:hover {
    background-color: #f4f4f4; /* Lighter background on hover */
    color: #333; /* Darker text on hover */
- }
- 
+}
+
+.certificate-images {
+   text-align: center; /* Centers all content, including the button */
+}
+
+.button {
+   display: inline-block; /* Makes the link behave like a button */
+   padding: 10px 20px; /* Adds padding to the button */
+   background-color: #555555; /* Button background color */
+   color: white; /* Button text color */
+   text-decoration: none; /* Removes underline */
+   border-radius: 5px; /* Rounds the button's corners */
+   font-size: 1.2rem; /* Button text size */
+   margin-top: 20px; /* Adds space above the button */
+   transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+}
+
+.button:hover {
+   background-color: #cccccc; /* Darker background color on hover */
+}
