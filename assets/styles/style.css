@@ -693,3 +693,72 @@ html {
 .button:hover {
    background-color: #cccccc; /* Darker background color on hover */
 }
+
+/* 📱 HIDE HEADER ON MOBILE */
+@media (max-width: 768px) {
+   header {
+      display: none; /* hides the header on mobile screens */
+   }
+
+   /* 🖼️ IMPROVEMENTS FOR MOBILE VIEW */
+   body {
+      font-size: 0.9rem; /* slightly smaller font size for mobile */
+      padding: 10px; /* adds padding around body for better spacing */
+   }
+
+   .hero {
+      padding: 50px 15%; /* adjust padding for hero section on mobile */
+   }
+
+   .hero h2 {
+      font-size: 2.5rem; /* reduces font size of hero heading */
+   }
+
+   .hero p {
+      font-size: 1rem; /* adjusts paragraph font size */
+   }
+
+   #about img {
+      width: 250px; /* reduces image size */
+      height: 250px; /* maintains square aspect ratio */
+      margin-right: 0; /* removes right margin */
+      margin-bottom: 20px; /* adds spacing below the image */
+   }
+
+   #about .content {
+      flex-direction: column; /* stacks content vertically */
+   }
+
+   .project-card {
+      width: 100%; /* makes project cards full width */
+      padding: 20px; /* adjusts padding */
+   }
+
+   .project-card h3 {
+      font-size: 1.8rem; /* adjusts heading font size */
+   }
+
+   .project-card p {
+      font-size: 1rem; /* adjusts paragraph font size */
+   }
+
+   .project-card .tools {
+      font-size: 1rem; /* adjusts tools font size */
+   }
+
+   .button-container {
+      flex-direction: column; /* stacks buttons vertically */
+   }
+
+   .button-container button {
+      margin: 10px 0; /* adds margin between buttons */
+   }
+
+   #contact form {
+      padding: 20px; /* adds padding to the form */
+   }
+
+   #contact h2 {
+      font-size: 2.5rem; /* adjusts the size of the contact heading */
+   }
+}
