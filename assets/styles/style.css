@@ -25,6 +25,16 @@ body {
 }
 
 /* 🔝 HEADER STYLING */
+
+/* 🔝 HEADER STYLING */
+nav .logo h1 {
+   font-size: 1rem; /* smaller font size for the logo */
+   color: #ffffff; /* sets logo text color to white */
+   letter-spacing: 1px; /* adds spacing between letters */
+   font-weight: 800; /* makes text bold */
+   text-transform: uppercase; /* capitalizes all letters */
+}
+
 header {
    position: fixed; /* keeps header at the top while scrolling */
    top: 0; /* positions header at the very top */
@@ -613,18 +623,19 @@ html {
    display: none; /* Hide the hamburger on larger screens */
    flex-direction: column; /* Stack the bars vertically */
    justify-content: space-between; /* Even space between bars */
-   width: 25px;
-   height: 20px;
+   width: 35px; /* Increase the width */
+   height: 30px; /* Increase the height */
    cursor: pointer; /* Changes the cursor to pointer */
 }
 
 .hamburger .bar {
-   height: 4px;
+   height: 5px; /* Make the bars thicker */
    width: 100%;
    background-color: #ffffff; /* White bars */
    border-radius: 10px; /* Rounds the corners */
 }
 
+/* Mobile View (up to 768px) */
 @media (max-width: 768px) {
    .hamburger {
       display: flex; /* Show the hamburger only on smaller screens */
