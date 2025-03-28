@@ -576,3 +576,34 @@ html {
    overscroll-behavior: none; /* This prevents the bounce effect */
 }
 
+/* BASIC SECTION REVISION */
+
+/* Add a delay to each element for animation */
+.hero-content h2, .hero-content p {
+   color: #fff;
+   opacity: 0;
+   transform: translateY(20px);
+   animation: fadeInUp 1s ease forwards;
+}
+
+/* Add a delay to each element */
+.hero-content h2 {
+   animation-delay: 0.5s;
+}
+
+.hero-content p {
+   animation-delay: 1s;
+}
+
+/* Animation for fade-in and slide-up effect */
+@keyframes fadeInUp {
+   to {
+       opacity: 1;
+       transform: translateY(0);
+   }
+}
+
+/* No hover effects, shadow stays the same */
+.hero-content h2, .hero-content p {
+   transition: text-shadow 0.3s ease;
+}
