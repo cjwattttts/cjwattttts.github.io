@@ -607,3 +607,51 @@ html {
 .hero-content h2, .hero-content p {
    transition: text-shadow 0.3s ease;
 }
+
+/* 🧑‍💻 HAMBURGER MENU */
+.hamburger {
+   display: none; /* Hide the hamburger on larger screens */
+   flex-direction: column; /* Stack the bars vertically */
+   justify-content: space-between; /* Even space between bars */
+   width: 25px;
+   height: 20px;
+   cursor: pointer; /* Changes the cursor to pointer */
+}
+
+.hamburger .bar {
+   height: 4px;
+   width: 100%;
+   background-color: #ffffff; /* White bars */
+   border-radius: 10px; /* Rounds the corners */
+}
+
+@media (max-width: 768px) {
+   .hamburger {
+      display: flex; /* Show the hamburger only on smaller screens */
+   }
+
+   .nav-links {
+      display: none; /* Hide the navigation links by default */
+      position: absolute; /* Position the nav links absolutely */
+      top: 70px; /* Positions the menu below the header */
+      left: 0;
+      width: 100%;
+      background-color: #808080; /* Light gray background */
+      flex-direction: column; /* Stacks the links vertically */
+      padding: 20px;
+   }
+
+   .nav-links.active {
+      display: flex; /* Show the nav links when active */
+   }
+
+   .nav-links li {
+      margin-left: 0; /* Remove left margin on small screens */
+      margin-bottom: 20px; /* Adds space between links */
+      text-align: center; /* Center the links */
+   }
+
+   .nav-links li a {
+      font-size: 1.5rem; /* Increase the font size for readability */
+   }
+}
