@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="assets/styles/style.css">
 
     <style>
-        /* Adding custom styles for proper layout */
         body {
             display: flex;
             flex-direction: column;
@@ -50,19 +49,20 @@
         .certificates-container {
             text-align: center;
             margin: 40px;
-            padding-top: 100px; /* Added top padding to avoid header blocking */
+            padding-top: 100px;
             flex-grow: 1;
+            padding-bottom: 100px;
         }
 
         h2 {
             font-size: 3rem;
             margin-bottom: 30px;
-            color: white; /* Title text in white */
+            color: white;
         }
 
         .certificate {
             display: inline-block;
-            text-align: left;
+            text-align: center;
             margin-bottom: 30px;
             padding: 30px;
             border-radius: 15px;
@@ -90,21 +90,25 @@
             margin: 0;
         }
 
+        .certificate img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 20px;
-            position: fixed;
-            bottom: 0;
             width: 100%;
             box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        /* Adding symbol styles */
         h2 i {
             margin-right: 10px;
-            color: white; /* Icon in white */
+            color: white;
         }
     </style>
 </head>
@@ -127,10 +131,9 @@
             <div class="certificate">
                 <h3>Google Data Analytics</h3>
                 <p>
-                    The Google Data Analytics certification, earned through Coursera, taught me key data analysis skills such as data cleaning, data visualization, and problem-solving techniques using SQL and spreadsheets. 
-                    Throughout the course, I worked with real-world datasets and learned how to interpret data to inform business decisions. I also gained hands-on experience with tools like Excel, SQL, and Tableau, 
-                    while developing the ability to analyze and present data in a way that drives actionable insights for businesses.
+                    In the Google Data Analytics Professional Certificate program, I developed a comprehensive skill set in data analytics using tools like Excel, SQL, Tableau, and R. I learned data cleaning, preparation, and statistical analysis techniques, as well as creating interactive dashboards for dynamic data exploration. The program emphasized data-driven decision-making through hands-on projects, which allowed me to apply my skills in real-world scenarios.
                 </p>
+                <img src="images/certificate.jpeg" alt="Google Data Analytics Certificate">
             </div>
         </div>
     </section>
