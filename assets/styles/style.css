@@ -441,7 +441,7 @@ nav .logo h1 {
 #contact form textarea:focus {
    background-color: #f4f4f4; /* light background on focus */
    outline: none; /* removes focus outline */
-   border-color: #004d66; /* highlights with lighter blue */
+   border-color: #545454; /* highlights with lighter blue */
 }
 
 #contact button {
@@ -453,7 +453,7 @@ nav .logo h1 {
    cursor: pointer; /* pointer cursor on hover */
    transition: all 0.3s ease; /* smooth transition */
    font-size: 1.2rem; /* adjusts font size */
-   color: #004d66; /* oceanic blue text */
+   color: #525252; /* oceanic blue text */
    margin-top: 20px; /* adds space above the button */
 }
 
@@ -524,7 +524,7 @@ nav .logo h1 {
 .project-card .tools {
    margin-top: 20px;
    font-size: 1.1rem;
-   color: #004d66; /* Lighter blue accent */
+   color: #505050; /* Lighter blue accent */
 }
 
 .project-card .tools span {
