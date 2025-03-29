@@ -27,8 +27,6 @@
             <div class="logo">
                 <h1>Cameron Watts</h1> <!-- Only your name showing on mobile -->
             </div>
-            <!-- Hamburger Icon for Mobile -->
-            <div class="hamburger" onclick="toggleNav()">&#9776;</div>
             <ul class="nav-links">
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#projects">PROJECTS</a></li>
@@ -137,12 +135,6 @@
                 event.preventDefault();
             }
         });
-
-        // Hamburger Menu Toggle
-        function toggleNav() {
-            var navLinks = document.querySelector('.nav-links');
-            navLinks.classList.toggle('active');
-        }
     </script>
 </body>
 </html>

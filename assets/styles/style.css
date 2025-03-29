@@ -14,7 +14,7 @@ a, p, h1, h2, h3, li {
 
 /* 🎨 BODY STYLING */
 body {
-   background: linear-gradient(to bottom right, #0d3b58, #1a2530); /* applies a dark blue-gray gradient */
+   background: linear-gradient(to bottom right, #0d1058, #400084); /* applies a dark blue-gray gradient */
    color: #333333; /* sets default text color */
    font-size: 1rem; /* sets base font size */
    line-height: 1.8; /* improves text readability */
@@ -81,7 +81,7 @@ nav .logo h1 {
    display: flex; /* enables flexbox layout */
    justify-content: center; /* centers content horizontally */
    align-items: center; /* centers content vertically */
-   background: linear-gradient(to bottom right, #0d3b58, #1a2530); /* applies a gradient background */
+   background: linear-gradient(to bottom right, #0d1058, #400084); /* applies a gradient background */
    padding: 100px 15%; /* adds padding to push content down */
    text-align: center; /* centers text */
    position: relative; /* ensures relative positioning */
@@ -161,7 +161,7 @@ nav .logo h1 {
 
 /* 🎯 PROJECTS SECTION */
 #projects {
-   background: linear-gradient(135deg, #0d3b58, #1a2530); /* applies a dark gradient background */
+   background: linear-gradient(135deg, #0d1058, #400084); /* applies a dark gradient background */
    padding: 40px 10%; /* adds padding around content */
    text-align: center; /* centers text */
 }
@@ -310,7 +310,7 @@ nav .logo h1 {
    margin: 15px; /* adds margin between items */
    padding: 12px 30px; /* adds padding inside list items */
    border-radius: 50px; /* makes the items round */
-   background-color: #1a485a; /* sets a blue background */
+   background-color: #3c2582; /* sets a blue background */
    color: #ffffff; /* sets text color to white */
    border: 2px solid #ffffff; /* adds a white border */
    transition: all 0.3s ease; /* smooth transition effect */
@@ -394,7 +394,7 @@ nav .logo h1 {
 
 /* 📞 CONTACT SECTION */
 #contact {
-   background: linear-gradient(to top left, #0d3b58, #1a2530); /* gradient background */
+   background: linear-gradient(to top left, #0d1058, #400084); /* gradient background */
    padding: 50px 5%; /* adds padding */
    text-align: center; /* centers text */
    display: flex; /* uses flexbox for layout */
@@ -476,7 +476,7 @@ nav .logo h1 {
 
 /* 🎯 PROJECTS SECTION */
 #projects {
-   background: linear-gradient(135deg, #0d3b58, #1a2530); /* applies a dark gradient background */
+   background: linear-gradient(135deg, #0d1058, #400084); /* applies a dark gradient background */
    padding: 40px 10%; /* adds padding around content */
    text-align: center; /* centers text */
 }
@@ -609,23 +609,6 @@ html {
    transition: text-shadow 0.3s ease;
 }
 
-/* 🧑‍💻 HAMBURGER MENU */
-.hamburger {
-   display: none; /* Hide the hamburger on larger screens */
-   flex-direction: column; /* Stack the bars vertically */
-   justify-content: space-between; /* Even space between bars */
-   width: 35px; /* Increase the width */
-   height: 30px; /* Increase the height */
-   cursor: pointer; /* Changes the cursor to pointer */
-}
-
-.hamburger .bar {
-   height: 5px; /* Make the bars thicker */
-   width: 100%;
-   background-color: #ffffff; /* White bars */
-   border-radius: 10px; /* Rounds the corners */
-}
-
 /* Mobile View (up to 768px) */
 @media (max-width: 768px) {
    .hamburger {
@@ -735,3 +718,4 @@ html {
         font-size: 14px; /* Adjusts font size */
     }
 }
+
