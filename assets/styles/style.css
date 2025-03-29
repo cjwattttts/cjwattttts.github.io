@@ -310,7 +310,7 @@ nav .logo h1 {
    margin: 15px; /* adds margin between items */
    padding: 12px 30px; /* adds padding inside list items */
    border-radius: 50px; /* makes the items round */
-   background-color: #381583; /* sets a blue background */
+   background-color: #3e60dc; /* sets a blue background */
    color: #ffffff; /* sets text color to white */
    border: 2px solid #ffffff; /* adds a white border */
    transition: all 0.3s ease; /* smooth transition effect */
