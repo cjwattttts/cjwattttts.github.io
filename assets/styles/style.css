@@ -719,3 +719,7 @@ html {
     }
 }
 
+/* Force the cursor to always be the default Mac arrow */
+* {
+   cursor: default !important; /* Ensures the standard arrow cursor is used across the page */
+}
