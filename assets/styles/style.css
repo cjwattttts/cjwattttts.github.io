@@ -14,7 +14,7 @@ a, p, h1, h2, h3, li {
 
 /* 🎨 BODY STYLING */
 body {
-   background: linear-gradient(to bottom right, #0d1058, #400084); /* applies a dark blue-gray gradient */
+   background: linear-gradient(to bottom right, #0d1058, #3e60dc); /* applies a dark blue-gray gradient */
    color: #333333; /* sets default text color */
    font-size: 1rem; /* sets base font size */
    line-height: 1.8; /* improves text readability */
@@ -81,7 +81,7 @@ nav .logo h1 {
    display: flex; /* enables flexbox layout */
    justify-content: center; /* centers content horizontally */
    align-items: center; /* centers content vertically */
-   background: linear-gradient(to bottom right, #0d1058, #400084); /* applies a gradient background */
+   background: linear-gradient(to bottom right, #0d1058, #3e60dc); /* applies a gradient background */
    padding: 100px 15%; /* adds padding to push content down */
    text-align: center; /* centers text */
    position: relative; /* ensures relative positioning */
@@ -161,7 +161,7 @@ nav .logo h1 {
 
 /* 🎯 PROJECTS SECTION */
 #projects {
-   background: linear-gradient(135deg, #0d1058, #400084); /* applies a dark gradient background */
+   background: linear-gradient(135deg, #0d1058, #3e60dc); /* applies a dark gradient background */
    padding: 40px 10%; /* adds padding around content */
    text-align: center; /* centers text */
 }
@@ -394,7 +394,7 @@ nav .logo h1 {
 
 /* 📞 CONTACT SECTION */
 #contact {
-   background: linear-gradient(to top left, #0d1058, #400084); /* gradient background */
+   background: linear-gradient(to top left, #0d1058, #3e60dc); /* gradient background */
    padding: 50px 5%; /* adds padding */
    text-align: center; /* centers text */
    display: flex; /* uses flexbox for layout */
@@ -476,7 +476,7 @@ nav .logo h1 {
 
 /* 🎯 PROJECTS SECTION */
 #projects {
-   background: linear-gradient(135deg, #0d1058, #400084); /* applies a dark gradient background */
+   background: linear-gradient(135deg, #0d1058, #3e60dc); /* applies a dark gradient background */
    padding: 40px 10%; /* adds padding around content */
    text-align: center; /* centers text */
 }
