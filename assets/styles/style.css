@@ -143,7 +143,7 @@ nav .logo h1 {
    display: flex; /* enables flexbox layout */
    justify-content: center; /* centers content horizontally */
    align-items: center; /* aligns content vertically */
-   margin-top: 35px; /* adds space above content */
+   margin-top: 40px; /* adds space above content */
    width: 100%; /* ensures full width */
 }
 
@@ -173,11 +173,12 @@ nav .logo h1 {
    margin-bottom: 0; /* removes space below heading */
 }
 
-#projects p {
-   color: #ffffff; /* makes text white */
+/* Only target the first paragraph directly under #projects */
+#projects > p {
+   color: #919191; /* makes text white */
    font-size: 1.2rem; /* adjusts font size */
-   margin-top: 0px; /* ensures it stays close to the heading */
    font-style: italic; /* makes text italic */
+   margin-top: 5px; /* ensures it stays close to the heading */
    margin-bottom: 50px; /* adds spacing below the paragraph */
 }
 
@@ -196,6 +197,7 @@ nav .logo h1 {
    margin-left: auto; /* centers card */
    margin-right: auto; /* centers card */
 }
+
 /* Project Card Hover Effect */
 .project-card:hover {
    transform: scale(1.08); /* Increases the size on hover */
@@ -214,6 +216,7 @@ nav .logo h1 {
    font-size: 1.1rem; /* Sets the font size */
    margin-top: 15px; /* Adds space between the heading and the text */
    color: #cccccc; /* Light gray color for the paragraph */
+   font-style: normal; /* Ensures project card text is NOT italic */
 }
 
 /* Project Card Tools Section */
@@ -346,7 +349,7 @@ nav .logo h1 {
 
 #certifications > p { 
    /* Targets only the direct paragraph under #certifications */
-   color: #333333; /* sets text color */
+   color: #919191; /* sets text color */
    font-size: 1.2rem; /* adjusts font size */
    font-style: italic; /* makes text italic */
    margin-top: 0px; /* ensures it stays close to the heading */
