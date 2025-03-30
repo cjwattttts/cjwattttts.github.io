@@ -177,6 +177,7 @@ nav .logo h1 {
    color: #ffffff; /* makes text white */
    font-size: 1.2rem; /* adjusts font size */
    margin-top: 0px; /* ensures it stays close to the heading */
+   font-style: italic; /* makes text italic */
    margin-bottom: 50px; /* adds spacing below the paragraph */
 }
 
@@ -347,6 +348,7 @@ nav .logo h1 {
    /* Targets only the direct paragraph under #certifications */
    color: #333333; /* sets text color */
    font-size: 1.2rem; /* adjusts font size */
+   font-style: italic; /* makes text italic */
    margin-top: 0px; /* ensures it stays close to the heading */
    margin-bottom: 50px; /* adds spacing below the paragraph */
 }
