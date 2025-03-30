@@ -169,8 +169,15 @@ nav .logo h1 {
 #projects h2 {
    font-size: 3rem; /* makes heading larger */
    font-weight: 800; /* makes text bold */
-   margin-bottom: 50px; /* adds spacing below heading */
    color: #ffffff; /* makes text white */
+   margin-bottom: 0; /* removes space below heading */
+}
+
+#projects p {
+   color: #ffffff; /* makes text white */
+   font-size: 1.2rem; /* adjusts font size */
+   margin-top: 0px; /* ensures it stays close to the heading */
+   margin-bottom: 50px; /* adds spacing below the paragraph */
 }
 
 .project-card {
@@ -310,7 +317,7 @@ nav .logo h1 {
    margin: 15px; /* adds margin between items */
    padding: 12px 30px; /* adds padding inside list items */
    border-radius: 50px; /* makes the items round */
-   background-color: #3e60dc; /* sets a blue background */
+   background-color: #1e3eaf; /* sets a blue background */
    color: #ffffff; /* sets text color to white */
    border: 2px solid #ffffff; /* adds a white border */
    transition: all 0.3s ease; /* smooth transition effect */
@@ -332,12 +339,20 @@ nav .logo h1 {
 #certifications h2 {
    font-size: 3rem; /* sets font size for h2 */
    font-weight: 800; /* makes the font bold */
-   margin-bottom: 50px; /* adds margin below the header */
+   margin-bottom: 0; /* removes space below heading */
    color: #333333; /* sets text color */
 }
 
+#certifications > p { 
+   /* Targets only the direct paragraph under #certifications */
+   color: #333333; /* sets text color */
+   font-size: 1.2rem; /* adjusts font size */
+   margin-top: 0px; /* ensures it stays close to the heading */
+   margin-bottom: 50px; /* adds spacing below the paragraph */
+}
+
 .certification-card {
-   background-color: #5d5d5d; /* sets light gray background */
+   background-color: #5d5d5d; /* sets dark gray background */
    border-radius: 25px; /* rounds the corners */
    padding: 40px; /* adds padding inside the card */
    margin: 25px; /* adds margin around the card */
@@ -428,13 +443,13 @@ nav .logo h1 {
    padding: 20px; /* adds padding inside */
    margin: 10px auto; /* centers elements with margin */
    border-radius: 25px; /* rounds the corners */
-   border: 2px solid #0d3b58; /* oceanic blue border */
+   border: 2px solid #ffffff; /* oceanic blue border */
    background-color: #ffffff; /* sets background to white */
    color: #333333; /* sets text color */
    font-size: 1.1rem; /* sets font size */
    transition: all 0.3s ease; /* smooth transition for interactions */
    display: block; /* ensures full width respects centering */
-   text-align: left; /* optional: centers text inside inputs */
+   text-align: center; /* optional: centers text inside inputs */
 }
 
 #contact form input:focus,
@@ -472,20 +487,6 @@ nav .logo h1 {
       opacity: 1; /* becomes fully visible */
       transform: translateY(0); /* ends at normal position */
    }
-}
-
-/* 🎯 PROJECTS SECTION */
-#projects {
-   background: linear-gradient(135deg, #0d1058, #3e60dc); /* applies a dark gradient background */
-   padding: 40px 10%; /* adds padding around content */
-   text-align: center; /* centers text */
-}
-
-#projects h2 {
-   font-size: 3rem; /* makes heading larger */
-   font-weight: 800; /* makes text bold */
-   margin-bottom: 50px; /* adds spacing below heading */
-   color: #ffffff; /* makes text white */
 }
 
 .project-card {
@@ -724,3 +725,53 @@ html {
    cursor: default !important; /* Ensures the standard arrow cursor is used across the page */
 }
 
+/* Default styles (for larger screens) */
+.hero-title {
+    font-size: 3rem; /* Larger font size for desktop */
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+}
+
+/* Make the hero title smaller and adjust other elements for mobile */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem; /* Adjust subtitle font size */
+    }
+
+    /* Adjusting other elements for better mobile responsiveness */
+    .hero-content {
+        padding: 20px; /* Adjust padding for mobile */
+        text-align: center; /* Center-align text */
+    }
+
+    .navigation {
+        font-size: 1rem; /* Make navigation text smaller */
+    }
+
+    .btn {
+        font-size: 1rem; /* Make buttons more appropriately sized */
+        padding: 12px 20px; /* Adjust button padding */
+    }
+}
+
+/* Optional: For very small screens (e.g., mobile phones in portrait mode) */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.5rem; /* Further reduce the title size */
+    }
+
+    .hero-subtitle {
+        font-size: 1rem; /* Reduce subtitle size */
+    }
+
+    .btn {
+        font-size: 0.9rem; /* Smaller button text */
+        padding: 10px 15px; /* Adjust button padding */
+    }
+}
