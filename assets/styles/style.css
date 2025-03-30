@@ -434,7 +434,7 @@ nav .logo h1 {
    font-size: 1.1rem; /* sets font size */
    transition: all 0.3s ease; /* smooth transition for interactions */
    display: block; /* ensures full width respects centering */
-   text-align: center; /* optional: centers text inside inputs */
+   text-align: left; /* optional: centers text inside inputs */
 }
 
 #contact form input:focus,
