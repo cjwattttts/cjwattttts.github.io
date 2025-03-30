@@ -138,11 +138,16 @@
 
         // Disable page scroll via keyboard arrow keys and spacebar
         window.addEventListener('keydown', function(event) {
-            if ((event.key === 'ArrowUp' || event.key === 'ArrowDown' || event.key === ' ' || event.key === 'PageUp' || event.key === 'PageDown') && 
-                (window.scrollY <= 0 || (window.innerHeight + window.scrollY) >= document.body.scrollHeight)) {
-                event.preventDefault();
-            }
-        });
+    // Allow space input inside text fields and textareas
+    if (event.key === ' ' && (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA')) {
+        return;
+    }
+    
+    if ((event.key === 'ArrowUp' || event.key === 'ArrowDown' || event.key === ' ' || event.key === 'PageUp' || event.key === 'PageDown') && 
+        (window.scrollY <= 0 || (window.innerHeight + window.scrollY) >= document.body.scrollHeight)) {
+        event.preventDefault();
+    }
+});
     </script>
 </body>
 </html>
