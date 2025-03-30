@@ -143,7 +143,7 @@ nav .logo h1 {
    display: flex; /* enables flexbox layout */
    justify-content: center; /* centers content horizontally */
    align-items: center; /* aligns content vertically */
-   margin-top: 40px; /* adds space above content */
+   margin-top: 35px; /* adds space above content */
    width: 100%; /* ensures full width */
 }
 
