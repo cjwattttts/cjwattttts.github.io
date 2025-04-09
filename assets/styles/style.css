@@ -311,7 +311,6 @@ nav .logo h1 {
    border-radius: 50px; /* makes the items round */
    background-color: #1e3eaf; /* sets a blue background */
    color: #ffffff; /* sets text color to white */
-   border: 2px solid #ffffff; /* adds a white border */
    transition: all 0.3s ease; /* smooth transition effect */
 }
 
@@ -351,13 +350,12 @@ nav .logo h1 {
    width: 700px; /* sets a fixed width */
    max-width: 100%; /* ensures it doesn’t overflow */
    text-align: left; /* aligns text to the left */
-   border: 2px solid transparent; /* adds transparent border */
    background-clip: padding-box; /* clips background to padding */
 }
 
 .certification-card h3 {
    font-size: 2rem; /* sets font size for h3 */
-   color: #ffffff; /* sets text color to white */
+   color: #bdbdbd; /* sets text color to white */
 }
 
 .certification-card p {
@@ -671,4 +669,19 @@ body::-webkit-scrollbar {
 body {
     -ms-overflow-style: none; /* Hides the scrollbar for Internet Explorer and Edge */
     scrollbar-width: none; /* Hides the scrollbar for Firefox */
+}
+
+
+.certification-card {
+   background-color: #5d5d5d;
+   border: 2px solid #5d5d5d; /* 👈 fixes the white outline */
+   border-radius: 25px;
+   background-clip: border-box; /* 👈 ensures full background coverage */
+   padding: 40px;
+   margin: 25px auto;
+   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   width: 700px;
+   max-width: 100%;
+   text-align: left;
 }
