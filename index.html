@@ -14,11 +14,36 @@
 
     <!-- Link to External CSS -->
     <link rel="stylesheet" href="assets/styles/style.css">
+    
     <style>
-        /* Prevent textarea from being resized */
-        textarea {
-            resize: none;
+    /* Prevent textarea from being resized */
+    textarea {
+        resize: none;
+    }
+
+    /* ✨ ANIMATED TEXT */
+    .animated-text {
+        font-size: 1.5rem; /* Adjust font size */
+        color: #ffffff; /* White text color */
+        text-align: center; /* Center the text */
+        max-width: 800px; /* Limit the width */
+        margin: 0 auto; /* Center horizontally */
+        opacity: 0; /* Initially hidden */
+        animation: fadeInUp 1.5s ease-out 2s forwards; /* Shorten fade-in duration */
+    }
+
+    /* Fade-in and slide-up animation */
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translateY(20px); /* Start slightly below */
         }
+        100% {
+            opacity: 1;
+            transform: translateY(0); /* End at normal position */
+        }
+    }
+
     </style>
 </head>
 <body>
@@ -40,7 +65,7 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <h2>Welcome to My Portfolio</h2>
-            <p>Explore my projects, skills, and experience as I develop my expertise in data-driven business analysis.</p>
+            <p class="animated-text">Explore my projects, skills, and experience as I develop my expertise in data-driven business analysis.</p>
         </div>
     </section>
 
@@ -124,15 +149,17 @@
     </footer>
 
     <script>
-        
         // Prevent scrolling past the top and bottom of the page
-window.addEventListener('wheel', function(event) {
-    // Prevent scrolling up when already at the top of the page
-    if (window.scrollY <= 0 && event.deltaY < 0) {
-        event.preventDefault();
-    }
-    // Prevent scrolling down when already at the bottom of the page
-    if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight && event.deltaY > 0) {
-        event.preventDefault();
-    }
-}, { passive: false }); // Explicitly set passive to false
+        window.addEventListener('wheel', function(event) {
+            // Prevent scrolling up when already at the top of the page
+            if (window.scrollY <= 0 && event.deltaY < 0) {
+                event.preventDefault();
+            }
+            // Prevent scrolling down when already at the bottom of the page
+            if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight && event.deltaY > 0) {
+                event.preventDefault();
+            }
+        }, { passive: false }); // Explicitly set passive to false
+    </script>
+</body>
+</html>

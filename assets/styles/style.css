@@ -12,17 +12,17 @@ a, p, h1, h2, h3, li {
    cursor: pointer; /* makes text elements appear clickable */
 }
 
-/* Body Styling */
+/* 🎨 BODY STYLING */
 body {
-   background: radial-gradient(ellipse at center, #1a103f 0%, #0e042b 100%);
-   color: #e6e6f0;
-   font-size: 0.95rem;
-   line-height: 1.6;
-   overflow-x: hidden;
-   background-attachment: fixed;
-   letter-spacing: 0.3px;
- }
- 
+   background: linear-gradient(to bottom right, #0d1058, #3e60dc); /* applies a dark blue-gray gradient */
+   color: #333333; /* sets default text color */
+   font-size: 1rem; /* sets base font size */
+   line-height: 1.8; /* improves text readability */
+   overflow-x: hidden; /* prevents horizontal scrolling */
+   min-height: 100vh; /* ensures body covers the full viewport height */
+   background-attachment: fixed; /* keeps background fixed while scrolling */
+   transition: background-color 0.3s ease; /* smooth transition for background color changes */
+}
 
 /* 🔝 HEADER STYLING */
 header {
@@ -34,14 +34,6 @@ header {
    z-index: 1000; /* ensures header stays on top of other elements */
    backdrop-filter: blur(10px); /* creates a glassmorphism effect */
 }
-
-/* Section Padding */
-section {
-   padding: 80px 6% 40px;
-   position: relative;
-   z-index: 1;
- }
- 
 
 /* 📌 NAVIGATION BAR */
 nav {
