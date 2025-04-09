@@ -89,9 +89,8 @@ nav .logo h1 {
 
 .hero h2 {
    font-size: 4rem; /* makes heading larger */
-   font-weight: 800; /* makes text bold */
+   font-weight: 600; /* makes text bold */
    color: #ffffff; /* sets text color to white */
-   text-transform: uppercase; /* capitalizes all letters */
    letter-spacing: 2px; /* adds spacing between letters */
    z-index: 2; /* ensures text appears above background elements */
    animation: fadeIn 2s ease-out; /* applies a fade-in effect */
@@ -124,7 +123,7 @@ nav .logo h1 {
 
 #about h2 {
    font-size: 3rem; /* makes heading larger */
-   font-weight: 800; /* makes text bold */
+   font-weight: 600; /* makes text bold */
    margin-bottom: 10px; /* adds spacing below heading */
 }
 
@@ -166,7 +165,7 @@ nav .logo h1 {
 
 #projects h2 {
    font-size: 3rem; /* makes heading larger */
-   font-weight: 800; /* makes text bold */
+   font-weight: 600; /* makes text bold */
    color: #ffffff; /* makes text white */
    margin-bottom: 0; /* removes space below heading */
 }
@@ -292,7 +291,7 @@ nav .logo h1 {
 
 #skills h2 {
    font-size: 3rem; /* sets font size for h2 */
-   font-weight: 800; /* makes the font bold */
+   font-weight: 600; /* makes the font bold */
    margin-bottom: 40px; /* adds margin below the header */
    color: #333333; /* sets text color */
 }
@@ -328,7 +327,7 @@ nav .logo h1 {
 
 #certifications h2 {
    font-size: 3rem; /* sets font size for h2 */
-   font-weight: 800; /* makes the font bold */
+   font-weight: 600; /* makes the font bold */
    margin-bottom: 0; /* removes space below heading */
    color: #333333; /* sets text color */
 }
@@ -407,7 +406,7 @@ nav .logo h1 {
 
 #contact h2 {
    font-size: 3rem; /* sets font size for h2 */
-   font-weight: 800; /* makes the font bold */
+   font-weight: 600; /* makes the font bold */
    margin-bottom: 40px; /* adds space below the title */
    color: #ffffff; /* sets text color to white */
    margin-top: 0; /* removes top margin */
@@ -608,6 +607,7 @@ html {
 .project-card h3,
 .certification-card h3 {
    font-size: 2rem;
+   font-weight: 500; /* makes the title semi-bold */
    color: #ffffff;
 }
 
@@ -685,3 +685,17 @@ body {
    max-width: 100%;
    text-align: left;
 }
+
+/* Vertically center the logo image */
+.cw-logo {
+   height: 50px;
+   display: block;
+   object-fit: contain;
+ }
+ 
+ /* Ensure .logo container aligns items center */
+ .logo {
+   display: flex;
+   align-items: center;
+ }
+ 
