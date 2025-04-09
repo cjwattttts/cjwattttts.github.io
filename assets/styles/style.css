@@ -661,14 +661,14 @@ html {
 
 /* Hide the scrollbar but allow scrolling */
 body {
-   overflow: auto; /* Enables scrolling */
+    overflow: auto; /* Enables scrolling */
 }
 
 body::-webkit-scrollbar {
-   display: none; /* Hides the scrollbar for WebKit browsers (Chrome, Safari, etc.) */
+    display: none; /* Hides the scrollbar for WebKit browsers (Chrome, Safari, etc.) */
 }
 
 body {
-   -ms-overflow-style: none; /* Hides the scrollbar for Internet Explorer and Edge */
-   scrollbar-width: none; /* Hides the scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hides the scrollbar for Internet Explorer and Edge */
+    scrollbar-width: none; /* Hides the scrollbar for Firefox */
 }

@@ -149,19 +149,19 @@
     </footer>
 
     <script>
-        // Allow normal scrolling while preventing excessive scrolling at the top or bottom
-        window.addEventListener('wheel', function(event) {
-            // Check if the user is at the top of the page
-            if (window.scrollY <= 0 && event.deltaY < 0) {
-                // Allow normal scrolling up
-                return;
-            }
-            // Check if the user is at the bottom of the page
-            if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight && event.deltaY > 0) {
-                // Allow normal scrolling down
-                return;
-            }
-        }, { passive: true }); // Set passive to true for better performance
-    </script>
+    // Allow normal scrolling while preventing excessive scrolling at the top or bottom
+    window.addEventListener('wheel', function(event) {
+        // Check if the user is at the top of the page
+        if (window.scrollY <= 0 && event.deltaY < 0) {
+            // Allow normal scrolling up
+            return;
+        }
+        // Check if the user is at the bottom of the page
+        if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight && event.deltaY > 0) {
+            // Allow normal scrolling down
+            return;
+        }
+    }, { passive: true }); // Set passive to true for better performance
+</script>
 </body>
 </html>
