@@ -109,6 +109,8 @@ nav .logo h1 {
 }
 
 /* 🏆 ABOUT ME SECTION */
+
+
 #about {
    background-color: #ffffff; /* sets background to white */
    color: #333333; /* makes text dark */
@@ -474,6 +476,7 @@ nav .logo h1 {
    }
 }
 
+
 /* 📝 FOOTER STYLING */
 footer {
    background-color: #555555; /* sets footer background color */
@@ -698,4 +701,5 @@ body {
    display: flex;
    align-items: center;
  }
+ 
  
