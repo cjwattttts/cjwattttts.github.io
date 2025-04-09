@@ -43,7 +43,7 @@ nav {
 }
 
 nav .logo h1 {
-   font-size: 2rem; /* makes the logo text larger */
+   font-size: 1.2rem; /* makes the logo text larger */
    color: #ffffff; /* sets logo text color to white */
    letter-spacing: 1px; /* adds spacing between letters */
    font-weight: 800; /* makes text bold */
@@ -545,7 +545,7 @@ html {
    }
 
    .nav-links li a {
-      font-size: 1.5rem;
+      font-size: 1rem;
    }
 }
 
