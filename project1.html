@@ -12,7 +12,7 @@
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;600&display=swap" rel="stylesheet"/>
 
-  <!-- External CSS -->
+  <!-- External Stylesheet -->
   <link rel="stylesheet" href="assets/styles/style.css"/>
 
   <style>
@@ -48,37 +48,30 @@
 
     .cw-logo {
       height: 65px;
-      display: block;
       object-fit: contain;
     }
 
     .nav-links {
       list-style: none;
-      display: flex;
-      gap: 30px;
-      margin: 0;
       padding: 0;
+      margin: 0;
     }
 
     .nav-links li {
       display: inline;
+      margin-right: 20px;
     }
 
     .nav-links a {
       color: white;
       text-decoration: none;
       font-size: 1.1rem;
-      font-weight: 600;
-    }
-
-    .nav-links a:hover {
-      color: #d3d3d3;
     }
 
     .certificates-container {
       text-align: center;
-      margin: 100px auto 40px;
-      padding-top: 60px;
+      margin: 40px;
+      padding-top: 100px;
       flex-grow: 1;
       padding-bottom: 100px;
     }
@@ -87,23 +80,18 @@
       font-size: 3rem;
       margin-bottom: 30px;
       font-weight: 600;
-      color: white; /* fixed to white */
-    }
-
-    h2 i {
-      margin-right: 10px;
-      color: white; /* fixed icon color */
+      color: white;
     }
 
     .certificate {
       display: inline-block;
-      text-align: left;
+      text-align: center;
       margin-bottom: 30px;
       padding: 30px;
       border-radius: 15px;
       background-color: #ffffff;
       max-width: 600px;
-      width: 90%;
+      width: 100%;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease;
     }
@@ -125,11 +113,12 @@
       margin: 0;
     }
 
-    .certificate-images img {
-      width: 100%;
-      border-radius: 15px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    .certificate img {
+      max-width: 100%;
+      height: auto;
       margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     .button {
@@ -153,47 +142,24 @@
       color: white;
       text-align: center;
       padding: 20px;
-      margin-top: auto;
       width: 100%;
       box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
     }
 
-    @media (max-width: 768px) {
-      .cw-logo {
-        height: 50px;
-      }
+    h2 i {
+      margin-right: 10px;
+      color: white;
+    }
 
-      .nav-links {
-        flex-direction: column;
-        background-color: #444;
-        position: absolute;
-        top: 70px;
-        right: 10%;
-        padding: 20px;
-        border-radius: 10px;
-        display: none;
-      }
+    .certificate-images {
+      text-align: center;
+    }
 
-      .certificates-container {
-        padding-top: 30px;
-      }
-
-      .certificate {
-        padding: 20px;
-      }
-
-      .certificate h3 {
-        font-size: 1.8rem;
-      }
-
-      .certificate p {
-        font-size: 1rem;
-      }
-
-      .button {
-        font-size: 1rem;
-        padding: 8px 16px;
-      }
+    .certificate-images img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
     }
   </style>
 </head>
@@ -219,11 +185,8 @@
       </p>
 
       <p>&nbsp;</p>
-
       <p><strong>Tools Used:</strong> Tableau, Excel</p>
-
       <p>&nbsp;</p>
-
       <p><strong>Formulas, Skills, and Techniques Used:</strong> Bar Graphs, Tree Map, Color Mark, Horizontal Bar Graph, Profit Map, Label Mark, Detail Mark, Interactive Filters, Dashboard, Story, Story Text Boxes</p>
 
       <div class="certificate-images">

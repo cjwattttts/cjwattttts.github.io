@@ -1,242 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Business Intelligence Dashboard - Cameron Watts</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Business Intelligence Dashboard - Cameron Watts</title>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
 
-    <!-- Google Font: Helvetica Neue / San Francisco -->
-    <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;600&display=swap" rel="stylesheet"/>
 
-    <!-- Link to External CSS -->
-    <link rel="stylesheet" href="assets/styles/style.css">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="assets/styles/style.css"/>
 
-    <style>
-        body {
-          display: flex;
-          flex-direction: column;
-          min-height: 100vh;
-          margin: 0;
-          font-family: 'Helvetica Neue', sans-serif;
-          background-color: #f4f4f9;
-        }
-    
-        header {
-          position: fixed;
-          top: 0;
-          width: 100%;
-          background-color: rgba(0, 0, 0, 0.7);
-          padding: 15px 10%;
-          z-index: 1000;
-          backdrop-filter: blur(10px);
-        }
-    
-        nav {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-        }
-    
-        .logo {
-          display: flex;
-          align-items: center;
-        }
-    
-        .cw-logo {
-          height: 65px;
-          display: block;
-          object-fit: contain;
-        }
-    
-        .nav-links {
-          list-style: none;
-          display: flex;
-          gap: 30px;
-          margin: 0;
-          padding: 0;
-        }
-    
-        .nav-links li {
-          display: inline;
-        }
-    
-        .nav-links a {
-          color: white;
-          text-decoration: none;
-          font-size: 1.1rem;
-          font-weight: 600;
-        }
-    
-        .nav-links a:hover {
-          color: #d3d3d3;
-        }
-    
-        .certificates-container {
-          text-align: center;
-          margin: 100px auto 40px;
-          padding-top: 60px;
-          flex-grow: 1;
-          padding-bottom: 100px;
-        }
-    
-        h2 {
-          font-size: 3rem;
-          margin-bottom: 30px;
-          font-weight: 600;
-          color: white; /* fixed to white */
-        }
-    
-        h2 i {
-          margin-right: 10px;
-          color: white; /* fixed icon color */
-        }
-    
-        .certificate {
-          display: inline-block;
-          text-align: left;
-          margin-bottom: 30px;
-          padding: 30px;
-          border-radius: 15px;
-          background-color: #ffffff;
-          max-width: 600px;
-          width: 90%;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-          transition: transform 0.3s ease;
-        }
-    
-        .certificate:hover {
-          transform: translateY(-10px);
-        }
-    
-        .certificate h3 {
-          font-size: 2.2rem;
-          margin-bottom: 15px;
-          color: #333;
-        }
-    
-        .certificate p {
-          font-size: 1.1rem;
-          color: #555;
-          line-height: 1.6;
-          margin: 0;
-        }
-    
-        .certificate-images img {
-          width: 100%;
-          border-radius: 15px;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-          margin-top: 20px;
-        }
-    
-        .button {
-          display: inline-block;
-          padding: 10px 20px;
-          background-color: #555555;
-          color: white;
-          text-decoration: none;
-          border-radius: 5px;
-          font-size: 1.2rem;
-          margin-top: 20px;
-          transition: background-color 0.3s ease;
-        }
-    
-        .button:hover {
-          background-color: #cccccc;
-        }
-    
-        footer {
-          background-color: #333;
-          color: white;
-          text-align: center;
-          padding: 20px;
-          margin-top: auto;
-          width: 100%;
-          box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-        }
-    
-        @media (max-width: 768px) {
-          .cw-logo {
-            height: 50px;
-          }
-    
-          .nav-links {
-            flex-direction: column;
-            background-color: #444;
-            position: absolute;
-            top: 70px;
-            right: 10%;
-            padding: 20px;
-            border-radius: 10px;
-            display: none;
-          }
-    
-          .certificates-container {
-            padding-top: 30px;
-          }
-    
-          .certificate {
-            padding: 20px;
-          }
-    
-          .certificate h3 {
-            font-size: 1.8rem;
-          }
-    
-          .certificate p {
-            font-size: 1rem;
-          }
-    
-          .button {
-            font-size: 1rem;
-            padding: 8px 16px;
-          }
-        }
-      </style>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #f4f4f9;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 15px 10%;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .cw-logo {
+      height: 65px;
+      object-fit: contain;
+    }
+
+    .nav-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav-links li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+
+    .certificates-container {
+      text-align: center;
+      margin: 40px;
+      padding-top: 100px;
+      flex-grow: 1;
+      padding-bottom: 100px;
+    }
+
+    h2 {
+      font-size: 3rem;
+      margin-bottom: 30px;
+      font-weight: 600;
+      color: white;
+    }
+
+    .certificate {
+      display: inline-block;
+      text-align: center;
+      margin-bottom: 30px;
+      padding: 30px;
+      border-radius: 15px;
+      background-color: #ffffff;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .certificate:hover {
+      transform: translateY(-10px);
+    }
+
+    .certificate h3 {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .certificate p {
+      font-size: 1.1rem;
+      color: #555;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .certificate img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #555555;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #cccccc;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      width: 100%;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 i {
+      margin-right: 10px;
+      color: white;
+    }
+
+    .certificate-images {
+      text-align: center;
+    }
+
+    .certificate-images img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="images/cw-logo.png" alt="CW Logo" class="cw-logo" />
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">BACK TO PORTFOLIO</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="images/cw-logo.png" alt="CW Logo" class="cw-logo" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">BACK TO PORTFOLIO</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section class="certificates-container">
-        <h2><i class="fas fa-tachometer-alt"></i>Business Intelligence Dashboard</h2>
+  <section class="certificates-container">
+    <h2><i class="fas fa-tachometer-alt"></i>Business Intelligence Dashboard</h2>
 
-        <div class="certificate">
-            <h3>Risk Management Dashboard</h3>
-            <p>
-                In this project, I developed a Business Intelligence dashboard that tracks and visualizes risk levels across various departments. The dashboard allows users to interact with data in real-time, filtering and drilling down to view specific risk metrics and trends. It was designed to help stakeholders identify potential risks, track their mitigation efforts, and manage risks effectively across different teams.
-            </p>
+    <div class="certificate">
+      <h3>Risk Management Dashboard</h3>
+      <p>
+        In this project, I developed a Business Intelligence dashboard that tracks and visualizes risk levels across various departments. The dashboard allows users to interact with data in real-time, filtering and drilling down to view specific risk metrics and trends. It was designed to help stakeholders identify potential risks, track their mitigation efforts, and manage risks effectively across different teams.
+      </p>
 
-            <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p><strong>Tools Used:</strong> HTML, CSS, JavaScript</p>
+      <p>&nbsp;</p>
+      <p><strong>Formulas, Skills, and Techniques Used:</strong> DOM Manipulation, createElement, appendChild, removeChild, event listeners, stopPropagation(), dynamic risk card creation, form handling, background color styling based on data, CSS Flexbox for layout, JavaScript functions for adding and removing risk items, handling button clicks for bulk updates, categorizing risk levels, and handling event propagation in complex user interactions.</p>
 
-            <p><strong>Tools Used:</strong> HTML, CSS, JavaScript</p>
+      <div class="certificate-images">
+        <img src="images/riskdashboard.png" alt="Risk Dashboard">
+        <a href="index.html" class="button">Back to Home Page</a>
+      </div>
+    </div>
+  </section>
 
-            <p>&nbsp;</p>
-
-            <p><strong>Formulas, Skills, and Techniques Used:</strong>
-                DOM Manipulation, createElement, appendChild, removeChild, event listeners, stopPropagation(), dynamic risk card creation, form handling, background color styling based on data, CSS Flexbox for layout, JavaScript functions for adding and removing risk items, handling button clicks for bulk updates, categorizing risk levels, and handling event propagation in complex user interactions.
-            </p>
-                        
-            <div class="certificate-images">
-                <img src="images/riskdashboard.png" alt="Risk Dashboard">
-                <a href="index.html" class="button">Back to Home Page</a>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Cameron Watts. All Rights Reserved.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Cameron Watts. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
