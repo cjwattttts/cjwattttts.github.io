@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="assets/styles/style.css">
 
     <style>
-        /* Adding custom styles for proper layout */
+        /* Body and Layout Styles */
         body {
             display: flex;
             flex-direction: column;
@@ -26,14 +26,37 @@
             background-color: #f4f4f9;
         }
 
-        nav .logo h1 {
-            margin: 0;
-            font-size: 2rem;
+        /* Header Styling */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px 10%;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .cw-logo {
+            height: 50px;
+            object-fit: contain;
         }
 
         .nav-links {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
 
         .nav-links li {
@@ -47,19 +70,19 @@
             font-size: 1.1rem;
         }
 
+        /* Main Content Section */
         .certificates-container {
             text-align: center;
-            margin: 40px;
-            padding-top: 100px; /* Added top padding to avoid header blocking */
-            padding-bottom: 200px; /* Extra padding at the bottom to extend the page length */
-            flex-grow: 1;
+            margin: 100px auto 40px;
+            padding-top: 60px; /* avoids header overlap */
+            flex-grow: 1; /* allows footer to stay at bottom */
         }
 
         h2 {
             font-size: 3rem;
             margin-bottom: 30px;
             font-weight: 600;
-            color: white; /* Title text in white */
+            color: white;
         }
 
         .certificate {
@@ -92,32 +115,54 @@
             margin: 0;
         }
 
+        /* Corrected Footer Styling */
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 20px;
-            position: fixed;
-            bottom: 0;
+            margin-top: auto; /* footer naturally at bottom */
             width: 100%;
             box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        /* Adding symbol styles */
-        h2 i {
-            margin-right: 10px;
-            color: white; /* Icon in white */
+        /* Button Styling */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #555555;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
         }
 
+        .button:hover {
+            background-color: #cccccc;
+        }
+
+        /* Images Styling */
+        .certificate-images img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        /* Icon Styling */
+        h2 i {
+            margin-right: 10px;
+            color: white;
+        }
     </style>
 </head>
 <body>
     <header>
         <nav>
-          <div class="logo">
-            <img src="images/cw-logo.png" alt="CW Logo" class="cw-logo" />
-          </div>
-          <ul class="nav-links">
+            <div class="logo">
+                <img src="images/cw-logo.png" alt="CW Logo" class="cw-logo" />
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">BACK TO PORTFOLIO</a></li>
@@ -125,37 +170,33 @@
         </nav>
     </header>
 
+    <section class="certificates-container">
+        <h2><i class="fas fa-hospital"></i>State Medical Policies Comparison</h2>
 
-    <section class="certificates">
-        <div class="certificates-container">
-            <h2><i class="fas fa-hospital"></i>State Medical Policies Comparison</h2>
+        <div class="certificate">
+            <h3>State Medical Policies Comparison</h3>
+            <p>
+                This project provides a comparative analysis of state medical policies, allowing users to input two states of their choice. The sheet returns rows containing data relating to the medical policies of each state. Green cells indicate policies that are supported in the state, and users can easily compare the support each state provides. Additionally, the sheet calculates and displays the total policy score for each state, providing a clear view of which states are more supportive of medical policies. A pie chart also visualizes the comparison, enhancing the overall user experience. The project includes multiple pivot tables and filters to allow users to analyze the data in-depth.
+            </p>
 
-            <div class="certificate">
-                <h3>State Medical Policies Comparison</h3>
-                <p>
-                    This project provides a comparative analysis of state medical policies, allowing users to input two states of their choice. The sheet returns rows containing data relating to the medical policies of each state. Green cells indicate policies that are supported in the state, and users can easily compare the support each state provides. Additionally, the sheet calculates and displays the total policy score for each state, providing a clear view of which states are more supportive of medical policies. A pie chart also visualizes the comparison, enhancing the overall user experience. The project includes multiple pivot tables and filters to allow users to analyze the data in-depth.
-                </p>
-            
-                <p>&nbsp;</p>
+            <p>&nbsp;</p>
 
-                <p><strong>Tools Used:</strong> Excel</p>
-            
-                <p>&nbsp;</p> <!-- Added space between tools and formulas sections -->
-            
-                <p><strong>Formulas, Skills, and Techniques Used:</strong> VLOOKUP, IFERROR, SUM, Conditional Formatting, Pivot Tables, Pie Charts, Data Visualization</p>
-            
-                <!-- Add images here -->
-                <div class="certificate-images">
-                    <img src="images/Excel2Home.png" alt="Excel2 Home" style="width: 100%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-top: 20px;">
-                    <img src="images/Excel2Pivot.png" alt="Excel2 Pivot" style="width: 100%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-top: 20px;">
-                    <a href="index.html" class="button">Back to Home Page</a> <!-- Button here -->
-                </div>
+            <p><strong>Tools Used:</strong> Excel</p>
+
+            <p>&nbsp;</p>
+
+            <p><strong>Formulas, Skills, and Techniques Used:</strong> VLOOKUP, IFERROR, SUM, Conditional Formatting, Pivot Tables, Pie Charts, Data Visualization</p>
+
+            <div class="certificate-images">
+                <img src="images/Excel2Home.png" alt="Excel2 Home">
+                <img src="images/Excel2Pivot.png" alt="Excel2 Pivot">
+                <a href="index.html" class="button">Back to Home Page</a>
             </div>
-        </section>
-    
-        <footer>
-            <p>&copy; 2025 Cameron Watts. All Rights Reserved.</p>
-        </footer>
-    </body>
-    </html>
-    
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Cameron Watts. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

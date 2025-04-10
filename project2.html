@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="assets/styles/style.css">
 
     <style>
-        /* Adding custom styles for proper layout */
+        /* Body and Layout Styles */
         body {
             display: flex;
             flex-direction: column;
@@ -26,14 +26,37 @@
             background-color: #f4f4f9;
         }
 
-        nav .logo h1 {
-            margin: 0;
-            font-size: 2rem;
+        /* Header Styling */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px 10%;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .cw-logo {
+            height: 50px;
+            object-fit: contain;
         }
 
         .nav-links {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
 
         .nav-links li {
@@ -47,19 +70,19 @@
             font-size: 1.1rem;
         }
 
+        /* Main Content Section */
         .certificates-container {
             text-align: center;
-            margin: 40px;
-            padding-top: 100px; /* Added top padding to avoid header blocking */
-            padding-bottom: 200px; /* Extra padding at the bottom to extend the page length */
-            flex-grow: 1;
+            margin: 100px auto 40px;
+            padding-top: 60px; /* avoids header overlap */
+            flex-grow: 1; /* ensures footer is at bottom */
         }
 
         h2 {
             font-size: 3rem;
             margin-bottom: 30px;
             font-weight: 600;
-            color: white; /* Title text in white */
+            color: white;
         }
 
         .certificate {
@@ -92,33 +115,54 @@
             margin: 0;
         }
 
+        /* Footer Styling - Corrected */
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 20px;
-            position: fixed;
-            bottom: 0;
+            margin-top: auto; /* Pushes footer to bottom */
             width: 100%;
             box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        /* Adding symbol styles */
-        h2 i {
-            margin-right: 10px;
-            color: white; /* Icon in white */
+        /* Button Styling */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #555555;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
         }
 
+        .button:hover {
+            background-color: #cccccc;
+        }
 
+        /* Images */
+        .certificate-images img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        /* Symbol styling */
+        h2 i {
+            margin-right: 10px;
+            color: white;
+        }
     </style>
 </head>
 <body>
     <header>
         <nav>
-          <div class="logo">
-            <img src="images/cw-logo.png" alt="CW Logo" class="cw-logo" />
-          </div>
-          <ul class="nav-links">
+            <div class="logo">
+                <img src="images/cw-logo.png" alt="CW Logo" class="cw-logo" />
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">BACK TO PORTFOLIO</a></li>
@@ -126,36 +170,34 @@
         </nav>
     </header>
 
-    <section class="certificates">
-        <div class="certificates-container">
-            <h2><i class="fas fa-tachometer-alt"></i>Business Intelligence Dashboard</h2>
+    <section class="certificates-container">
+        <h2><i class="fas fa-tachometer-alt"></i>Business Intelligence Dashboard</h2>
 
-            <div class="certificate">
-                <h3>Risk Management Dashboard</h3>
-                <p>
-                    In this project, I developed a Business Intelligence dashboard that tracks and visualizes risk levels across various departments. The dashboard allows users to interact with data in real-time, filtering and drilling down to view specific risk metrics and trends. It was designed to help stakeholders identify potential risks, track their mitigation efforts, and manage risks effectively across different teams.
-                </p>
+        <div class="certificate">
+            <h3>Risk Management Dashboard</h3>
+            <p>
+                In this project, I developed a Business Intelligence dashboard that tracks and visualizes risk levels across various departments. The dashboard allows users to interact with data in real-time, filtering and drilling down to view specific risk metrics and trends. It was designed to help stakeholders identify potential risks, track their mitigation efforts, and manage risks effectively across different teams.
+            </p>
 
-                <p>&nbsp;</p>
+            <p>&nbsp;</p>
 
-                <p><strong>Tools Used:</strong> HTML, CSS, JavaScript</p>
+            <p><strong>Tools Used:</strong> HTML, CSS, JavaScript</p>
 
-                <p>&nbsp;</p> <!-- Added space between tools and formulas sections -->
+            <p>&nbsp;</p>
 
-                <p><strong>Formulas, Skills, and Techniques Used:</strong>
-                    DOM Manipulation, createElement, appendChild, removeChild, event listeners, stopPropagation(), dynamic risk card creation, form handling, background color styling based on data, CSS Flexbox for layout, JavaScript functions for adding and removing risk items, handling button clicks for bulk updates, categorizing risk levels, and handling event propagation in complex user interactions.
-                </p>
-                            
-                <!-- Add image here -->
-                <div class="certificate-images">
-                    <img src="images/riskdashboard.png" alt="Risk Dashboard" style="width: 100%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-top: 20px;">
-                    <a href="index.html" class="button">Back to Home Page</a> <!-- Button here -->
-                </div>
+            <p><strong>Formulas, Skills, and Techniques Used:</strong>
+                DOM Manipulation, createElement, appendChild, removeChild, event listeners, stopPropagation(), dynamic risk card creation, form handling, background color styling based on data, CSS Flexbox for layout, JavaScript functions for adding and removing risk items, handling button clicks for bulk updates, categorizing risk levels, and handling event propagation in complex user interactions.
+            </p>
+                        
+            <div class="certificate-images">
+                <img src="images/riskdashboard.png" alt="Risk Dashboard">
+                <a href="index.html" class="button">Back to Home Page</a>
             </div>
-        </section>
-    
-        <footer>
-            <p>&copy; 2025 Cameron Watts. All Rights Reserved.</p>
-        </footer>
-    </body>
-    </html>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Cameron Watts. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

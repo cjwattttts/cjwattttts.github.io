@@ -483,8 +483,7 @@ footer {
    color: #ffffff; /* makes text color white */
    text-align: center; /* centers footer text */
    padding: 20px; /* adds padding inside the footer */
-   position: relative; /* makes footer position relative */
-   bottom: 0; /* keeps footer at the bottom */
+   margin-top: auto; /* pushes footer to bottom when content is short */
    width: 100%; /* makes footer take up the full width */
 }
 
@@ -494,6 +493,7 @@ footer p {
    font-weight: 600; /* makes the font slightly bold */
    letter-spacing: 0.5px; /* adds spacing between letters */
 }
+
 
 /* 📱 MEDIA QUERIES FOR RESPONSIVENESS */
 @media screen and (max-width: 768px) {

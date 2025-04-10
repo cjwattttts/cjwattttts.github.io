@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="assets/styles/style.css">
 
     <style>
-        /* Adding custom styles for proper layout */
+        /* Body and Layout Styles */
         body {
             display: flex;
             flex-direction: column;
@@ -26,14 +26,37 @@
             background-color: #f4f4f9;
         }
 
-        nav .logo h1 {
-            margin: 0;
-            font-size: 2rem;
+        /* Header Styling */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px 10%;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .cw-logo {
+            height: 50px;
+            object-fit: contain;
         }
 
         .nav-links {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
 
         .nav-links li {
@@ -47,12 +70,12 @@
             font-size: 1.1rem;
         }
 
+        /* Main Content Section */
         .certificates-container {
             text-align: center;
-            margin: 40px;
-            padding-top: 100px;
-            padding-bottom: 200px;
-            flex-grow: 1;
+            margin: 100px auto 40px;
+            padding-top: 60px; /* avoids header overlap */
+            flex-grow: 1; /* ensures footer stays at bottom */
         }
 
         h2 {
@@ -92,31 +115,54 @@
             margin: 0;
         }
 
+        /* Corrected Footer Styling */
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 20px;
-            position: fixed;
-            bottom: 0;
+            margin-top: auto; /* pushes footer down naturally */
             width: 100%;
             box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
         }
 
+        /* Button Styling */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #555555;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #cccccc;
+        }
+
+        /* Images Styling */
+        .certificate-images img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        /* Icon Styling */
         h2 i {
             margin-right: 10px;
             color: white;
         }
-
     </style>
 </head>
 <body>
     <header>
         <nav>
-          <div class="logo">
-            <img src="images/cw-logo.png" alt="CW Logo" class="cw-logo" />
-          </div>
-          <ul class="nav-links">
+            <div class="logo">
+                <img src="images/cw-logo.png" alt="CW Logo" class="cw-logo" />
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">BACK TO PORTFOLIO</a></li>
@@ -124,36 +170,33 @@
         </nav>
     </header>
 
+    <section class="certificates-container">
+        <h2><i class="fas fa-chart-bar"></i>Southern US Sales Performance</h2>
 
-    <section class="certificates">
-        <div class="certificates-container">
-            <h2><i class="fas fa-chart-bar"></i> Southern US Sales Performance</h2>
+        <div class="certificate">
+            <h3>Southern US Sales Performance</h3>
+            <p>
+                This project analyzes sales and profit trends across the Southern U.S., revealing major fluctuations in machine sales from 2020 to 2023. I began by cleaning and structuring the dataset in Excel to ensure accuracy before importing it into Tableau for visualization. The analysis highlights how machine sales peaked at $27,594 in 2020 but dropped sharply to $3,113 in 2021, with continued instability in the following years. The findings uncover North Carolina's machine sales in 2023 as a key loss driver, with Burlington alone losing nearly $1,000 in profit. 
+            </p>
 
-            <div class="certificate">
-                <h3>Southern US Sales Performance</h3>
-                <p>
-                    This project analyzes sales and profit trends across the Southern U.S., revealing major fluctuations in machine sales from 2020 to 2023. I began by cleaning and structuring the dataset in Excel to ensure accuracy before importing it into Tableau for visualization. The analysis highlights how machine sales peaked at $27,594 in 2020 but dropped sharply to $3,113 in 2021, with continued instability in the following years. The findings uncover North Carolina's machine sales in 2023 as a key loss driver, with Burlington alone losing nearly $1,000 in profit. 
-                </p>
-            
-                <p>&nbsp;</p>
+            <p>&nbsp;</p>
 
-                <p><strong>Tools Used:</strong> Tableau, Excel</p>
-            
-                <p>&nbsp;</p> <!-- Added space between tools and formulas sections -->
-            
-                <p><strong>Formulas, Skills, and Techniques Used:</strong> Bar Graphs, Filters, Profit Map, Color Mark, Label Mark, Detail Mark, Horizontal Bar Graph, Interactive Dashboard, Story, Story Text Boxes</p>
-            
-                <!-- Add images here -->
-                <div class="certificate-images">
-                    <img src="images/tab1dashboard.png" alt="Tableau Dashboard" style="width: 100%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-top: 20px;">
-                    <img src="images/tab1story.png" alt="Tableau Story" style="width: 100%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-top: 20px;">
-                    <a href="index.html" class="button">Back to Home Page</a>
-                </div>
+            <p><strong>Tools Used:</strong> Tableau, Excel</p>
+
+            <p>&nbsp;</p>
+
+            <p><strong>Formulas, Skills, and Techniques Used:</strong> Bar Graphs, Filters, Profit Map, Color Mark, Label Mark, Detail Mark, Horizontal Bar Graph, Interactive Dashboard, Story, Story Text Boxes</p>
+
+            <div class="certificate-images">
+                <img src="images/tab1dashboard.png" alt="Tableau Dashboard">
+                <img src="images/tab1story.png" alt="Tableau Story">
+                <a href="index.html" class="button">Back to Home Page</a>
             </div>
-        </section>
-    
-        <footer>
-            <p>&copy; 2025 Cameron Watts. All Rights Reserved.</p>
-        </footer>
-    </body>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Cameron Watts. All Rights Reserved.</p>
+    </footer>
+</body>
 </html>

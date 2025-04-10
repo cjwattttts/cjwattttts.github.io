@@ -16,24 +16,47 @@
     <link rel="stylesheet" href="assets/styles/style.css">
 
     <style>
-        /* Adding custom styles for proper layout */
+        /* Body and Layout Styles */
         body {
             display: flex;
             flex-direction: column;
-            min-height: 100vh;
+            min-height: 100vh; /* ensures footer moves correctly */
             margin: 0;
             font-family: 'Helvetica Neue', sans-serif;
             background-color: #f4f4f9;
         }
 
-        nav .logo h1 {
-            margin: 0;
-            font-size: 2rem;
+        /* Header Styling */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px 10%;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .cw-logo {
+            height: 50px;
+            object-fit: contain;
         }
 
         .nav-links {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
 
         .nav-links li {
@@ -47,19 +70,19 @@
             font-size: 1.1rem;
         }
 
+        /* Main Content Section */
         .certificates-container {
             text-align: center;
-            margin: 40px;
-            padding-top: 100px; /* Added top padding to avoid header blocking */
-            padding-bottom: 200px; /* Extra padding at the bottom to extend the page length */
-            flex-grow: 1;
+            margin: 100px auto 40px;
+            padding-top: 60px; /* ensures content isn't hidden by header */
+            flex-grow: 1; /* allows footer to push to bottom */
         }
 
         h2 {
             font-size: 3rem;
             margin-bottom: 30px;
             font-weight: 600;
-            color: white; /* Title text in white */
+            color: white;
         }
 
         .certificate {
@@ -82,7 +105,6 @@
         .certificate h3 {
             font-size: 2.2rem;
             margin-bottom: 15px;
-            
             color: #333;
         }
 
@@ -93,32 +115,54 @@
             margin: 0;
         }
 
+        /* Footer Styling (corrected) */
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 20px;
-            position: fixed;
-            bottom: 0;
+            margin-top: auto; /* Pushes footer down */
             width: 100%;
             box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        /* Adding symbol styles */
-        h2 i {
-            margin-right: 10px;
-            color: white; /* Icon in white */
+        /* Button Styling */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #555555;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
         }
 
+        .button:hover {
+            background-color: #cccccc;
+        }
+
+        /* Images */
+        .certificate-images img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        /* Symbol styling */
+        h2 i {
+            margin-right: 10px;
+            color: white;
+        }
     </style>
 </head>
 <body>
     <header>
         <nav>
-          <div class="logo">
-            <img src="images/cw-logo.png" alt="CW Logo" class="cw-logo" />
-          </div>
-          <ul class="nav-links">
+            <div class="logo">
+                <img src="images/cw-logo.png" alt="CW Logo" class="cw-logo" />
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">BACK TO PORTFOLIO</a></li>
@@ -126,35 +170,33 @@
         </nav>
     </header>
 
-    <section class="certificates">
-        <div class="certificates-container">
-            <h2><i class="fas fa-chart-line"></i>Western US Sales Trend Dashboard</h2>
+    <section class="certificates-container">
+        <h2><i class="fas fa-chart-line"></i>Western US Sales Trend Dashboard</h2>
 
-            <div class="certificate">
-                <h3>Western US Sales Trend Dashboard</h3>
-                <p>
-                    In this project, I explored a large dataset and created visuals to uncover trends and insights. I began by developing bar graphs to show profit levels for various products across regions in 2022 and 2023. Next, I created a tree map for each item and category, where the size of each block represented sales volume, with the largest product, Lagan, generating $195,034,677 in sales. The project also includes interactive filters for users to customize data by year, category, and item. A detailed chart visualizes sales amounts for items in the West region, while a profit map shows state-level profits in the Western US using color gradients, red for high profits and blue for low. A key feature is the interactive dashboard, allowing users to drill down into data for specific items in the West and view state-level performance. Users can click on a state to see more detailed product data. To conclude, I crafted a compelling story to communicate the insights, guiding viewers through a drill-down into California’s sales data with visuals and text boxes for clarity.
-                </p>
-            
-                <p>&nbsp;</p>
+        <div class="certificate">
+            <h3>Western US Sales Trend Dashboard</h3>
+            <p>
+                In this project, I explored a large dataset and created visuals to uncover trends and insights. I began by developing bar graphs to show profit levels for various products across regions in 2022 and 2023. Next, I created a tree map for each item and category, where the size of each block represented sales volume, with the largest product, Lagan, generating $195,034,677 in sales. The project also includes interactive filters for users to customize data by year, category, and item. A detailed chart visualizes sales amounts for items in the West region, while a profit map shows state-level profits in the Western US using color gradients, red for high profits and blue for low. A key feature is the interactive dashboard, allowing users to drill down into data for specific items in the West and view state-level performance. Users can click on a state to see more detailed product data. To conclude, I crafted a compelling story to communicate the insights, guiding viewers through a drill-down into California’s sales data with visuals and text boxes for clarity.
+            </p>
 
-                <p><strong>Tools Used:</strong> Tableau, Excel</p>
-            
-                <p>&nbsp;</p> <!-- Added space between tools and formulas sections -->
-            
-                <p><strong>Formulas, Skills, and Techniques Used:</strong> Bar Graphs, Tree Map, Color Mark, Horizontal Bar Graph, Profit Map, Label Mark, Detail Mark, Interactive Filters, Dashboard, Story, Story Text Boxes</p>
-            
-                <!-- Add images here -->
-                <div class="certificate-images">
-                    <img src="images/tab2dashboard.png" alt="Tab2 Dashboard" style="width: 100%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-top: 20px;">
-                    <img src="images/tab2story.png" alt="Tab2 Story" style="width: 100%; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-top: 20px;">
-                    <a href="index.html" class="button">Back to Home Page</a> <!-- Button here -->
-                </div>
+            <p>&nbsp;</p>
+
+            <p><strong>Tools Used:</strong> Tableau, Excel</p>
+
+            <p>&nbsp;</p>
+
+            <p><strong>Formulas, Skills, and Techniques Used:</strong> Bar Graphs, Tree Map, Color Mark, Horizontal Bar Graph, Profit Map, Label Mark, Detail Mark, Interactive Filters, Dashboard, Story, Story Text Boxes</p>
+
+            <div class="certificate-images">
+                <img src="images/tab2dashboard.png" alt="Tab2 Dashboard">
+                <img src="images/tab2story.png" alt="Tab2 Story">
+                <a href="index.html" class="button">Back to Home Page</a>
             </div>
-        </section>
-    
-        <footer>
-            <p>&copy; 2025 Cameron Watts. All Rights Reserved.</p>
-        </footer>
-    </body>
-    </html>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Cameron Watts. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
