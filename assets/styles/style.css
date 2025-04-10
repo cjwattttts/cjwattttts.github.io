@@ -702,4 +702,45 @@ body {
    align-items: center;
  }
  
- 
+ /* 📱 MOBILE-SPECIFIC STYLES FIXES */
+
+/* Completely hide header on mobile screens */
+@media (max-width: 768px) {
+   header {
+       display: none !important; /* fully removes header on mobile */
+   }
+
+   /* Adjust top padding since header is removed */
+   .certificates-container,
+   .hero {
+       padding-top: 30px !important;
+   }
+}
+
+/* 🦸 FIXED HERO SECTION FOR MOBILE */
+@media (max-width: 768px) {
+   .hero {
+       height: auto; /* makes hero height adapt to content */
+       padding: 60px 5%; /* reduced padding for better spacing */
+   }
+
+   .hero h2 {
+       font-size: 2.2rem; /* smaller, readable heading */
+       margin-top: 20px; /* reduced spacing above heading */
+   }
+
+   .hero p {
+       font-size: 1rem; /* slightly smaller paragraph font */
+       padding: 0 15px; /* ensures text doesn't touch screen edges */
+       max-width: 100%; /* prevents overflow */
+   }
+}
+
+/* Ensure footer positioning is always correct on mobile */
+@media (max-width: 768px) {
+   footer {
+       position: relative; /* ensures footer placement naturally at bottom */
+       margin-top: auto; /* pushes footer down naturally */
+       padding: 15px 5%; /* reduced padding for small screens */
+   }
+}
