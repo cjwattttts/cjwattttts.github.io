@@ -749,3 +749,124 @@ body {
 .cw-logo {
    height: 65px; /* Increase from 50px to 65px for subtle enlargement */
 }
+
+/* 📱 MOBILE OPTIMIZATION - ADDITIONAL TWEAKS */
+@media (max-width: 768px) {
+  
+  /* General padding and margins adjustments */
+  body {
+    font-size: 0.9rem; /* slightly reduces base font size */
+    line-height: 1.5; /* tighter line-height for better readability */
+  }
+
+  /* 🎯 Hero Section adjustments for better readability */
+  .hero {
+    padding: 50px 5%;
+    height: auto;
+  }
+  .hero h2 {
+    font-size: 1.8rem;
+    margin-top: 10px;
+  }
+  .hero p {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    padding: 0 10px;
+  }
+
+  /* 🔲 Project and Certification Cards */
+  .project-card,
+  .certification-card {
+    padding: 15px; /* less padding for a compact feel */
+    width: 90%; /* reduces width to avoid edge-to-edge */
+    margin: 15px auto; /* smaller vertical margin for compactness */
+  }
+
+  .project-card h3,
+  .certification-card h3 {
+    font-size: 1.4rem; /* smaller headings for cards */
+    margin-bottom: 10px;
+  }
+
+  .project-card p,
+  .certification-card p {
+    font-size: 0.9rem; /* smaller paragraph text */
+    margin-top: 8px;
+  }
+
+  .project-card .tools,
+  .certification-card .tools {
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+
+  /* 📸 Image adjustments for project and certificate images */
+  .certificate-images img {
+    margin-top: 15px;
+    border-radius: 10px;
+  }
+
+  /* 🏆 ABOUT ME adjustments */
+  #about {
+    padding: 30px 5%;
+  }
+
+  #about h2 {
+    font-size: 2rem;
+  }
+
+  #about p {
+    font-size: 0.9rem;
+    max-width: 90%;
+  }
+
+  #about img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+  }
+
+  /* 🎯 Skills section adjustments */
+  #skills {
+    padding: 25px 5%;
+  }
+
+  #skills h2 {
+    font-size: 2rem;
+  }
+
+  #skills ul li {
+    font-size: 0.9rem;
+    margin: 10px;
+    padding: 8px 20px;
+  }
+
+  /* 📞 Contact section adjustments */
+  #contact {
+    padding: 30px 5%;
+    min-height: auto;
+  }
+
+  #contact h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+
+  #contact form input,
+  #contact form textarea {
+    padding: 12px;
+    font-size: 0.9rem;
+    border-radius: 15px;
+  }
+
+  #contact button {
+    padding: 15px 25px;
+    font-size: 1rem;
+  }
+
+  /* 📝 Footer adjustments */
+  footer {
+    padding: 12px 5%;
+    font-size: 0.8rem;
+  }
+}
