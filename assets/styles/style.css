@@ -744,3 +744,8 @@ body {
        padding: 15px 5%; /* reduced padding for small screens */
    }
 }
+
+/* Slightly bigger header logo */
+.cw-logo {
+   height: 65px; /* Increase from 50px to 65px for subtle enlargement */
+}
