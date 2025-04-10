@@ -1,202 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Retail Performance & Trend Analysis - Cameron Watts</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Retail Performance & Trend Analysis - Cameron Watts</title>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
 
-    <!-- Google Font: Helvetica Neue / San Francisco -->
-    <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;600&display=swap" rel="stylesheet"/>
 
-    <!-- Link to External CSS -->
-    <link rel="stylesheet" href="assets/styles/style.css">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="assets/styles/style.css"/>
 
-    <style>
-        /* Body and Layout Styles */
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh; /* ensures footer moves correctly */
-            margin: 0;
-            font-family: 'Helvetica Neue', sans-serif;
-            background-color: #f4f4f9;
-        }
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #f4f4f9;
+    }
 
-        /* Header Styling */
-        header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 15px 10%;
-            z-index: 1000;
-            backdrop-filter: blur(10px);
-        }
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 15px 10%;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+    }
 
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-        .logo {
-            display: flex;
-            align-items: center;
-        }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
 
-        .cw-logo {
-            height: 50px;
-            object-fit: contain;
-        }
+    .cw-logo {
+      height: 65px;
+      display: block;
+      object-fit: contain;
+    }
 
-        .nav-links {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
 
-        .nav-links li {
-            display: inline;
-            margin-right: 20px;
-        }
+    .nav-links li {
+      display: inline;
+    }
 
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.1rem;
-        }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
 
-        /* Main Content Section */
-        .certificates-container {
-            text-align: center;
-            margin: 100px auto 40px;
-            padding-top: 60px; /* ensures content isn't hidden by header */
-            flex-grow: 1; /* allows footer to push to bottom */
-        }
+    .nav-links a:hover {
+      color: #d3d3d3;
+    }
 
-        h2 {
-            font-size: 3rem;
-            margin-bottom: 30px;
-            font-weight: 600;
-            color: white;
-        }
+    .certificates-container {
+      text-align: center;
+      margin: 100px auto 40px;
+      padding-top: 60px;
+      flex-grow: 1;
+      padding-bottom: 100px;
+    }
 
-        .certificate {
-            display: inline-block;
-            text-align: left;
-            margin-bottom: 30px;
-            padding: 30px;
-            border-radius: 15px;
-            background-color: #ffffff;
-            max-width: 600px;
-            width: 100%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
+    h2 {
+      font-size: 3rem;
+      margin-bottom: 30px;
+      font-weight: 600;
+      color: white; /* fixed to white */
+    }
 
-        .certificate:hover {
-            transform: translateY(-10px);
-        }
+    h2 i {
+      margin-right: 10px;
+      color: white; /* fixed icon color */
+    }
 
-        .certificate h3 {
-            font-size: 2.2rem;
-            margin-bottom: 15px;
-            color: #333;
-        }
+    .certificate {
+      display: inline-block;
+      text-align: left;
+      margin-bottom: 30px;
+      padding: 30px;
+      border-radius: 15px;
+      background-color: #ffffff;
+      max-width: 600px;
+      width: 90%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
 
-        .certificate p {
-            font-size: 1.1rem;
-            color: #555;
-            line-height: 1.6;
-            margin: 0;
-        }
+    .certificate:hover {
+      transform: translateY(-10px);
+    }
 
-        /* Footer Styling (corrected) */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: auto; /* Pushes footer down */
-            width: 100%;
-            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-        }
+    .certificate h3 {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+      color: #333;
+    }
 
-        /* Button Styling */
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #555555;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.2rem;
-            margin-top: 20px;
-            transition: background-color 0.3s ease;
-        }
+    .certificate p {
+      font-size: 1.1rem;
+      color: #555;
+      line-height: 1.6;
+      margin: 0;
+    }
 
-        .button:hover {
-            background-color: #cccccc;
-        }
+    .certificate-images img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
 
-        /* Images */
-        .certificate-images img {
-            width: 100%;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
-        }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #555555;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
 
-        /* Symbol styling */
-        h2 i {
-            margin-right: 10px;
-            color: white;
-        }
-    </style>
+    .button:hover {
+      background-color: #cccccc;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: auto;
+      width: 100%;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      .cw-logo {
+        height: 50px;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        background-color: #444;
+        position: absolute;
+        top: 70px;
+        right: 10%;
+        padding: 20px;
+        border-radius: 10px;
+        display: none;
+      }
+
+      .certificates-container {
+        padding-top: 30px;
+      }
+
+      .certificate {
+        padding: 20px;
+      }
+
+      .certificate h3 {
+        font-size: 1.8rem;
+      }
+
+      .certificate p {
+        font-size: 1rem;
+      }
+
+      .button {
+        font-size: 1rem;
+        padding: 8px 16px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="images/cw-logo.png" alt="CW Logo" class="cw-logo" />
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">BACK TO PORTFOLIO</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="images/cw-logo.png" alt="CW Logo" class="cw-logo" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">BACK TO PORTFOLIO</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section class="certificates-container">
-        <h2><i class="fas fa-chart-line"></i>Western US Sales Trend Dashboard</h2>
+  <section class="certificates-container">
+    <h2><i class="fas fa-chart-line"></i>Western US Sales Trend Dashboard</h2>
 
-        <div class="certificate">
-            <h3>Western US Sales Trend Dashboard</h3>
-            <p>
-                In this project, I explored a large dataset and created visuals to uncover trends and insights. I began by developing bar graphs to show profit levels for various products across regions in 2022 and 2023. Next, I created a tree map for each item and category, where the size of each block represented sales volume, with the largest product, Lagan, generating $195,034,677 in sales. The project also includes interactive filters for users to customize data by year, category, and item. A detailed chart visualizes sales amounts for items in the West region, while a profit map shows state-level profits in the Western US using color gradients, red for high profits and blue for low. A key feature is the interactive dashboard, allowing users to drill down into data for specific items in the West and view state-level performance. Users can click on a state to see more detailed product data. To conclude, I crafted a compelling story to communicate the insights, guiding viewers through a drill-down into California’s sales data with visuals and text boxes for clarity.
-            </p>
+    <div class="certificate">
+      <h3>Western US Sales Trend Dashboard</h3>
+      <p>
+        In this project, I explored a large dataset and created visuals to uncover trends and insights. I began by developing bar graphs to show profit levels for various products across regions in 2022 and 2023. Next, I created a tree map for each item and category, where the size of each block represented sales volume, with the largest product, Lagan, generating $195,034,677 in sales. The project also includes interactive filters for users to customize data by year, category, and item. A detailed chart visualizes sales amounts for items in the West region, while a profit map shows state-level profits in the Western US using color gradients, red for high profits and blue for low. A key feature is the interactive dashboard, allowing users to drill down into data for specific items in the West and view state-level performance. Users can click on a state to see more detailed product data. To conclude, I crafted a compelling story to communicate the insights, guiding viewers through a drill-down into California’s sales data with visuals and text boxes for clarity.
+      </p>
 
-            <p>&nbsp;</p>
+      <p>&nbsp;</p>
 
-            <p><strong>Tools Used:</strong> Tableau, Excel</p>
+      <p><strong>Tools Used:</strong> Tableau, Excel</p>
 
-            <p>&nbsp;</p>
+      <p>&nbsp;</p>
 
-            <p><strong>Formulas, Skills, and Techniques Used:</strong> Bar Graphs, Tree Map, Color Mark, Horizontal Bar Graph, Profit Map, Label Mark, Detail Mark, Interactive Filters, Dashboard, Story, Story Text Boxes</p>
+      <p><strong>Formulas, Skills, and Techniques Used:</strong> Bar Graphs, Tree Map, Color Mark, Horizontal Bar Graph, Profit Map, Label Mark, Detail Mark, Interactive Filters, Dashboard, Story, Story Text Boxes</p>
 
-            <div class="certificate-images">
-                <img src="images/tab2dashboard.png" alt="Tab2 Dashboard">
-                <img src="images/tab2story.png" alt="Tab2 Story">
-                <a href="index.html" class="button">Back to Home Page</a>
-            </div>
-        </div>
-    </section>
+      <div class="certificate-images">
+        <img src="images/tab2dashboard.png" alt="Tab2 Dashboard">
+        <img src="images/tab2story.png" alt="Tab2 Story">
+        <a href="index.html" class="button">Back to Home Page</a>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Cameron Watts. All Rights Reserved.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Cameron Watts. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
