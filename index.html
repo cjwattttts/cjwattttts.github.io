@@ -25,7 +25,7 @@
     color: #ffffff;
     text-align: center;
     max-width: 800px;
-    margin: 10px auto; /* Increased spacing */
+    margin: 0 auto;
     opacity: 0;
     animation: fadeInUp 1.2s ease-out 0.8s forwards;
     text-shadow: 3px 6px 12px rgba(0, 0, 0, 0.15);
@@ -167,10 +167,10 @@
     }
   }
 
-  /* Adjusting the text positioning under the "Welcome to My Portfolio" for desktop */
+  /* Adjusting the hero section to move all elements down slightly on desktop */
   @media (min-width: 769px) {
-    .hero .hero-content p.animated-text {
-      margin-top: -20px; /* Move the text up a smidge */
+    .hero {
+      padding-top: 80px; /* Moves the entire hero section down slightly */
     }
   }
 </style>
