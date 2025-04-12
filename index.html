@@ -89,7 +89,7 @@
   }
 
   .hero h2 {
-    font-size: 4.6rem; /* Increased from 4rem to 5rem */
+    font-size: 4.6rem; /* Default for larger screens */
     font-weight: 600;
     color: #ffffff;
     letter-spacing: 2px;
@@ -97,6 +97,81 @@
     animation: fadeInUp 1.2s ease-out 0s forwards;
     margin-top: 50px;
     text-shadow: 3px 6px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Mobile-specific styles */
+  @media (max-width: 768px) {
+    .hero h2 {
+      font-size: 2.8rem; /* Smaller size for mobile */
+    }
+
+    .hero .hero-content p.animated-text {
+      font-size: 1.2rem; /* Smaller text size for mobile */
+      max-width: 90%; /* Adjust width for mobile */
+    }
+
+    .hero img.fade-in-delayed {
+      height: 150px; /* Smaller icon size for mobile */
+    }
+
+    /* Adjusting font sizes for Projects and Certifications sections */
+    #projects h2,
+    #certifications h2 {
+      font-size: 2.4rem; /* Smaller title size for mobile */
+    }
+
+    /* Mobile-specific adjustments for icons and email */
+    .contact-icons a {
+      font-size: 1.6rem; /* Smaller LinkedIn icon */
+    }
+
+    .contact-icons .email-info {
+      font-size: 1rem; /* Smaller email text */
+    }
+
+    .contact-icons i {
+      font-size: 1.5rem; /* Smaller mail icon */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero h2 {
+      font-size: 2.4rem; /* Even smaller size for very small screens */
+    }
+
+    .hero .hero-content p.animated-text {
+      font-size: 1rem; /* Further reduce text size */
+    }
+
+    .hero img.fade-in-delayed {
+      height: 120px; /* Even smaller icon size */
+    }
+
+    /* Further reduction for Projects and Certifications sections */
+    #projects h2,
+    #certifications h2 {
+      font-size: 2rem; /* Even smaller title size */
+    }
+
+    /* Further reduce LinkedIn and mail icon sizes */
+    .contact-icons a {
+      font-size: 1.4rem; /* Further reduce LinkedIn icon for very small screens */
+    }
+
+    .contact-icons .email-info {
+      font-size: 0.9rem; /* Further reduce email text */
+    }
+
+    .contact-icons i {
+      font-size: 1.2rem; /* Further reduce mail icon size */
+    }
+  }
+
+  /* Adjusting the text positioning under the "Welcome to My Portfolio" for desktop */
+  @media (min-width: 769px) {
+    .hero .hero-content p.animated-text {
+      margin-top: -20px; /* Move the text up a smidge */
+    }
   }
 </style>
 
