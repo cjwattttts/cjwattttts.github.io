@@ -167,10 +167,18 @@
     }
   }
 
-  /* Adjusting the text positioning under the "Welcome to My Portfolio" for desktop */
+  /* Slight adjustment for moving the text and logo down in the hero section on desktop */
   @media (min-width: 769px) {
+    .hero .hero-content h2 {
+      margin-top: 20px; /* Slightly moves the title down */
+    }
+
     .hero .hero-content p.animated-text {
-      margin-top: -20px; /* Move the text up a smidge */
+      margin-top: 10px; /* Slightly moves the text below the title down */
+    }
+
+    .hero img.fade-in-delayed {
+      margin-top: 15px; /* Slightly moves the logo down */
     }
   }
 </style>
