@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Amazon Sales Analytics Case Study - Cameron Watts</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;600&display=swap" rel="stylesheet"/>
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="assets/styles/style.css"/>
+
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #f4f4f9;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 15px 10%;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .cw-logo {
+      height: 65px;
+      object-fit: contain;
+    }
+
+    .nav-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav-links li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+
+    .certificates-container {
+      text-align: center;
+      margin: 40px;
+      padding-top: 100px;
+      flex-grow: 1;
+      padding-bottom: 100px;
+    }
+
+    h2 {
+      font-size: 3rem;
+      margin-bottom: 30px;
+      font-weight: 600;
+      color: white;
+    }
+
+    .certificate {
+      display: inline-block;
+      text-align: center;
+      margin-bottom: 30px;
+      padding: 30px;
+      border-radius: 15px;
+      background-color: #ffffff;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .certificate:hover {
+      transform: translateY(-10px);
+    }
+
+    .certificate h3 {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .certificate p {
+      font-size: 1.1rem;
+      color: #555;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .certificate img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #555555;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #cccccc;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      width: 100%;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 i {
+      margin-right: 10px;
+      color: white;
+    }
+
+    .certificate-images {
+      text-align: center;
+    }
+
+    .certificate-images img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="images/cw-logo.png" alt="CW Logo" class="cw-logo" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">BACK TO PORTFOLIO</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="certificates-container">
+    <h2><i class="fas fa-tags"></i> Amazon Sales Analytics Case Study</h2>
+
+    <div class="certificate">
+      <p>
+        For this self-directed case study, I analyzed a dataset of Amazon product listings using SQL (Snowflake), Excel, and Power BI. I wrote custom queries to calculate review volume, discount trends, and average product ratings. I then cleaned and joined the data to create meaningful metrics. In Power BI, I designed a polished dashboard with KPIs, pie and bar charts, and scatter plots to explore discount-to-review relationships, category breakdowns, and product trends. This project demonstrates my ability to work across the full data pipeline, from raw data to SQL transformation to clear, visual storytelling.
+      </p>
+
+      <p>&nbsp;</p>
+      <p><strong>Tools Used:</strong> Snowflake (SQL), Excel, Power BI</p>
+      <p>&nbsp;</p>
+      <p><strong>Skills & Techniques:</strong> SQL Aggregations, Data Cleaning, Joins, KPIs, Visual Design, Trend Analysis, Dashboard Layout, Custom Formatting</p>
+
+      <div class="certificate-images">
+        <img src="images/power_bi_dashboard.png" alt="Power BI Dashboard">
+        <img src="images/highest_rated_products.png" alt="Top Rated Products Query">
+        <img src="images/biggest_discounts.png" alt="Biggest Discounts Query">
+        <img src="images/top_categories_by_rating.png" alt="Category Ratings Query">
+        <img src="images/top_prods_rev.png" alt="Top Products by Revenue Query">
+        <a href="index.html" class="button">Back to Home Page</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Cameron Watts. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
