@@ -70,10 +70,11 @@
 
     .certificates-container {
       text-align: center;
-      margin: 40px;
+      margin: 40px auto;
       padding-top: 100px;
       flex-grow: 1;
       padding-bottom: 100px;
+      max-width: 1000px;
     }
 
     h2 {
@@ -84,14 +85,12 @@
     }
 
     .certificate {
-      display: inline-block;
+      display: block;
       text-align: center;
       margin-bottom: 30px;
       padding: 30px;
       border-radius: 15px;
       background-color: #ffffff;
-      max-width: 600px;
-      width: 100%;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease;
     }
@@ -113,12 +112,25 @@
       margin: 0;
     }
 
-    .certificate img {
-      max-width: 100%;
-      height: auto;
-      margin-top: 20px;
-      border-radius: 10px;
+    .certificate-images {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    .certificate-images img {
+      width: 100%;
+      max-width: 900px;
+      border-radius: 15px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+
+    .img-caption {
+      font-size: 0.95rem;
+      color: #888;
+      margin-top: 10px;
     }
 
     .button {
@@ -129,7 +141,7 @@
       text-decoration: none;
       border-radius: 5px;
       font-size: 1.2rem;
-      margin-top: 20px;
+      margin-top: 30px;
       transition: background-color 0.3s ease;
     }
 
@@ -151,20 +163,13 @@
       color: white;
     }
 
-    .certificate-images {
-      text-align: center;
-    }
-
-    .certificate-images img {
-      width: 100%;
-      border-radius: 15px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      margin-top: 20px;
-    }
-
     @media (max-width: 768px) {
       h2 {
         font-size: 2rem;
+      }
+
+      .certificate-images img {
+        width: 100%;
       }
     }
   </style>
@@ -196,10 +201,20 @@
 
       <div class="certificate-images">
         <img src="images/power_bi_dashboard.png" alt="Power BI Dashboard">
+        <div class="img-caption">Final Power BI dashboard summarizing KPIs, trends, and top products. Electronics led in both reviews and average discounted price, while higher discounts appeared to drive more reviews. Top-rated products clustered around the $50 price point.</div>
+
         <img src="images/highest_rated_products.png" alt="Top Rated Products Query">
+        <div class="img-caption">Top 10 highest-rated products with more than 100 reviews.</div>
+
         <img src="images/biggest_discounts.png" alt="Biggest Discounts Query">
+        <div class="img-caption">Products with the steepest discounts across all categories.</div>
+
         <img src="images/top_categories_by_rating.png" alt="Category Ratings Query">
+        <div class="img-caption">Top 10 product categories ranked by average rating.</div>
+
         <img src="images/top_prods_rev.png" alt="Top Products by Revenue Query">
+        <div class="img-caption">Top products by total revenue based on sale price and volume.</div>
+
         <a href="index.html" class="button">Back to Home Page</a>
       </div>
     </div>

@@ -1,157 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Certifications - Cameron Watts</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Certifications - Cameron Watts</title>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="assets/styles/style.css"/>
 
-    <!-- Google Font: Helvetica Neue / San Francisco -->
-    <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #f4f4f9;
+    }
 
-    <!-- Link to External CSS -->
-    <link rel="stylesheet" href="assets/styles/style.css">
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 15px 10%;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+    }
 
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            margin: 0;
-            font-family: 'Helvetica Neue', sans-serif;
-            background-color: #f4f4f9;
-        }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-        nav .logo h1 {
-            margin: 0;
-            font-size: 2rem;
-        }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
 
-        .nav-links {
-            list-style: none;
-            padding: 0;
-        }
+    .cw-logo {
+      height: 65px;
+      object-fit: contain;
+    }
 
-        .nav-links li {
-            display: inline;
-            margin-right: 20px;
-        }
+    .nav-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
 
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.1rem;
-        }
+    .nav-links li {
+      display: inline;
+      margin-right: 20px;
+    }
 
-        .certificates-container {
-            text-align: center;
-            margin: 40px;
-            padding-top: 100px;
-            flex-grow: 1;
-            padding-bottom: 100px;
-        }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
 
-        h2 {
-            font-size: 3rem;
-            margin-bottom: 30px;
-            font-weight: 600;
-            color: white;
-        }
+    .certificates-container {
+      text-align: center;
+      margin: 40px auto;
+      padding-top: 100px;
+      flex-grow: 1;
+      padding-bottom: 100px;
+      max-width: 1000px;
+    }
 
-        .certificate {
-            display: inline-block;
-            text-align: center;
-            margin-bottom: 30px;
-            padding: 30px;
-            border-radius: 15px;
-            background-color: #ffffff;
-            max-width: 600px;
-            width: 100%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
+    h2 {
+      font-size: 3rem;
+      margin-bottom: 30px;
+      font-weight: 600;
+      color: white;
+    }
 
-        .certificate:hover {
-            transform: translateY(-10px);
-        }
+    .certificate {
+      display: block;
+      text-align: center;
+      margin-bottom: 30px;
+      padding: 30px;
+      border-radius: 15px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
 
-        .certificate h3 {
-            font-size: 2.2rem;
-            margin-bottom: 15px;
-            color: #333;
-        }
+    .certificate:hover {
+      transform: translateY(-10px);
+    }
 
-        .certificate p {
-            font-size: 1.1rem;
-            color: #555;
-            line-height: 1.6;
-            margin: 0;
-        }
+    .certificate h3 {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+      color: #333;
+    }
 
-        .certificate img {
-            max-width: 100%;
-            height: auto;
-            margin-top: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow to image */
-        }
+    .certificate p {
+      font-size: 1.1rem;
+      color: #555;
+      line-height: 1.6;
+      margin: 0;
+    }
 
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            width: 100%;
-            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-        }
+    .certificate-images {
+      text-align: center;
+      margin-top: 30px;
+    }
 
-        h2 i {
-            margin-right: 10px;
-            color: white;
-        }
+    .certificate-images img,
+    .certificate img {
+      width: 100%;
+      border-radius: 15px;
+      margin-top: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
-        /* Mobile-specific styles for smaller title */
-        @media (max-width: 768px) {
-            h2 {
-                font-size: 2rem; /* Smaller title on mobile */
-            }
-        }
-    </style>
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #555555;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #cccccc;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      width: 100%;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 i {
+      margin-right: 10px;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-          <div class="logo">
-            <img src="images/cw-logo.png" alt="CW Logo" class="cw-logo" />
-          </div>
-          <ul class="nav-links">
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">BACK TO PORTFOLIO</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="images/cw-logo.png" alt="CW Logo" class="cw-logo" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">BACK TO PORTFOLIO</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section class="certificates">
-        <div class="certificates-container">
-            <h2><i class="fas fa-certificate"></i>Certifications</h2>
+  <section class="certificates-container">
+    <h2><i class="fas fa-certificate"></i> Certifications</h2>
 
-            <div class="certificate">
-                <h3>Google Data Analytics</h3>
-                <p>
-                    In the Google Data Analytics Professional Certificate program, I developed a comprehensive skill set in data analytics using tools like Excel, SQL, Tableau, and R. I learned data cleaning, preparation, and statistical analysis techniques, as well as creating interactive dashboards for dynamic data exploration. The program emphasized data-driven decision-making through hands-on projects, which allowed me to apply my skills in real-world scenarios.
-                </p>
-                <img src="images/certificate.jpeg" alt="Google Data Analytics Certificate">
-                <a href="index.html" class="button">Back to Home Page</a> <!-- Button here -->
-            </div>
-        </div>
-    </section>
+    <div class="certificate">
+      <h3>Google Data Analytics</h3>
+      <p>
+        In the Google Data Analytics Professional Certificate program, I developed a comprehensive skill set in data analytics using tools like Excel, SQL, Tableau, and R. I learned data cleaning, preparation, and statistical analysis techniques, as well as creating interactive dashboards for dynamic data exploration. The program emphasized data-driven decision-making through hands-on projects, which allowed me to apply my skills in real-world scenarios.
+      </p>
+      <img src="images/certificate.jpeg" alt="Google Data Analytics Certificate">
+      <a href="index.html" class="button">Back to Home Page</a>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Cameron Watts. All Rights Reserved.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Cameron Watts. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>

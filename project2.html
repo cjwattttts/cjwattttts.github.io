@@ -70,10 +70,11 @@
 
     .certificates-container {
       text-align: center;
-      margin: 40px;
+      margin: 40px auto;
       padding-top: 100px;
       flex-grow: 1;
       padding-bottom: 100px;
+      max-width: 1000px;
     }
 
     h2 {
@@ -84,14 +85,12 @@
     }
 
     .certificate {
-      display: inline-block;
+      display: block;
       text-align: center;
       margin-bottom: 30px;
       padding: 30px;
       border-radius: 15px;
       background-color: #ffffff;
-      max-width: 600px;
-      width: 100%;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease;
     }
@@ -114,11 +113,17 @@
     }
 
     .certificate img {
-      max-width: 100%;
+      width: 100%;
       height: auto;
       margin-top: 20px;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .img-caption {
+      font-size: 0.95rem;
+      color: #888;
+      margin-top: 10px;
     }
 
     .button {
@@ -129,7 +134,7 @@
       text-decoration: none;
       border-radius: 5px;
       font-size: 1.2rem;
-      margin-top: 20px;
+      margin-top: 30px;
       transition: background-color 0.3s ease;
     }
 
@@ -162,10 +167,10 @@
       margin-top: 20px;
     }
 
-    /* Mobile-specific styles for smaller title */
+    /* Mobile-specific styles */
     @media (max-width: 768px) {
       h2 {
-        font-size: 2rem; /* Smaller title on mobile */
+        font-size: 2rem;
       }
     }
   </style>
@@ -183,7 +188,7 @@
   </header>
 
   <section class="certificates-container">
-    <h2><i class="fas fa-tachometer-alt"></i>Business Intelligence Dashboard</h2>
+    <h2><i class="fas fa-tachometer-alt"></i> Business Intelligence Dashboard</h2>
 
     <div class="certificate">
       <p>
@@ -193,10 +198,12 @@
       <p>&nbsp;</p>
       <p><strong>Tools Used:</strong> HTML, CSS, JavaScript</p>
       <p>&nbsp;</p>
-      <p><strong>Formulas, Skills, and Techniques Used:</strong> DOM Manipulation, createElement, appendChild, removeChild, event listeners, stopPropagation(), dynamic risk card creation, form handling, background color styling based on data, CSS Flexbox for layout, JavaScript functions for adding and removing risk items, handling button clicks for bulk updates, categorizing risk levels, and handling event propagation in complex user interactions.</p>
+      <p><strong>Skills & Techniques:</strong> DOM Manipulation, createElement, appendChild, removeChild, event listeners, stopPropagation(), dynamic risk card creation, form handling, background color styling based on data, CSS Flexbox for layout, JavaScript functions for adding and removing risk items, handling button clicks for bulk updates, categorizing risk levels, and handling event propagation in complex user interactions.</p>
 
       <div class="certificate-images">
         <img src="images/riskdashboard.png" alt="Risk Dashboard">
+        <div class="img-caption">Interactive dashboard for tracking and categorizing department-level risks by severity and type.</div>
+
         <a href="index.html" class="button">Back to Home Page</a>
       </div>
     </div>
